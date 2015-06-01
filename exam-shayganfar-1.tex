@@ -51,7 +51,33 @@ plans \cite{grosz:plans-discourse, Litman:discourse-commonsense}. In these
 theories the discourse analysis is based on search over these tree plans
 \cite{rich:discourse}.
 
+The two theories Joint Intentions and SharedPlans have been extensively used to
+examine and describe teamwork.
+
 \subsection{Theory of Joint Intentions/Teamwork}
+
+The Joint Intentions Framework \cite{levesque:acting-together}
+\cite{cohen:intention-commitment} \cite{cohen:persistence-intention-commitment}
+is a theoretical framework founded on BDI logics. The framework focuses on a
+team's joint mental state, called a joint intention. A team jointly intends a
+team action if all team members are jointly committed to perform an action while
+in a specified mental state.
+
+In order to enter a joint commitment, the team members have to establish
+appropriate mutual beliefs and individual commitments. Although the Joint
+Intentions Theory does not mandate communication and several techniques are
+available to establish mutual beliefs about actions from observations (see
+\cite{huber:withour-communication}), currently communication seems to be the
+only feasible way to attain joint commitments. A key aspect of the Joint
+Intention Theory is the commitment to attain mutual belief about the termination
+of a team action. This helps to ensure that the team stays updated about the
+status of the team actions. This behaviour is achieved by enforcing that agents
+committing to a joint intention also commit to inform their team about any
+relevant failures or premature terminations. Joint intentions and joint
+commitments provide a basic framework to reason about coordination required for
+teamwork as well as guidance for monitoring and maintaining team activities.
+However, a single joint intention for a high-level team goal is not sufficient
+to model team behaviour in detail and to ensure coherent teamwork.
 
 There are also some other theories with similarities and contrasts conveying
 collaboration concepts including Cohen and Levesque's work describing the
@@ -96,6 +122,15 @@ processing utterances during the discourse \cite{grosz:plans-discourse}.
 Grosz and Sidner \cite{grosz:plans-discourse}
 Grosz and Kraus \cite{grosz:collaboration}
 
+SharedPlans is a general theory of collaborative planning that requires no
+notion of joint intentions, accommodates multi-level action decomposition
+hierarchies and allows the process of expanding and elaborating partial plans
+into full plans.
+
+SharedPlans is rooted in the observation that collaborative plans are not simply
+a collection of individual plans, but rather a tight interleaving of mutual
+beliefs and intentions of different team members.
+
 The SharedPlans model of collaborative action \cite{grosz:planning-acting}
 \cite{grosz:collaboration} \cite{grosz:plans-discourse} aims to provide the
 theoretical foundations needed for building collaborative robots/ agents
@@ -123,15 +158,17 @@ commitments required of the collaborators.
 
 \subsubsection{Intention-to and Intention-that}
 
-Intention to \ldots
-
-In contrast with \textit{intention to}, an \textit{intention that} does not
-directly connote an action. Rather it implies that agents will behave in a
-manner consistent with a collaborative effort: they won't adopt intentions that
-conflict with the joint activity, and they will adopt intentions to communicate
-about the plan \cite{grosz:collaboration}. Communication requirements are
-derived from any intention that's, as opposed to being ``hard-wired" in Joint
-Intentions.
+The notion of \textit{intention to} models the intention of an agent to do any
+single-agent action while the agent not only believes that it is able to
+execute that action, but it also committs to doing so. In contrast with
+\textit{intention to}, an \textit{intention that} does not directly imply an
+action. In fact, an individual agent's \textit{intention that} is directed
+towards its collaborator's action or towards a group's joint action.
+\textit{Intention that} guides an agent to take actions (including the
+communication), that enable or facilitate other collaborators to perform
+assigned tasks. This leads an agent to behave in a manner consistent with a
+collaborative effort. Therefore, agents will adopt intentions to communicate
+about the plan \cite{grosz:collaboration}.
 
 \subsubsection{Recipes}
 
@@ -150,7 +187,8 @@ Grosaz and Sidner in their earlier work \cite{grosz:plans-discourse} have
 considered only simple recipes in which each recipe consisted of only a single
 act-type relation \cite{lochbaum:plan-models}. Recipes are aggregations of
 act-types and relations among them. Act-types, rather than actions, are the main
-elements in recipes.
+elements in recipes. Recipes can be partial, meaning thay can expand and be
+modified over time.
 
 Finally, the definition of the overall plan in terms of constituent plans of
 individuals or groups is recursive, with the recursion ending at the level of
@@ -187,9 +225,31 @@ reformulate Pollack's definition of the individual plans
 \cite{pollack:plan-mental-attitudes}, and also revise and expand the SharedPlans
 to address these shortcomings.
 
-\subsection{``Hybrid" Collaboration Approaches}
+\subsection{Hybrid Collaboration Approaches}
 
 Tambe's work on \textit{STEAM teamwork model} \cite{tambe:flexible-teamwork}.
+
+Jennings work in \cite{jennings:joint-intention-hybrid}
+
+STEAM (Shell for Teamwork) builds on both Joint Intention Theory and Shared Plan
+Theory and tries to overcome their shortcomings. Based on joint intentions,
+STEAM builds up hierarchical structures that parallel the Shared Plan Theory as
+described in the previous chapter. Hence, STEAM formalises commitments by
+building an  maintaining Joint Intentions, and uses SharedPlans to formulate the
+team's attitudes in complex tasks.
+
+In \cite{tambe:flexible-teamwork} Tambe presents STEAM, an implemented model of
+teamwork based primarily on Cohen et al.'s theory of Joint Intentions, but
+informed by key concepts from SharedPlans. Following Cohen et al., a team
+initially adopts a joint intention for a high-level team goal that includes
+commitments to maintain the goal until it is deemed already achieved,
+unachievable or irrelevant. The agents then construct a hierarchy of individual
+and joint intentions analogous to partial SharedPlans. Tambe notes that as the
+hierarchy evolves, if a step involves only a subteam then that subteam must form
+a joint intention to perform that step, and the remaining team members need only
+track the subteam's joint intention, requiring that they be able to infer
+whether or not the subteam intends to, or is able to, execute that step
+\cite{hunsberger:shared-plans-easier}.
 
 \section{Relation to Psychology and Sociology}
 
@@ -198,7 +258,7 @@ Referring expressions \cite{heeman:model-collaboration-referring}
 \section{Similarities and Differences}
 
 \begin{enumerate}
-  \item None of SHaredPlans' four components (see Section \ref{sec:sharedplans})
+  \item None of SharedPlans' four components (see Section \ref{sec:sharedplans})
   has the notion of a joint intention. This is a significant difference between
   SharedPlans and Joint Intentions theories, since the notion of joint intention
   is an integral part of Cohen and Levesque's theory. In particular, SharedPLans
@@ -207,6 +267,19 @@ Referring expressions \cite{heeman:model-collaboration-referring}
   of their collaborators' actions which is introduced in
   \cite{grosz:collaboration} by Grosz and Kraus as the notion of
   \textit{intention-that}.
+  \item Communication requirements are derived from any intention that's, as
+  opposed to being ``hard-wired" in Joint Intentions.
+  \item In contrast to Joint Intentions, the SharedPlans Theory employs
+  hierarchical structures over intentions, thus overcoming the shortcoming of a
+  single Joint Intention for complex team tasks. The Shared Plans Theory is not
+  based on a joint mental attitude but on an intentional attitude called
+  intending that, which is very similar to an agent’s normal intention to
+  perform an action.
+  \item Another main difference between the Joint Intentions Theory and the
+  SharedPlans Theory is that the Shared Plans Theory describes the way to
+  achieve a common goal through the hierarchy of plans, whereas the Joint
+  Intentions Theory describes only this common goal
+  \cite{skubch:modelling-behavior-robots}.
 \end{enumerate}
 
 \section{Application in Human-Computer Collaboration}
@@ -222,6 +295,19 @@ SharedPlan model of collaborative behavior \cite{grosz:plans-discourse}. They
 present an algorithm for updating an agent’s beliefs about a partial SharedPlan
 and describe an initial implementation of this algorithm in the domain of
 network management.
+
+The system GRATE* by Jennings \cite{jennings:joint-intention-hybrid} is based on
+the Joint Intention Theory. GRATE* provides a rule-based modelling approach to
+cooperation using the notion of Joint Responsibilities, which in turn is based
+on Join Intentions. GRATE* is geared towards industrial settings in which both
+agents and the communication between them can be considered to be reliable.
+
+CAST (Collaborative Agents for Simulating Teamwork) \cite{yen:cast}
+\cite{yin:knowledge-based-sharedplans} is a teamwork framework based on the
+SharedPlans Theory. CAST focuses on flexibility in dynamic environments and on
+proactive information exchange enabled by anticipating what information team
+members will need. Petri Nets are used to represent both the team structure and
+the teamwork process, i.e., the plans to be executed.
 
 There are many research focusing
 on different aspects of collaboration each of which are different than my own

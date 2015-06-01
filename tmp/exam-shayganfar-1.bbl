@@ -34,6 +34,18 @@ Philip Cohen and Hector~J. Levesque.
 \newblock {\em Teamwork}.
 \newblock SRI International, 1991.
 
+\bibitem{cohen:intention-commitment}
+Philip~R. Cohen and Hector~J. Levesque.
+\newblock Intention is choice with commitment.
+\newblock {\em Artificial Intelligence}, 42(2-3):213--261, 1990.
+
+\bibitem{cohen:persistence-intention-commitment}
+Philip~R. Cohen and Hector~J. Levesque.
+\newblock Persistence, intention, and commitment.
+\newblock In Philip~R. Cohen, Jerry Morgan, and Martha~E. Pollack, editors,
+  {\em Intentions in Communication}, pages 33--69. MIT Press, Cambridge, MA,
+  1990.
+
 \bibitem{esau:integrating-emotion-collaboration}
 Natascha Esau, Lisa Kleinjohann, and Bernd Kleinjohann.
 \newblock Integrating emotional competence into man-machine collaboration.
@@ -103,6 +115,25 @@ Peter~Anthony Heeman.
 \newblock {\em A Computational Model of Collaboration on Referring
   Expressions}.
 \newblock PhD thesis, University of Toronto, 1991.
+
+\bibitem{huber:withour-communication}
+Marcus Huber and Edmund~H. Durfee.
+\newblock On acting together: Without communication.
+\newblock In {\em In Working Notes of the AAAI Spring Symposium on Representing
+  Mental States and Mechanisms}, pages 60--71, 1995.
+
+\bibitem{hunsberger:shared-plans-easier}
+Luke Hunsberger.
+\newblock {Making Shared Plans More Concise and Easier to Reason About}.
+\newblock In {\em Proceedings of the 5th International Workshop on Intelligent
+  Agents V : Agent Theories, Architectures, and Languages ({ATAL}-98)}, volume
+  1555, pages 81--98. Springer-Verlag: Heidelberg, Germany, 1999.
+
+\bibitem{jennings:joint-intention-hybrid}
+Nicholas~R. Jennings.
+\newblock Controlling cooperative problem solving in industrial multi-agent
+  systems using joint intentions.
+\newblock {\em Artificial Intelligence}, 75(2):195--240, 1995.
 
 \bibitem{levesque:acting-together}
 Hector~J. Levesque, Philip~R. Cohen, and José H.~T. Nunes.
@@ -176,6 +207,12 @@ Candace Sidner.
 \newblock In {\em In Proceedings of the Twelfth National Conference on
   Artificial Intelligence}, pages 814--819. MIT Press, 1994.
 
+\bibitem{skubch:modelling-behavior-robots}
+Hendrik Skubch.
+\newblock {\em Modelling and Controlling of Behaviour for Autonomous Mobile
+  Robots}.
+\newblock Springer Science & Business Media, 2012.
+
 \bibitem{sofge:collaboration-humanoid-space}
 Donald Sofge, Magdalena~D. Bugajska, J.~Gregory Trafton, Dennis Perzanowski,
   Scott Thomas, Marjorie Skubic, Samuel Blisard, Nicholas Cassimatis, Derek~P.
@@ -188,5 +225,19 @@ Donald Sofge, Magdalena~D. Bugajska, J.~Gregory Trafton, Dennis Perzanowski,
 Milind Tambe.
 \newblock Towards flexible teamwork.
 \newblock {\em Journal of Artificial Intelligence Research}, 7:83--124, 1997.
+
+\bibitem{yen:cast}
+John Yen, Jianwen Yin, Thomas~R. Ioerger, Michael~S. Miller, Dianxiang Xu, and
+  Richard~A. Volz.
+\newblock Cast: Collaborative agents for simulating teamwork.
+\newblock In {\em In Proceedings of IJCAI’2001}, pages 1135--1142, 2001.
+
+\bibitem{yin:knowledge-based-sharedplans}
+Jianwen Yin, Michael~S. Miller, Thomas~R. Ioerger, John Yen, and Richard~A.
+  Volz.
+\newblock A knowledge-based approach for designing intelligent team training
+  systems.
+\newblock In {\em Proceedings of the Fourth International Conference on
+  Autonomous Agents}, pages 427--434. ACM, 2000.
 
 \end{thebibliography}
