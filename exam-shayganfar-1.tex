@@ -65,6 +65,9 @@ levesque:acting-together}.
 
 Using discourse plans can help to encode the knowledge about conversation.
 
+The SharedPlans theory recognises three interrelated levels of discourse
+structure.
+
 In \cite{grosz:plans-discourse}, Grosz and Sidner argue that the components of
 the discourse structure are a trichotomy of linguistic structure, intentions
 structure and the attention state. In their work, the linguistic structure of a
@@ -84,7 +87,11 @@ the entities in each space during the discourse. In short, the focusing
 structure is the central repository for the contextual content required for
 processing utterances during the discourse \cite{grosz:plans-discourse}.
 
-\subsubsection{SharedPLans}
+\subsubsection{Collaboration Vs. Sum of Coordinate Actions}
+
+\cite{grosz:collaborative-systems}
+
+\subsubsection{SharedPlans}
 
 Grosz and Sidner \cite{grosz:plans-discourse}
 Grosz and Kraus \cite{grosz:collaboration}
@@ -99,19 +106,55 @@ for a group activity to be collaborative, the collaborators must have:
 
 \begin{enumerate}[a)]
   \item intentions that the group perform the group activity;
-  \item mutual belief of a recipe;
+  \item mutual belief of a (partial or complete) recipe;
   \item individual or group plans for the constituent subactions of the recipe;
   \item intentions that their collaborators succeed in doing the constituent
   subactions.
 \end{enumerate}
  
+In other words, to successfully complete a plan the collaborators must mutually
+believe that they have a common goal and have agreed on a sequence of actions
+for achieving that goal. They should believe that they are both capable of
+performing their own actions and intend to perform those actions while they are
+committed to the success of their plans.
+
 The intentions that this definition specifies constitute different kinds of
-commitments required of the collaborators. Mutual belief of the recipe
-essentially means that all the collaborators hold the same beliefs about the way
-in which the activity will be accomplished. Therefore, the collaborators must
-agree on how to do the activity. The definition of the overall plan in terms of
-constituent plans of individuals or groups is recursive, with the recursion
-ending at the level of basic, individual actions \cite{grosz:mice-menus}.
+commitments required of the collaborators. 
+
+\subsubsection{Intention-to and Intention-that}
+
+Intention to \ldots
+
+In contrast with \textit{intention to}, an \textit{intention that} does not
+directly connote an action. Rather it implies that agents will behave in a
+manner consistent with a collaborative effort: they won't adopt intentions that
+conflict with the joint activity, and they will adopt intentions to communicate
+about the plan \cite{grosz:collaboration}. Communication requirements are
+derived from any intention that's, as opposed to being ``hard-wired" in Joint
+Intentions.
+
+\subsubsection{Recipes}
+
+The SharedPlans definition of mutual beliefs states that when agents have a
+shared plan for doing some act, they must hold mutual beliefs about the way in
+which to perform that act. Following Pollack
+\cite{pollack:plan-mental-attitudes}, the term recipe refers to what
+collaborators know when they know a way of doing something. Recipes are
+specified at a particular level of detail. Hence, the agents need to have mutual
+beliefs about acts specified at the particular level of detail of the recipe,
+and they do not to have mutual beliefs about all levels of acts that each agent
+will perform. Mutual belief of the recipe essentially means that all the
+collaborators hold the same beliefs about the way in which the activity will be
+accomplished. Therefore, the collaborators must agree on how to do the activity.
+Grosaz and Sidner in their earlier work \cite{grosz:plans-discourse} have
+considered only simple recipes in which each recipe consisted of only a single
+act-type relation \cite{lochbaum:plan-models}. Recipes are aggregations of
+act-types and relations among them. Act-types, rather than actions, are the main
+elements in recipes.
+
+Finally, the definition of the overall plan in terms of constituent plans of
+individuals or groups is recursive, with the recursion ending at the level of
+basic, individual actions \cite{grosz:mice-menus}.
 
 Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
 \cite{lochbaum:plan-models} present a model of plans to account for how agents
@@ -154,6 +197,18 @@ Referring expressions \cite{heeman:model-collaboration-referring}
 
 \section{Similarities and Differences}
 
+\begin{enumerate}
+  \item None of SHaredPlans' four components (see Section \ref{sec:sharedplans})
+  has the notion of a joint intention. This is a significant difference between
+  SharedPlans and Joint Intentions theories, since the notion of joint intention
+  is an integral part of Cohen and Levesque's theory. In particular, SharedPLans
+  theories emphesizes on the agents individually intending that the joint action
+  be done successfully as well as the agents individually intending the success
+  of their collaborators' actions which is introduced in
+  \cite{grosz:collaboration} by Grosz and Kraus as the notion of
+  \textit{intention-that}.
+\end{enumerate}
+
 \section{Application in Human-Computer Collaboration}
 
 In \cite{heeman:model-collaboration-referring} Heeman presents a computational
@@ -162,6 +217,11 @@ referring action successful. The model is based on the view of language as
 goal-directed behaviour, and in his work, he refers to SharedPlans as part of
 the planning and conversation literature.
 
+In \cite{lochbaum:plan-models}, Lochbaum and Sidner modify and expand the
+SharedPlan model of collaborative behavior \cite{grosz:plans-discourse}. They
+present an algorithm for updating an agent’s beliefs about a partial SharedPlan
+and describe an initial implementation of this algorithm in the domain of
+network management.
 
 There are many research focusing
 on different aspects of collaboration each of which are different than my own
