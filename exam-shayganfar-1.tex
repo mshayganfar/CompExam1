@@ -5,6 +5,7 @@
 %\usepackage{algorithm}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{enumerate}
 \usepackage[mathscr]{euscript}
 
 \begin{document}
@@ -19,6 +20,18 @@
 \end{center}
 
 \section{Introduction to Collaboration Theories}
+
+To be collaborative, partners, e.g., a robot and a human, need to meet the
+specifications stipulated by some theories that we review in this document. As
+we discuss in Section \ref{sec:sharedplans}, collborators need to commit to the
+group activity and to their role in it; they need to divide the task load
+according to their capabilities so they can carry out the individual plans that
+constitute the group activity; and they need to commit to the success of others.
+Collaborators also need to be able to communicate with others effectively, and
+to interpret others' actions and utterances in the collaboration context.
+Furthermore, collaborators need to be willing to help others in doing their own
+tasks, and to reconcile between commitments to existing collabortion and their
+other activities \cite{grosz:mice-menus}.
 
 Collaboration is a special type of coordinated activity in which the
 participants work jointly, together performing a task or carrying out the
@@ -38,7 +51,7 @@ plans \cite{grosz:plans-discourse, Litman:discourse-commonsense}. In these
 theories the discourse analysis is based on search over these tree plans
 \cite{rich:discourse}.
 
-\subsection{Theory of Joint Intentions}
+\subsection{Theory of Joint Intentions/Teamwork}
 
 There are also some other theories with similarities and contrasts conveying
 collaboration concepts including Cohen and Levesque's work describing the
@@ -46,26 +59,71 @@ concept of \textit{joint intentions} in \cite{cohen:teamwork,
 levesque:acting-together}.
 
 \subsection{SharedPlans Theory}
+\label{sec:sharedplans}
 
-In \cite{grosz:plans-discourse}, Grosz and Sidner argue
-that the components of the discourse structure are a trichotomy of linguistic
-structure, intentions structure and the attention state. In their work, the
-linguistic structure of a discourse is a sequence of utterances aggregating into
-discourse segments just as the words in a single sentence form constituent
-phrases. They also discuss the idea of the discourse purpose as the intention
-that underlies engagement in the particular discourse. They believe this
-intention is the reason behind performing a discourse rather than some other
-actions, and also the reason behind conveying a particular content of the
-discourse rather than some other contents. They describe mechanisms for plan
-analysis looking at Discourse Segment Purposes (DSPs). In fact, the DSPs
-specify how the discourse segments contribute to achieving the overall discourse
-purpose. Finally, the third component in their theory, the attentional state,
-provides an abstraction of the agent's focus of attention as the discourse
-unfolds. The focusing structure contains DSPs and the stacking of focus spaces
-reflects the relative salience of the entities in each space during the
-discourse. In short, the focusing structure is the central repository for the
-contextual content required for processing utterances during the discourse
-\cite{grosz:plans-discourse}.
+\subsubsection{Communicating Intentions}
+
+Using discourse plans can help to encode the knowledge about conversation.
+
+In \cite{grosz:plans-discourse}, Grosz and Sidner argue that the components of
+the discourse structure are a trichotomy of linguistic structure, intentions
+structure and the attention state. In their work, the linguistic structure of a
+discourse is a sequence of utterances aggregating into discourse segments just
+as the words in a single sentence form constituent phrases. They also discuss
+the idea of the discourse purpose as the intention that underlies engagement in
+the particular discourse. They believe this intention is the reason behind
+performing a discourse rather than some other actions, and also the reason
+behind conveying a particular content of the discourse rather than some other
+contents. They describe mechanisms for plan analysis looking at Discourse
+Segment Purposes (DSPs). In fact, the DSPs specify how the discourse segments
+contribute to achieving the overall discourse purpose. Finally, the third
+component in their theory, the attentional state, provides an abstraction of the
+agent's focus of attention as the discourse unfolds. The focusing structure
+contains DSPs and the stacking of focus spaces reflects the relative salience of
+the entities in each space during the discourse. In short, the focusing
+structure is the central repository for the contextual content required for
+processing utterances during the discourse \cite{grosz:plans-discourse}.
+
+\subsubsection{SharedPLans}
+
+Grosz and Sidner \cite{grosz:plans-discourse}
+Grosz and Kraus \cite{grosz:collaboration}
+
+The SharedPlans model of collaborative action \cite{grosz:planning-acting}
+\cite{grosz:collaboration} \cite{grosz:plans-discourse} aims to provide the
+theoretical foundations needed for building collaborative robots/ agents
+\cite{grosz:collaborative-systems}. It specifies four key characteristics for
+participants in a group activity to be collaborative partners, and thus for
+their joint activity to be collaborative. The SharedPlans definition states that
+for a group activity to be collaborative, the collaborators must have:
+
+\begin{enumerate}[a)]
+  \item intentions that the group perform the group activity;
+  \item mutual belief of a recipe;
+  \item individual or group plans for the constituent subactions of the recipe;
+  \item intentions that their collaborators succeed in doing the constituent
+  subactions.
+\end{enumerate}
+ 
+The intentions that this definition specifies constitute different kinds of
+commitments required of the collaborators. Mutual belief of the recipe
+essentially means that all the collaborators hold the same beliefs about the way
+in which the activity will be accomplished. Therefore, the collaborators must
+agree on how to do the activity. The definition of the overall plan in terms of
+constituent plans of individuals or groups is recursive, with the recursion
+ending at the level of basic, individual actions \cite{grosz:mice-menus}.
+
+Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
+\cite{lochbaum:plan-models} present a model of plans to account for how agents
+with partial knowledge collaborate in the construction of a domain plan. Agents
+have a library of partially speci ed plan schemas (recipes). These recipes might
+be underspeci ed as to how an action is executed or how an action contributes to
+a goal. Agents then collaborate in constructing a shared plan by uttering
+statements about their beliefs and intentions about the plan. This collaboration
+will terminate with each agent mutually believing that each act in the plan can
+be executed by one of the agents, that that agent intends to perform the act,
+and that each act in the plan contributes to the goal.
+
 
 \textit{Shared plan} is another essential concept in the collaboration context.
 The definition of the shared plan is derived from the definition of plans
@@ -83,7 +141,7 @@ requirement for the commitment of the agents to their joint activities, and (c)
 did not adequately deal with agents having partial recipes
 \cite{grosz:collaboration}. Grosz and Kraus in \cite{grosz:collaboration},
 reformulate Pollack's definition of the individual plans
-\cite{pollack:plan-mental-attitudes}, and also revise and expand the shared plan
+\cite{pollack:plan-mental-attitudes}, and also revise and expand the SharedPlans
 to address these shortcomings.
 
 \subsection{``Hybrid" Collaboration Approaches}
@@ -92,9 +150,18 @@ Tambe's work on \textit{STEAM teamwork model} \cite{tambe:flexible-teamwork}.
 
 \section{Relation to Psychology and Sociology}
 
+Referring expressions \cite{heeman:model-collaboration-referring}
+
 \section{Similarities and Differences}
 
 \section{Application in Human-Computer Collaboration}
+
+In \cite{heeman:model-collaboration-referring} Heeman presents a computational
+model of how a conversational participant collaborates in order to make a
+referring action successful. The model is based on the view of language as
+goal-directed behaviour, and in his work, he refers to SharedPlans as part of
+the planning and conversation literature.
+
 
 There are many research focusing
 on different aspects of collaboration each of which are different than my own

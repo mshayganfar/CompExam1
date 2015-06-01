@@ -61,10 +61,26 @@ Barbara Grosz and Sarit Kraus.
 \newblock In {\em Foundations and Theories of Rational Agency}, pages 227--262,
   1998.
 
+\bibitem{grosz:collaborative-systems}
+Barbara~J. Grosz.
+\newblock {AAAI-94} presidential address: Collaborative systems.
+\newblock {\em {AI} Magazine}, 17(2):67--85, 1996.
+
+\bibitem{grosz:mice-menus}
+Barbara~J. Grosz.
+\newblock Beyond mice and menus.
+\newblock {\em Proceedings of the American Philosophical Society},
+  149(4):523--543, 2005.
+
 \bibitem{grosz:intention-dynamics-collaboration}
 Barbara~J. Grosz and Luke Hunsberger.
 \newblock The dynamics of intention in collaborative activity.
 \newblock {\em Cognitive Systems Research}, 7(2-3):259--272, 2007.
+
+\bibitem{grosz:planning-acting}
+Barbara~J. Grosz, Luke Hunsberger, and Sarit Kraus.
+\newblock Planning and acting together.
+\newblock {\em {AI} Magazine}, 20(4):23--34, 1999.
 
 \bibitem{grosz:collaboration}
 Barbara~J. Grosz and Sarit Kraus.
@@ -81,6 +97,12 @@ Barbara~J. Grosz and Candace~L. Sidner.
 \newblock Plans for discourse.
 \newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
   Intentions in Communication}, pages 417--444. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{heeman:model-collaboration-referring}
+Peter~Anthony Heeman.
+\newblock {\em A Computational Model of Collaboration on Referring
+  Expressions}.
+\newblock PhD thesis, University of Toronto, 1991.
 
 \bibitem{levesque:acting-together}
 Hector~J. Levesque, Philip~R. Cohen, and José H.~T. Nunes.
@@ -99,7 +121,7 @@ Karen~E Lochbaum.
 \newblock {\em Computational Linguistics}, 24(4):525--572, 1998.
 
 \bibitem{lochbaum:plan-models}
-Karen~E. Lochbaum, Barbara~J. Grosz, and Candice~L. Sidner.
+Karen~E. Lochbaum, Barbara~J. Grosz, and Candace~L. Sidner.
 \newblock Models of plans to support communication: An initial report.
 \newblock In {\em Proceedings of the Eighth National Conference on Artificial
   Intelligence}, pages 485--490. AAAI Press, 1990.
