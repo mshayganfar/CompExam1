@@ -43,6 +43,12 @@ an essential distinction between a collaboration and a simple interaction or
 even a coordination in terms of commitments \cite{grosz:shared-plans,
 lochbaum:collaborative-planning}.
 
+\section{Teamwork \& Collaboration}
+
+Bratman's view is that collective intention can be described by referring to
+individual intention in combination with other mental attitudes. Searle's
+opposing view is that collective intention cannot be so reduced.
+
 \section{Computational Theories of Collaboration}
 
 There are prominent collaboration theories that are mostly based on plans and
@@ -54,6 +60,9 @@ theories the discourse analysis is based on search over these tree plans
 The two theories Joint Intentions and SharedPlans have been extensively used to
 examine and describe teamwork.
 
+Two important theories for modeling teamwork collaboration were derived from
+the BDI paradigm.
+
 \subsection{Theory of Joint Intentions/Teamwork}
 
 The Joint Intentions Framework \cite{levesque:acting-together}
@@ -62,6 +71,15 @@ is a theoretical framework founded on BDI logics. The framework focuses on a
 team's joint mental state, called a joint intention. A team jointly intends a
 team action if all team members are jointly committed to perform an action while
 in a specified mental state.
+
+Joint Intentions Theory describes how a team of agents can jointly act together
+by sharing mental states about their actions. An intention is viewed as a
+commitment to perform an action while in a mental state. And a joint intention
+is a shared commitment to perform an action while in a group mental state
+\cite{cohen:intention-commitment}. Communication is required to establish and
+maintain mutual beliefs and joint intentions. A team of agents jointly intend to
+perform an action if and only if the members have a joint persistent goal
+\cite{cohen:teamwork}.
 
 In order to enter a joint commitment, the team members have to establish
 appropriate mutual beliefs and individual commitments. Although the Joint
@@ -83,6 +101,25 @@ There are also some other theories with similarities and contrasts conveying
 collaboration concepts including Cohen and Levesque's work describing the
 concept of \textit{joint intentions} in \cite{cohen:teamwork,
 levesque:acting-together}.
+
+In \cite{cohen:teamwork} Cohen and Levesque establish that joint intention
+cannot be defined simply as individual intention with the team regarded as an
+individual. This is because after the initial formation of an intention, team
+members may diverge in their beliefs and hence in their attitudes towards the
+intention. Instead, Cohen and Levesque generalise their own definition of
+intention. First they present a definition of individual persistent goal and, in
+terms of this, individual intention. Both definitions use the notion of
+individual belief. Next, they define precise analogues of these concepts --
+joint persistent goal and joint intention -- by invoking mutual belief in place
+of individual belief. The definition of joint persistent goal additionally
+requires each team member to commit to informing other members -- to the extent
+of the team's mutual belief -- if it comes to believe that the common goal has
+been achieved, becomes impossible or is no longer relevant. The result is that,
+while a team is not an individual, nevertheless joint intention is similar to
+individual intention. In Cohen and Levesque's theory, then, a team with a joint
+intention is a group that shares a common objective and a certain shared mental
+state. In particular, joint intentions are held by the team as a whole
+\cite{jarvis:teams-multiagent-systems}.
 
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
@@ -139,8 +176,10 @@ participants in a group activity to be collaborative partners, and thus for
 their joint activity to be collaborative. The SharedPlans definition states that
 for a group activity to be collaborative, the collaborators must have:
 
+Look at this carefully!!!
+
 \begin{enumerate}[a)]
-  \item intentions that the group perform the group activity;
+  \item individual intentions that the group perform the group activity;
   \item mutual belief of a (partial or complete) recipe;
   \item individual or group plans for the constituent subactions of the recipe;
   \item intentions that their collaborators succeed in doing the constituent
@@ -156,19 +195,26 @@ committed to the success of their plans.
 The intentions that this definition specifies constitute different kinds of
 commitments required of the collaborators. 
 
+The idea behind partial shared plans is enabling the agents to modify the shared
+plan over the course of planning without impairing the achievement of the shared
+goals.
+
 \subsubsection{Intention-to and Intention-that}
 
-The notion of \textit{intention to} models the intention of an agent to do any
-single-agent action while the agent not only believes that it is able to
+In Grosz and Sidner's SharedPlans theory \cite{grosz:plans-discourse}, two
+intentional attitudes are employed: ``intending to" (do an action) and
+``intending that" (a proposition will hold). The notion of \textit{intention
+to}, as an individual-oriented intention, models the intention of an agent to do
+any single-agent action while the agent not only believes that it is able to
 execute that action, but it also committs to doing so. In contrast with
-\textit{intention to}, an \textit{intention that} does not directly imply an
-action. In fact, an individual agent's \textit{intention that} is directed
-towards its collaborator's action or towards a group's joint action.
-\textit{Intention that} guides an agent to take actions (including the
-communication), that enable or facilitate other collaborators to perform
-assigned tasks. This leads an agent to behave in a manner consistent with a
-collaborative effort. Therefore, agents will adopt intentions to communicate
-about the plan \cite{grosz:collaboration}.
+\textit{intention to}, an \textit{intention that}, as the notion of an intention
+directed toward group activity, does not directly imply an action. In fact, an
+individual agent's \textit{intention that} is directed towards its
+collaborator's action or towards a group's joint action. \textit{Intention that}
+guides an agent to take actions (including the communication), that enable or
+facilitate other collaborators to perform assigned tasks. This leads an agent to
+behave in a manner consistent with a collaborative effort. Therefore, agents
+will adopt intentions to communicate about the plan \cite{grosz:collaboration}.
 
 \subsubsection{Recipes}
 
@@ -205,6 +251,20 @@ will terminate with each agent mutually believing that each act in the plan can
 be executed by one of the agents, that that agent intends to perform the act,
 and that each act in the plan contributes to the goal.
 
+Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
+\cite{lochbaum:plan-models} are interested in the type of plans that underlie
+discourse in which the agents are collaborating in order to achieve a shared
+goal. They propose that agents are building a shared plan in which participants
+have a collection of beliefs and intentions about the actions in the plan.
+
+Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
+\cite{lochbaum:plan-models} model how several agents with partial knowledge
+collaborate on constructing a shared domain plan . Each agent communicates their
+beliefs and intentions by making utterances about what actions they can
+contribute to the shared plan. Collaboration is again modelled by the agents
+establishing a mutual belief that each action in the shared plan contributes to
+the goal of the plan, and that each action can and will be performed by one of
+the agents.
 
 \textit{Shared plan} is another essential concept in the collaboration context.
 The definition of the shared plan is derived from the definition of plans
@@ -224,6 +284,14 @@ did not adequately deal with agents having partial recipes
 reformulate Pollack's definition of the individual plans
 \cite{pollack:plan-mental-attitudes}, and also revise and expand the SharedPlans
 to address these shortcomings.
+
+\subsubsection{Coordinated Cultivation of SharedPlans}
+
+Grosz and Hunsberger \cite{grosz:ccsp} claim to reconcile the two approaches.
+They provide the ``Coordinated Cultivation of SharedPlans" (CCSP) model, which,
+while relying solely on individual intention, captures the essential properties
+argued for in accounts that require group-oriented intention. CCSP also provides
+a general architecture for collaboration-capable agents.
 
 \subsection{Hybrid Collaboration Approaches}
 
@@ -280,9 +348,19 @@ Referring expressions \cite{heeman:model-collaboration-referring}
   achieve a common goal through the hierarchy of plans, whereas the Joint
   Intentions Theory describes only this common goal
   \cite{skubch:modelling-behavior-robots}.
+  \item Joint Intentions theory assumes that knowledge about the team-mates is
+  always available.
 \end{enumerate}
 
 \section{Application in Human-Computer Collaboration}
+
+COLLAGEN \cite{rich:collaboration-manager,rich:discourse} is the first
+implemented system based on the SharedPlans theory. It incorporates certain
+algorithms for discourse generation and interpretation, and is able to maintain
+a segmented interaction history, which facilitates the discourse between human
+user and the intelligent agent. The model includes two main parts: (1) a
+representation of discourse state and (2) a discourse interpretation algorithm
+utterances of the user and agent \cite{rickel:discourse-theory-dialogue}.
 
 In \cite{heeman:model-collaboration-referring} Heeman presents a computational
 model of how a conversational participant collaborates in order to make a

@@ -84,6 +84,11 @@ Barbara~J. Grosz.
 \newblock {\em Proceedings of the American Philosophical Society},
   149(4):523--543, 2005.
 
+\bibitem{grosz:ccsp}
+Barbara~J. Grosz and Luke Hunsberger.
+\newblock The dynamics of intention in collaborative activity.
+\newblock {\em Cognitive Systems Research}, 7(2-3):259--272, 2006.
+
 \bibitem{grosz:intention-dynamics-collaboration}
 Barbara~J. Grosz and Luke Hunsberger.
 \newblock The dynamics of intention in collaborative activity.
@@ -128,6 +133,12 @@ Luke Hunsberger.
 \newblock In {\em Proceedings of the 5th International Workshop on Intelligent
   Agents V : Agent Theories, Architectures, and Languages ({ATAL}-98)}, volume
   1555, pages 81--98. Springer-Verlag: Heidelberg, Germany, 1999.
+
+\bibitem{jarvis:teams-multiagent-systems}
+Bevan Jarvis, Dennis Jarvis, and Lakhmi Jain.
+\newblock Teams in multi-agent systems.
+\newblock In {\em Intelligent Information Processing III}, volume 228. Springer
+  US, 2007.
 
 \bibitem{jennings:joint-intention-hybrid}
 Nicholas~R. Jennings.
@@ -187,11 +198,22 @@ Charles Rich.
 \newblock Building task-based user interfaces with {ANSI/CEA}-2018.
 \newblock {\em IEEE Computer}, 42(8):20--27, July 2009.
 
+\bibitem{rich:collaboration-manager}
+Charles Rich and Candace~L. Sidner.
+\newblock {COLLAGEN}: A collaboration manager for software interface agents.
+\newblock {\em User Modeling User-Adapted Interaction}, 8(3-4):315--350, 1998.
+
 \bibitem{rich:discourse}
 Charles Rich, Candace~L. Sidner, and Neal Lesh.
 \newblock {COLLAGEN}: Applying collaborative discourse theory to human-computer
   interaction.
 \newblock {\em AI Magazine}, 22(4):15--26, 2001.
+
+\bibitem{rickel:discourse-theory-dialogue}
+Jeff Rickel, Neal Lesh, Charles Rich, Candace~L. Sidner, and Abigail Gertner.
+\newblock Collaborative discourse theory as a foundation for tutorial dialogue.
+\newblock In {\em In Proceedings Sixth International Conference on Intelligent
+  Tutoring Systems}, 2002.
 
 \bibitem{scerri:prototype-distributed-teams}
 Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
