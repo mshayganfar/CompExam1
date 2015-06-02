@@ -18,6 +18,12 @@ Michael~E. Bratman.
 \newblock {\em Intention, Plans, and Practical Reason}.
 \newblock Cambridge, Mass.: Harvard University Press, 1987.
 
+\bibitem{breazeal:humanoid-robots}
+Cynthia Breazeal, Andrew Brooks, Jesse Gray, Guy Hoffman, Cory Kidd, Hans Lee,
+  Jeff Lieberman, Andrea Lockerd, and David Mulanda.
+\newblock Humanoid robots as cooperative partners for people.
+\newblock {\em Journal of Humanoid Robots}, 1(2):1--34, 2004.
+
 \bibitem{burghart:cognitive-architecture-robot}
 Catherina Burghart, RalfMikut, Rainer Stiefelhagen, Tamim Asfour, Hartwig
   Holzapfel, Peter Steinhaus, and Ruediger Dillmann.
@@ -169,6 +175,13 @@ Nicholas~R. Jennings.
   systems using joint intentions.
 \newblock {\em Artificial Intelligence}, 75(2):195--240, 1995.
 
+\bibitem{kinny:planned-team}
+David Kinny, Magnus Ljungberg, Anand Rao, Gil Tidhar, Eric Werner, and
+  Elizabeth Sonenberg.
+\newblock Planned team activity.
+\newblock In {\em Lecture notes in artificial intelligence}. Springer-Verlag,
+  1992.
+
 \bibitem{levesque:acting-together}
 Hector~J. Levesque, Philip~R. Cohen, and José H.~T. Nunes.
 \newblock On acting together.
@@ -203,6 +216,12 @@ Stacy Marsella, Jafar Adibi, Yaser Al-Onaizan, Ali Erdem, Randall Hill, Gal~A.
 Laetitia Matignon, Abir~Beatrice Karami, and Abdel-Illah Mouaddib.
 \newblock A model for verbal and non-verbal human-robot collaboration.
 \newblock In {\em AAAI Fall Symposium Series}, pages 62--67, 2010.
+
+\bibitem{montreuil:planning-robot-activity}
+Vincent Montreuil, Aur{\'{e}}lie Clodic, Maxime Ransan, and Rachid Alami.
+\newblock Planning human centered robot activities.
+\newblock In {\em Proceedings of the {IEEE} International Conference on
+  Systems, Man and Cybernetics}, pages 2618--2623, 2007.
 
 \bibitem{nikolaidis:collaboration-joint-action}
 Stefanos Nikolaidis, Przemyslaw~A. Lasota, Gregory~F. Rossano, Carlos Martinez,
@@ -265,6 +284,13 @@ Candace Sidner.
 \newblock An artificial discourse language for collaborative negotiation.
 \newblock In {\em In Proceedings of the Twelfth National Conference on
   Artificial Intelligence}, pages 814--819. MIT Press, 1994.
+
+\bibitem{sidner:enagagement-robot}
+Candace~L. Sidner and Myroslava Dzikovska.
+\newblock A first experiment in engagement for human-robot interaction in
+  hosting activities.
+\newblock In {\em Advances in Natural Multimodal Dialogue Systems}, volume~30
+  of {\em Cognitive Technologies}, pages 55--76. Springer Netherlands, 2005.
 
 \bibitem{skubch:modelling-behavior-robots}
 Hendrik Skubch.
