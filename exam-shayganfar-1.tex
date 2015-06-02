@@ -21,6 +21,22 @@
 
 \section{Introduction to Collaboration Theories}
 
+The construction of computer systems that are intelligent, collaborative
+problem-solving partners is an important goal for both the science of AI and its
+application. There is no question that there is a need to make computer systems
+better at helping us do what we use them to do. collaboration must be designed
+into systems from the start; it cannot be patched on. To build collaborative sys-
+tems, we need to identify the capabilities that must be added to individual
+agents so that they can work with other agents
+\cite{grosz:collaborative-systems}.
+
+Most collaborative situations involve agents who have different beliefs and
+capabilities. Partial knowledge is the rule, not the exception. As a result,
+collaborative planning requires an ability to ascribe beliefs and intentions.
+
+Another feature of collaborative activity is collaborative plans are not simply
+the sum of individual plans.
+
 To be collaborative, partners, e.g., a robot and a human, need to meet the
 specifications stipulated by some theories that we review in this document. As
 we discuss in Section \ref{sec:sharedplans}, collborators need to commit to the
@@ -156,6 +172,17 @@ processing utterances during the discourse \cite{grosz:plans-discourse}.
 
 \subsubsection{SharedPlans}
 
+The SharedPlans formalization distinguishes partial plans and complete plans. A
+Full SharedPlan (FSP) is a complete plan in which agents have fully determined
+how they will perform an action. The Partial SharedPlan (PSP) definition
+provides a specification of the minimal mental-state requirements for
+collaboration to exist and gives criteria governing the process of completing
+the plan. Consequently, a full recipe for doing an action \textit{A} is a set of
+actions and constraints such that the doing of those actions under those
+constraints constitutes the doing of action \textit{A}. A partial recipe is a
+set of actions and constraints that may be extended to a full recipe
+\cite{grosz:planning-acting}.
+
 Grosz and Sidner \cite{grosz:plans-discourse}
 Grosz and Kraus \cite{grosz:collaboration}
 
@@ -206,15 +233,20 @@ intentional attitudes are employed: ``intending to" (do an action) and
 ``intending that" (a proposition will hold). The notion of \textit{intention
 to}, as an individual-oriented intention, models the intention of an agent to do
 any single-agent action while the agent not only believes that it is able to
-execute that action, but it also committs to doing so. In contrast with
-\textit{intention to}, an \textit{intention that}, as the notion of an intention
-directed toward group activity, does not directly imply an action. In fact, an
-individual agent's \textit{intention that} is directed towards its
+execute that action, but it also committs to doing so. In short, it is an
+intention to perform an action, similar to Bratman’s conception. In contrast
+with \textit{intention to}, an \textit{intention that}, as the notion of an
+intention directed toward group activity, does not directly imply an action. In
+fact, an individual agent's \textit{intention that} is directed towards its
 collaborator's action or towards a group's joint action. \textit{Intention that}
 guides an agent to take actions (including the communication), that enable or
 facilitate other collaborators to perform assigned tasks. This leads an agent to
 behave in a manner consistent with a collaborative effort. Therefore, agents
 will adopt intentions to communicate about the plan \cite{grosz:collaboration}.
+There is a significant difference between ``Intention that'' and ``Intention
+to". ``Intention to" commits an agent to means-end reasoning and acting
+\cite{bratman:intentions-plans}. In contrast, ``Intention that'' does not
+necessarily entail this commitment.
 
 \subsubsection{Recipes}
 
@@ -235,6 +267,48 @@ act-type relation \cite{lochbaum:plan-models}. Recipes are aggregations of
 act-types and relations among them. Act-types, rather than actions, are the main
 elements in recipes. Recipes can be partial, meaning thay can expand and be
 modified over time.
+
+\subsubsection{Plans}
+
+Figure \ref{fig:plans} shows what we need to add to individual plans in order to
+have plans for group action, and lists the major components of group plans; to
+provide a base for comparison, the top of the figure lists the main components
+for individual plans. First, just as an individual agent must know how to do an
+action, agents in a group must have knowledge of how they’re going to do an
+action. In the case of a group plan to do a joint activity, there must be mutual
+belief of the recipe; agents must agree on how they are going to do the action.
+Then, just as individual agents must have the ability to perform the constituent
+actions in an individual plan and must have intentions to perform them, the
+participants in a group activity must have individual or group plans for each of
+the constituent actions in their agreed-on recipe \cite{grosz:plans-discourse}
+\cite{grosz:collaborative-systems}.
+
+\begin{figure}[tbh]
+  \center
+  \includegraphics[width=0.9\textwidth]{figure/plans.png}
+  \caption{Plans for collaborative action \cite{grosz:collaborative-systems}.}
+  \label{fig:plans}
+\end{figure}
+
+Plans for group actions include two major constituents that do not have
+correlates in the individual plan. First, the agents must have a commitment to
+the group activity; they must all intend-that the group will do the action. For
+instance, a robot and an astronaut need to have intentions that they install
+solar panels. Among other things, these intentions will keep them both working
+on the panels until the panels are installed. Second, the participants must have
+some commitment to the other agents being able to do their actions. For example,
+the robot must have an intention that the astronaut be able to measure the
+quality of installation. This intention will prevent the robot from interrupting
+astronaut's measurement action or prevent the robot from using astronaut's
+measurement tool \cite{grosz:plans-discourse}
+\cite{grosz:collaborative-systems}.
+
+\subsubsection{Commitment}
+
+Bratman in \cite{bratman:intentions-plans} has argued that intentions constrain
+an agent’s choice of what else it can intend, and they provide the context for
+an agent’s replanning when something goes wrong. The commitment to joint
+activity leads to a need to communicate.
 
 Finally, the definition of the overall plan in terms of constituent plans of
 individuals or groups is recursive, with the recursion ending at the level of
@@ -386,6 +460,40 @@ SharedPlans Theory. CAST focuses on flexibility in dynamic environments and on
 proactive information exchange enabled by anticipating what information team
 members will need. Petri Nets are used to represent both the team structure and
 the teamwork process, i.e., the plans to be executed.
+
+Researchers in \cite{hobbs:microsociology-relationship} discuss developing an
+ontology of microsocial concepts for use in an instructional system for teaching
+cross-cultural communication. They believe being acquainted with one another is
+not a strong enough relationship to create a society from. Hence, there is a
+need for commitment and shared plans (as the basis of social life) to achieve a
+shared goal. In this work, Gorsz and Sidner's SharedPlans theory
+\cite{grosz:plans-discourse} is used to explain the concept of shared plans
+within the interpersonal relationships of societies in an industrial
+environment.
+
+In \cite{hunsberger:auction-collaborative} Hunsberger and Grosz discuss the idea
+of whether the rational, utility-maximizing agents should determine commiting to
+a group activity when there is an opportunity to collaborate. They call this
+problem as the ``initial-commitment decision problem'' (ICDP) and provide a
+mechanism that agents can use to dolve the ICDP. They use the representation of
+action, act-types and recepies in the SharedPlans theory.
+
+In \cite{zamfirescu:gdss} an integrated agent-based model for Group Decision
+Support Systems is proposed and discussed. The decisional model that authors
+outline in this paper is based on the SharedPlans theory.
+
+Rauenbusch and Grosz in \cite{rauenbusch:decision-making-planning} formally
+define a search problem with search operators that correspond to the team
+planning decisions. They provide an algorithm for making the three types of
+interrelated decisions by recasting the problem as a search problem. Their model
+respects the constraints on mental states specified by the SharedPlans theory of
+collaboration.
+
+In \cite{marsella:robocup} authors provide their in RoboCup (robotics soccer
+testbed) in which their focus is on teamwork and learning challenges. Their
+research investigationin RobotCup is based on ISI Synthetic, a team of synthetic
+soccer-players. They also investigate the use of STEAM as their model of
+teamwork which is influenced by the Joint Intentions and SharedPlans theories.
 
 There are many research focusing
 on different aspects of collaboration each of which are different than my own

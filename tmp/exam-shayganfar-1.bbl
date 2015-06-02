@@ -7,6 +7,11 @@ Jerry Andriessen, Koenraad de~Smedt, and Michael Zock.
   psycholinguistics: AI and connectionist models of human language processing},
   pages 247--278. Taylor \& Francis, 1996.
 
+\bibitem{bratman:intentions-plans}
+Michael~E. Bratman.
+\newblock {\em Intention, Plans, and Practical Reason}.
+\newblock Cambridge, Mass.: Harvard University Press, 1987.
+
 \bibitem{burghart:cognitive-architecture-robot}
 Catherina Burghart, RalfMikut, Rainer Stiefelhagen, Tamim Asfour, Hartwig
   Holzapfel, Peter Steinhaus, and Ruediger Dillmann.
@@ -121,6 +126,13 @@ Peter~Anthony Heeman.
   Expressions}.
 \newblock PhD thesis, University of Toronto, 1991.
 
+\bibitem{hobbs:microsociology-relationship}
+Jerry~R. Hobbs, Alicia Sagae, and Suzanne Wertheim.
+\newblock Toward a commonsense theory of microsociology: Interpersonal
+  relationships.
+\newblock In {\em Formal Ontology in Information Systems - Proceedings of the
+  Seventh International Conference}, pages 249--262, 2012.
+
 \bibitem{huber:withour-communication}
 Marcus Huber and Edmund~H. Durfee.
 \newblock On acting together: Without communication.
@@ -133,6 +145,11 @@ Luke Hunsberger.
 \newblock In {\em Proceedings of the 5th International Workshop on Intelligent
   Agents V : Agent Theories, Architectures, and Languages ({ATAL}-98)}, volume
   1555, pages 81--98. Springer-Verlag: Heidelberg, Germany, 1999.
+
+\bibitem{hunsberger:auction-collaborative}
+Luke Hunsberger and Barbara~J. Grosz.
+\newblock A combinatorial auction for collaborative planning.
+\newblock In {\em In Proceedings of ICMAS}, 2000.
 
 \bibitem{jarvis:teams-multiagent-systems}
 Bevan Jarvis, Dennis Jarvis, and Lakhmi Jain.
@@ -168,6 +185,14 @@ Karen~E. Lochbaum, Barbara~J. Grosz, and Candace~L. Sidner.
 \newblock In {\em Proceedings of the Eighth National Conference on Artificial
   Intelligence}, pages 485--490. AAAI Press, 1990.
 
+\bibitem{marsella:robocup}
+Stacy Marsella, Jafar Adibi, Yaser Al-Onaizan, Ali Erdem, Randall Hill, Gal~A.
+  Kaminka, Zhun Qiu, and Milind Tambe.
+\newblock Using an explicit teamwork model and learning in robocup: An extended
+  abstract.
+\newblock In {\em RoboCup-98: Robot Soccer World Cup II}, volume 1604, pages
+  237--245. Springer Berlin Heidelberg, 1999.
+
 \bibitem{matignon:verbal-nonverbal-collaboration}
 Laetitia Matignon, Abir~Beatrice Karami, and Abdel-Illah Mouaddib.
 \newblock A model for verbal and non-verbal human-robot collaboration.
@@ -192,6 +217,12 @@ Martha~E. Pollack.
 Martha~E. Pollack.
 \newblock Plans as complex mental attitudes.
 \newblock In {\em Intentions in Communication}, pages 77--103. MIT Press, 1990.
+
+\bibitem{rauenbusch:decision-making-planning}
+Timothy~W. Rauenbusch and Barbara~J. Grosz.
+\newblock A decision making procedure for collaborative planning.
+\newblock In {\em Proceedings of the Second International Joint Conference on
+  Autonomous Agents and Multiagent Systems}, 2003.
 
 \bibitem{rich:cea}
 Charles Rich.
@@ -261,5 +292,11 @@ Jianwen Yin, Michael~S. Miller, Thomas~R. Ioerger, John Yen, and Richard~A.
   systems.
 \newblock In {\em Proceedings of the Fourth International Conference on
   Autonomous Agents}, pages 427--434. ACM, 2000.
+
+\bibitem{zamfirescu:gdss}
+Zamfirescu and Candea.
+\newblock On integrating agents into gdss.
+\newblock In {\em In Preprints of the 9th IFAC / IFORS / IMACS / IFIP/
+  Symposium on Large Scale Systems: Theory and Applications}, 2001.
 
 \end{thebibliography}
