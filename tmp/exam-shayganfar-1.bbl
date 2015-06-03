@@ -202,6 +202,11 @@ Hiroaki Kitano, Minoru Asada, Yasuo Kuniyoshi, Itsuki Noda, Eiichi Osawai, and
 \newblock Robocup: {A} challenge problem for {AI}.
 \newblock {\em {AI} Magazine}, 18(1):73--85, 1997.
 
+\bibitem{laird:soar}
+John Laird.
+\newblock {\em The Soar Cognitive Architecture}.
+\newblock MIT Press, 2012.
+
 \bibitem{levesque:acting-together}
 Hector~J. Levesque, Philip~R. Cohen, and José H.~T. Nunes.
 \newblock On acting together.
@@ -357,6 +362,12 @@ Rajah~Annamalai Subramanian, Sanjeev Kumar, and Philip Cohen.
 Milind Tambe.
 \newblock Towards flexible teamwork.
 \newblock {\em Journal of Artificial Intelligence Research}, 7:83--124, 1997.
+
+\bibitem{tambe:agent-archtecture-teamwork}
+Milland Tambe.
+\newblock Agent architecture for flexible, practical teamwork.
+\newblock In {\em Proceedings of the National Conference on Artificial
+  Intelligence}, pages 22--28, 1997.
 
 \bibitem{yen:cast}
 John Yen, Jianwen Yin, Thomas~R. Ioerger, Michael~S. Miller, Dianxiang Xu, and

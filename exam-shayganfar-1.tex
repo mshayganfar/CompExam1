@@ -113,6 +113,7 @@ Two important theories for modeling teamwork collaboration were derived from
 the BDI paradigm.
 
 \subsection{Theory of Joint Intentions/Teamwork}
+\label{sec:joint-intentions}
 
 1. Mutual belief in the joint intention
 
@@ -138,6 +139,20 @@ part of the implicit collaborative “contract”, to have an intention to make 
 knowledge common. In a collaboration, agents can count on the commitment of
 other members, first to the goal and then—if necessary—to the mutual belief of
 the status of the goal.
+
+A joint intention of a team $\Theta$ is based on its joint commitment, which is
+defined as a \textit{Joint Persistent Goal} (JPG). A JPG to achieve a team
+action p, denoted JPG($\Theta$, p) requires all team members to mutually believe
+that p is currently false and want p to be eventually true. A JPG guarantees
+that team members cannot decommit until p is mutually known to be
+\textit{achieved, unachievable} or \textit{irrelevant}. Basically, JPG($\Theta$,
+p) requires team members to each hold p as a \textit{Weak Achievement Goal}
+(WAG). WAG($\mu$, p, $\Theta$), where $\mu$ is a team member in $\Theta$,
+requires p to achieve p if it is false. However, if p privately believes that p
+is either achieved, unachievable or irrelevant, JPG($\Theta$, p) is dissolved,
+but p is left with a commitment to have this belief become $\Theta$'s mutual
+belief. Such a commitment is required to establish mutual belief in $\Theta$
+that an agent must typically communicate with its teammates.
 
 The Joint Intentions Framework \cite{levesque:acting-together}
 \cite{cohen:intention-commitment} \cite{cohen:persistence-intention-commitment}
@@ -212,6 +227,35 @@ state. In particular, joint intentions are held by the team as a whole
 
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
+
+\subsubsection{Full Vs. Partial Shared Plan}
+A shared plan is either a \textit{Full Shared Plan} (FSP) or a \textit{Partial
+Shared Plan} (PSP). An FSP to do $\alpha$ represents a situation where every
+aspect of a joint activity $\alpha$ is fully determined. This includes mutual
+belief and agreement in the complete recipe to do $\alpha$. Recipe is a
+specication of a set of actions \textit{$A_i$}, which constitutes performance of
+$\alpha$ when executed under speci ed constraints. \textit{FSP(\textbf{P},
+$\Theta, \alpha, T_p, T_\alpha, \textbf{R}_\alpha$)} denotes a group $\Theta$'s
+plan \textit{\textbf{P}} at time \textit{$T_p$} to do action $\alpha$ at time
+\textit{$T_\alpha$} using recipe \textit{$\textbf{R}_\alpha$}. In short,
+\textit{FSP} holds if and only if the following conditions are satisfied:
+
+\begin{enumerate}
+  \item All members of group $\Theta$ mutually believe that they intend to do
+  $\alpha$.
+  \item All members of group $\Theta$ mutually believe that
+  \textit{$\textbf{R}_\alpha$} is the recipe for $\alpha$.
+  \item For each step \textit{$A_i$} in recipe \textit{$\textbf{R}_\alpha$}:
+  \begin{itemize}
+    \item A subgroup $\Theta_j$ has an \textit{FSP} for \textit{$A_i$}, using
+    recipe \textit{${\textbf{R}_A}_i$}.
+    \item Other members of group $\Theta$ believe that there exists a recipe
+    such that subgroup $\Theta_j$ can bring about \textit{$A_i$} and have an FSP
+    for \textit{$A_i$}.
+    \item Other members of group $\Theta$ intend that subgroup $\Theta_j$ can
+    bring about \textit{$A_i$} using some recipe.
+  \end{itemize}
+\end{enumerate}
 
 \subsubsection{Communicating Intentions}
 
@@ -521,6 +565,35 @@ a general architecture for collaboration-capable agents.
 
 \subsection{Hybrid Collaboration Approaches}
 
+\subsubsection{Hybrid Collaboration Approaches}
+
+Tambe in \cite{tambe:flexible-teamwork} argues that teamwork in complex,
+dynamic, multi-agent domains requires the agent to obtains flexibility and
+reusability by using integrated capabilities. Tambe created STEAM based on this
+idea. STEAM's operationalization in complex, real-world domains is the key in
+its development to address important teamwork issues some of which are discussed
+in Section \ref{sec:applicaiton}. STEAM is founded on the Joint Intentions
+theory and it uses joint intentions as the basic building block of teamwork.
+Furthermore, STEAM borrows some of the concepts, e.g., partial (hierarchical)
+plan, individual intentions and beliefs about others' intentions, from
+SharedPlans theory. However, Tambe added more practical concepts into the
+STEAM's architecture. For instance, STEAM has team synchronization protocol to
+establish joint intention (see JPG in Section \ref{sec:joint-intentions}), or it
+has constructs for monitoring joint intentions which helps the agent to be able
+to monitor team performance. STEAM facilitates this monitoring by exploiting its
+explicit representation of team goals and plans. In particular, STEAM allows an
+explicit specification of monitoring conditions to determine achievement,
+unachievability or irrelevancy conditions of team operators. Finally, in STEAM,
+communication is driven by commitments embodied in the joint intentions theory,
+i.e., team members may communicate to obtain mutual belief while building and
+disbanding joint intentions. Thus, joint intentions provide STEAM a principled
+framework for reasoning about communication. Also, STEAM addresses some
+practical issues, not addressed in other teamwork theories. One of these issues
+is STEAM's detailed attention to communication overheads and risks, which can
+be significant \cite{tambe:agent-archtecture-teamwork}. Furthermore,
+operationalization of STEAM is based on enhancements to the Soar architecture
+\cite{laird:soar}, plus a set of about 300 domain-independent Soar rules.
+
 Building on the well developed theory of joint intentions \cite{cohen:teamwork}
 and shared plans \cite{grosz:plans-discourse} \cite{grosz:collaboration}, the
 STEAM teamwork model \cite{tambe:flexible-teamwork} was operationalized as a set
@@ -528,7 +601,8 @@ of domain independent rules that describe how teams should work together.
 
 Tambe's work on \textit{STEAM teamwork model} \cite{tambe:flexible-teamwork}.
 
-Jennings work in \cite{jennings:joint-intention-hybrid}
+STEAM enables explicit representation of team goals and plans, and team’s
+joint commitments.
 
 STEAM (Shell for Teamwork) builds on both Joint Intention Theory and Shared Plan
 Theory and tries to overcome their shortcomings. Based on joint intentions,
@@ -549,6 +623,12 @@ a joint intention to perform that step, and the remaining team members need only
 track the subteam's joint intention, requiring that they be able to infer
 whether or not the subteam intends to, or is able to, execute that step
 \cite{hunsberger:shared-plans-easier}.
+
+\subsubsection{Joint Responsibility}
+
+Jennings work in \cite{jennings:joint-intention-hybrid}
+
+\subsubsection{Planned Team Activity}
 
 \section{Relation to Psychology and Sociology}
 
@@ -588,6 +668,13 @@ Cohen and Levesque Joint Intentions theory also states that a joint action could
 not be seen as a collection of individual ones but that agents working together
 need to share belief.
 
+In contrast with Joint Intentions theory, the concept of SharedPlans theory is
+not based on a joint mental attitude , i.e., joint intention. Instead,
+SharedPlans relies on a novel intentional attitude, intending that (see
+Section \ref{sec:sharedplans}), which is similar to an agent's normal intention
+to do an action. However, an individual agent's intention that is directed
+towards its collaborator's actions or towards a group's joint action.
+
 \begin{enumerate}
   \item None of SharedPlans' four components (see Section \ref{sec:sharedplans})
   has the notion of a joint intention. This is a significant difference between
@@ -616,6 +703,7 @@ need to share belief.
 \end{enumerate}
 
 \section{Application in Human-Computer Collaboration}
+\label{sec:applicaiton}
 
 COLLAGEN \cite{rich:collaboration-manager,rich:discourse} is the first
 implemented system based on the SharedPlans theory. It incorporates certain
@@ -741,7 +829,7 @@ theory to develop shared task representations and strategies for task
 decomposition.
 
 In \cite{kabil:coordination-mechanisms} researchers propose a behavioral
-architecture C2BDI that allows to enhance the knowledge sharing using natural
+architecture C$^2$BDI that allows to enhance the knowledge sharing using natural
 language communication between team members. They define collaborative
 conversation protocols that provide proactive behavior to agents for the
 coordination between team members. Their agent architecture provides
