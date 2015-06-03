@@ -175,6 +175,12 @@ Nicholas~R. Jennings.
   systems using joint intentions.
 \newblock {\em Artificial Intelligence}, 75(2):195--240, 1995.
 
+\bibitem{kabil:coordination-mechanisms}
+Alexandre Kabil, Camille~De Keukelaere, and Pierre Chavaillier.
+\newblock Coordination mechanisms in human-robot collaboration.
+\newblock In {\em Proceeding of the 7th International Conference on Advances in
+  Computer-Human Interactions}, pages 389--394, 2014.
+
 \bibitem{kinny:planned-team}
 David Kinny, Magnus Ljungberg, Anand Rao, Gil Tidhar, Eric Werner, and
   Elizabeth Sonenberg.
@@ -222,6 +228,12 @@ Vincent Montreuil, Aur{\'{e}}lie Clodic, Maxime Ransan, and Rachid Alami.
 \newblock Planning human centered robot activities.
 \newblock In {\em Proceedings of the {IEEE} International Conference on
   Systems, Man and Cybernetics}, pages 2618--2623, 2007.
+
+\bibitem{mutlu:coordination-robot}
+Bilge Mutlu, Alison Terrell, and Chien-Ming Huang.
+\newblock Coordination mechanisms in human-robot collaboration.
+\newblock In {\em Proceedings of the HRI 2013 Workshop on Collaborative
+  Manipulation}, 2013.
 
 \bibitem{nikolaidis:collaboration-joint-action}
 Stefanos Nikolaidis, Przemyslaw~A. Lasota, Gregory~F. Rossano, Carlos Martinez,

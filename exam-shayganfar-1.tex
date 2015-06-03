@@ -59,6 +59,31 @@ an essential distinction between a collaboration and a simple interaction or
 even a coordination in terms of commitments \cite{grosz:shared-plans,
 lochbaum:collaborative-planning}.
 
+\section{Shared Activity}
+
+Joint action can best be described as doing something as a team where the
+participants share the same goal and a common plan of execution. Grosz and
+Sidner has pointed out that collaborative plans do not reduce to the sum of the
+individual plans \cite{grosz:plans-discourse}
+\cite{grosz:collaborative-systems}.
+
+For example, if we were to move a table jointly through a doorway, your picking
+up one side of the table and starting to walk through the door does not make
+sense outside our joint activity. Even the sum of both our picking-up and moving
+actions would not amount to the shared activity without the existence of a
+collaborative plan that both of us are sharing (namely to move the table out the
+door). It seems that we both hold a joint intention, as well as individual
+intentions related to this joint intention.
+
+\section{Communication}
+
+Cohen’s Joint Intention Theory predicts that an efficient and robust
+collaboration scheme in a changing environment requires an open channel of
+communication. Sharing information through communication acts is critical given
+that each teammate often has only partial knowledge relevant to solving the
+problem, different capabilities, and possibly diverging beliefs about the state
+of the task.
+
 \section{Teamwork \& Collaboration}
 
 Bratman's view is that collective intention can be described by referring to
@@ -88,6 +113,31 @@ Two important theories for modeling teamwork collaboration were derived from
 the BDI paradigm.
 
 \subsection{Theory of Joint Intentions/Teamwork}
+
+1. Mutual belief in the joint intention
+
+2. Joint execution until MB in goal termination
+
+3. Termination:
+
+- Goal achieved
+
+- Goal unachievable
+
+- Goal irrelevant
+
+[Use my own example] Supporting Bratman’s guidelines, Cohen and Levesque propose
+a formal approach to building artificial collaborative agents. Their notion of
+joint intention is viewed not only as a persistent commitment of the team to a
+shared goal, but also implies a commitment on part of all its members to a
+mutual belief about the state of the goal. Teammates are committed to inform the
+team when they reach the conclusion that a goal is achievable, impossible, or
+irrelevant. In our table-moving example, if one team member reaches the
+conclusion that the table will not fit through the doorway, it is an essential
+part of the implicit collaborative “contract”, to have an intention to make this
+knowledge common. In a collaboration, agents can count on the commitment of
+other members, first to the goal and then—if necessary—to the mutual belief of
+the status of the goal.
 
 The Joint Intentions Framework \cite{levesque:acting-together}
 \cite{cohen:intention-commitment} \cite{cohen:persistence-intention-commitment}
@@ -328,6 +378,22 @@ measurement tool \cite{grosz:plans-discourse}
 
 \subsubsection{Commitment}
 
+Teamwork is:
+
+Mutual commitment to joint activity:
+
+- Agreement on the joint activity
+
+- Cannot abomdom activity without involving teammates
+
+Mutual suppport:
+
+- Must be active in helping teammate activity
+
+Mutual Responsiveness:
+
+- Take over tasks from teammates if necessary
+
 Joint Intentions theory is expressed in a modal language.
 
 Individual Commitment:(Joint Intentions)
@@ -446,6 +512,11 @@ a general architecture for collaboration-capable agents.
 
 \subsection{Hybrid Collaboration Approaches}
 
+Building on the well developed theory of joint intentions (Cohen & Levesque,
+1991) and shared plans (Grosz & Kraus, 1996), the STEAM teamwork model (Tambe,
+1997a) was operationalized as a set of domain independent rules that describe
+how teams should work together. 
+
 Tambe's work on \textit{STEAM teamwork model} \cite{tambe:flexible-teamwork}.
 
 Jennings work in \cite{jennings:joint-intention-hybrid}
@@ -472,13 +543,41 @@ whether or not the subteam intends to, or is able to, execute that step
 
 \section{Relation to Psychology and Sociology}
 
+[from Hoffman \& Breazeal] In Bratman’s detailed analysis of Shared Cooperative
+Activity (SCA), he defines certain prerequisites for an activity to be
+considered shared and cooperative: he stresses the importance of mutual
+responsiveness, commitment to the joint activity and commitment to mutual
+support. His work also introduces the idea of meshing singular sub-plans into a
+joint activity. In our implementation, we generalize this concept to the idea of
+dynamically meshing sub-plans.
+
 Referring expressions \cite{heeman:model-collaboration-referring}
 
 \section{Similarities and Differences}
 
+- SharedPlans theory:
+
++ Teammates agree on SharedPlan
+
++ Plan it together, execute it together
+
++ Specifies conditions for assistance, monitoring
+
+- Joint Intentions theory
+
++ Teammates agree on intentions
+
++ Teammates agree on selecting/deselecting goals
+
++ i.e., goal unachievable, achieved, irrelevant
+
 Similar to SharedPlans theory by Grosz and Sidner, Joint Intentions theory
 specifies what it means for agents to execute actions as a team.
 \cite{subramanian:joint-intention-dialogue}.
+
+Cohen and Levesque Joint Intentions theory also states that a joint action could
+not be seen as a collection of individual ones but that agents working together
+need to share belief.
 
 \begin{enumerate}
   \item None of SharedPlans' four components (see Section \ref{sec:sharedplans})
@@ -622,6 +721,34 @@ intention interpreter that is integrated with a reasoner over beliefs and
 communicative acts can form the core of a dialogue engine. Ultimately, the
 system engages in dialogue through the planning and execution of communicative
 acts necessary to attain the collaborative task at hand.
+
+Mutlu et. al. in \cite{mutlu:coordination-robot} discuss key mechanisms for
+effective coordination toward informing the design of communication and
+coordination mechanisms for robots. They present two illustrative studies that
+explore how robot behavior might be designed to employ these mechanisms
+(particularly joint attention and action observation) to improve measure of task
+performance in human-robot collaboration. Their work uses Joint Intentions
+theory to develop shared task representations and strategies for task
+decomposition.
+
+In \cite{kabil:coordination-mechanisms} researchers propose a behavioral
+architecture C2BDI that allows to enhance the knowledge sharing using natural
+language communication between team members. They define collaborative
+conversation protocols that provide proactive behavior to agents for the
+coordination between team members. Their agent architecture provides
+deliberative and conversational behaviors for collaboration, and it is based
+on both of the SharedPlans and Joint Intentions theories.
+
+This domain independent teamwork model, STEAM, has been successfully applied to
+a variety of domains.  From combat air missions (Hill, Chen, Gratch, Rosenbloom,
+& Tambe, 1997) to robot soc- cer (Kitano, Asada, Kuniyoshi, Noda, Osawa, &
+Matsubara, 1997) to teams supporting human organizations (Pynadath & Tambe,
+2003) to rescue response (Scerri, Pynadath, Johnson, P., Schurr, Si, & Tambe,
+2003), applying the same set of STEAM rules has resulted in successful
+coordination between heteroge- neous agents. The successful use of the same
+teamwork model in a wide variety of diverse domains provides compelling evidence
+that it is the principles of team- work, rather than exploitation of speciØc
+domain phenomena, that underlies the success of teamwork based approaches.
 
 There are many research focusing
 on different aspects of collaboration each of which are different than my own
