@@ -138,6 +138,14 @@ Peter~Anthony Heeman.
   Expressions}.
 \newblock PhD thesis, University of Toronto, 1991.
 
+\bibitem{hill:synthetic-battlefield-aircraft}
+Randall~W. Hill, Jr., Johnny Chen, Jonathan Gratch, Paul Rosenbloom, and Milind
+  Tambe.
+\newblock Intelligent agents for the synthetic battlefield: A company of rotary
+  wing aircraft.
+\newblock In {\em Innovative Applications of Artificial Inttigence (IAAI-97)},
+  pages 227--262, 1997.
+
 \bibitem{hobbs:microsociology-relationship}
 Jerry~R. Hobbs, Alicia Sagae, and Suzanne Wertheim.
 \newblock Toward a commonsense theory of microsociology: Interpersonal
@@ -145,7 +153,7 @@ Jerry~R. Hobbs, Alicia Sagae, and Suzanne Wertheim.
 \newblock In {\em Formal Ontology in Information Systems - Proceedings of the
   Seventh International Conference}, pages 249--262, 2012.
 
-\bibitem{huber:withour-communication}
+\bibitem{huber:without-communication}
 Marcus Huber and Edmund~H. Durfee.
 \newblock On acting together: Without communication.
 \newblock In {\em In Working Notes of the AAAI Spring Symposium on Representing
@@ -187,6 +195,12 @@ David Kinny, Magnus Ljungberg, Anand Rao, Gil Tidhar, Eric Werner, and
 \newblock Planned team activity.
 \newblock In {\em Lecture notes in artificial intelligence}. Springer-Verlag,
   1992.
+
+\bibitem{kitano:robocup}
+Hiroaki Kitano, Minoru Asada, Yasuo Kuniyoshi, Itsuki Noda, Eiichi Osawai, and
+  Hitoshi Matsubara.
+\newblock Robocup: {A} challenge problem for {AI}.
+\newblock {\em {AI} Magazine}, 18(1):73--85, 1997.
 
 \bibitem{levesque:acting-together}
 Hector~J. Levesque, Philip~R. Cohen, and José H.~T. Nunes.
@@ -255,6 +269,14 @@ Martha~E. Pollack.
 \newblock Plans as complex mental attitudes.
 \newblock In {\em Intentions in Communication}, pages 77--103. MIT Press, 1990.
 
+\bibitem{pynadath:teamwork-heterogeneous-agents}
+David~V. Pynadath and Milind Tambe.
+\newblock An automated teamwork infrastructure for heterogeneous software
+  agents and humans.
+\newblock {\em Journal of Autonomous Agents and Multi-Agent Systems, Special
+  Issue on Infrastructure and Requirements for Building Research Grade
+  Multi-Agent Systems,}, 7(1-2):71--100, 2003.
+
 \bibitem{rauenbusch:decision-making-planning}
 Timothy~W. Rauenbusch and Barbara~J. Grosz.
 \newblock A decision making procedure for collaborative planning.
@@ -282,6 +304,13 @@ Jeff Rickel, Neal Lesh, Charles Rich, Candace~L. Sidner, and Abigail Gertner.
 \newblock Collaborative discourse theory as a foundation for tutorial dialogue.
 \newblock In {\em In Proceedings Sixth International Conference on Intelligent
   Tutoring Systems}, 2002.
+
+\bibitem{scerri:robot-agent-person}
+Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
+  Schurr, and Milind Tambe.
+\newblock A prototype infrastructure for distributed robot-agent-person teams.
+\newblock In {\em The Second International Joint Conference on Autonomous
+  Agents and Multiagent Systems}, 2003.
 
 \bibitem{scerri:prototype-distributed-teams}
 Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  3 JUN 2015 13:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  3 JUN 2015 14:48
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -251,7 +251,7 @@ Missing character: There is no ™ in font cmr10!
 File: figure/plans.png Graphic file (type png)
 
 <use figure/plans.png>
-Package pdftex.def Info: figure/plans.png used on input line 361.
+Package pdftex.def Info: figure/plans.png used on input line 370.
 (pdftex.def)             Requested size: 323.9978pt x 202.67784pt.
  [8] [9 <./figure/plans.png (PNG copy)>]
 Missing character: There is no â in font cmr10!
@@ -272,32 +272,12 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [10]
-! Misplaced alignment tab character &.
-l.515 ...loped theory of joint intentions (Cohen &
-                                                   Levesque,
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.516 1991) and shared plans (Grosz &
-                                      Kraus, 1996), the STEAM teamwork model...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[11]
+ [10] [11]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [12]
+
+[12]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -319,49 +299,9 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [15]
-! Misplaced alignment tab character &.
-l.744 &
-        Tambe, 1997) to robot soc- cer (Kitano, Asada, Kuniyoshi, Noda, Osaw...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.744 ...(Kitano, Asada, Kuniyoshi, Noda, Osawa, &
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.745 ...upporting human organizations (Pynadath &
-                                                   Tambe,
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.746 ...rri, Pynadath, Johnson, P., Schurr, Si, &
-                                                   Tambe,
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ˜ in font cmr10!
-[16] (./exam-shayganfar-1.bbl [17]
+ [16] (./exam-shayganfar-1.bbl [17]
 LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -379,9 +319,9 @@ Missing character: There is no ™ in font cmti10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
  [20]
-[21]
+[21] [22]
 ! Misplaced alignment tab character &.
-l.311 \newblock Springer Science &
+l.340 \newblock Springer Science &
                                    Business Media, 2012.
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -393,23 +333,23 @@ might try typing `S' now just to see what is salvageable.
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ™ in font cmti10!
-[22]) [23] (./exam-shayganfar-1.aux) ) 
+) [23] (./exam-shayganfar-1.aux) ) 
 Here is how much of TeX's memory you used:
- 2478 strings out of 495028
- 33600 string characters out of 6181497
- 90675 words of memory out of 5000000
- 5651 multiletter control sequences out of 15000+600000
+ 2482 strings out of 495028
+ 33720 string characters out of 6181497
+ 90691 words of memory out of 5000000
+ 5655 multiletter control sequences out of 15000+600000
  11059 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,5n,26p,249b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on exam-shayganfar-1.pdf (23 pages, 214975 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on exam-shayganfar-1.pdf (23 pages, 216145 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
