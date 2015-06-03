@@ -65,6 +65,14 @@ Bratman's view is that collective intention can be described by referring to
 individual intention in combination with other mental attitudes. Searle's
 opposing view is that collective intention cannot be so reduced.
 
+According to Joint Intentions theory, the notion of teamwork is characterized by
+joint commitment (also known as joint persistent goal or JPG). The definition of
+JPG states that the agents mutually believe they have the appropriate goal, and
+that they mutually believe a persistent weak achievement goal (which represents
+the one-way commitment of one agent directed towards another) to achieve it
+persists until the agents mutually believe that the goal has either been
+achieved, impossible, or irrelevant.
+
 \section{Computational Theories of Collaboration}
 
 There are prominent collaboration theories that are mostly based on plans and
@@ -320,6 +328,58 @@ measurement tool \cite{grosz:plans-discourse}
 
 \subsubsection{Commitment}
 
+Joint Intentions theory is expressed in a modal language.
+
+Individual Commitment:(Joint Intentions)
+
+PGOAL (Persistent Goal) to achieve p relative to q
+
+1. she believes that p is currently false.
+
+2. she wants p to be true eventually.
+
+3. 2. will continue to hold until she comes to believe that p is true, or will
+never be true, or that q is false (q is irrelevance clause for the case that p
+becomes unnecessary).
+
+Joint Commitment: (Joint Intentions)
+
+JPG (Joint Persistent Goal) to achieve p relative to q
+
+1. they mutually believe that p is currently false.
+
+2. they mutually believe that they all want p to be true eventually.
+
+3. until they come to mutually believe that p is true, or will never be true, or
+that q is false, they will continue to mutually believe that they each have p as
+a AGOAL (Achievement Goal)
+
+Joint Intention:
+
+A Join Intention of team t to achieve p relative to q
+≡
+t’s members have a JPG to achieve p relative to q 
++
+t’s members are believing throughout that they are doing it.
+
+(a joint intention to perform a particular action is a joint commitment to enter
+a future state wherein the agents mutually believe the collaborative action is
+imminent just before they perform it)
+
+Theorem:
+
+If a team jointly intends to do a complex action consisting of team members
+concurrently doing individual actions, then the individuals will privately
+intend to do their share relative to the joint intention.
+
+The notion of an agent’s commitment to achieving some state in the world is
+expressed as a persistent goal or PGOAL in Joint Intentions Theory
+\cite{cohen:intention-commitment}. An agent x has a persistent goal (PGOAL x p
+q) if x wants p to become true and cannot give up the goal until it believes
+that p is accomplished, or is impossible, or is irrelevant. An intention to do
+an action is defined as a persistent goal in which the agent is committed to
+performing the action believing throughout that it is doing that action.
+
 Bratman in \cite{bratman:intentions-plans} has argued that intentions noramlly
 pose the problems for the agent and agents needs to determine an action to
 achieve those intentions. He also argued that intentions constrain an agent’s
@@ -415,6 +475,10 @@ whether or not the subteam intends to, or is able to, execute that step
 Referring expressions \cite{heeman:model-collaboration-referring}
 
 \section{Similarities and Differences}
+
+Similar to SharedPlans theory by Grosz and Sidner, Joint Intentions theory
+specifies what it means for agents to execute actions as a team.
+\cite{subramanian:joint-intention-dialogue}.
 
 \begin{enumerate}
   \item None of SharedPlans' four components (see Section \ref{sec:sharedplans})
@@ -550,6 +614,14 @@ work towards building socially intelligent, cooperative humanoid robots,
 Leonardo, that can collaborate and learn in partnership with humans. They employ
 the Joint Intentions theory of collaboration to implement the collaborative
 behaviors while performing a task in collaboration with humans.
+
+In \cite{subramanian:joint-intention-dialogue} researchers' goal is to develop
+an architecture (based on the concepts of Joint Intentions theory) that can
+guide an agent during collaborative teamwork. They describe how a joint
+intention interpreter that is integrated with a reasoner over beliefs and
+communicative acts can form the core of a dialogue engine. Ultimately, the
+system engages in dialogue through the planning and execution of communicative
+acts necessary to attain the collaborative task at hand.
 
 There are many research focusing
 on different aspects of collaboration each of which are different than my own
