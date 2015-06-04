@@ -115,6 +115,18 @@ the BDI paradigm.
 \subsection{Theory of Joint Intentions/Teamwork}
 \label{sec:joint-intentions}
 
+The Joint Intentions model of Cohen and Levesque \cite{cohen:teamwork,
+levesque:acting-together, cohen:persistence-intention-commitment,
+cohen:intentions,cohen:intention-commitment} represents one of the first
+attempts to establish a formal theory of multi-agent collaboration, and due to
+its clarity and expression, is probably one of the best known of the rational
+agent theories. The basic premise of Joint Intentions theory is based on the
+idea of an intention -- commitments (individual or joint) to act in a certain
+mental state. In this theory, once an agent entered into a joint commitment with
+other agents, it (the agent) should communicate its private beliefs with other
+team members if the agent believes that the joint goal is either achieved or it
+is unachievable or irrelevant \cite{wilsker:study-theories}.
+
 1. Mutual belief in the joint intention
 
 2. Joint execution until MB in goal termination
@@ -382,6 +394,10 @@ There is a significant difference between ``Intention that'' and ``Intention
 to". ``Intention to" commits an agent to means-end reasoning and acting
 \cite{bratman:intentions-plans}. In contrast, ``Intention that'' does not
 necessarily entail this commitment.
+
+The key point about intentions to and intentions that is that both commit an
+agent not to adopt conflicting intentions, and constrain replanning in case of
+failure
 
 \subsubsection{Recipes}
 
@@ -671,6 +687,21 @@ track the subteam's joint intention, requiring that they be able to infer
 whether or not the subteam intends to, or is able to, execute that step
 \cite{hunsberger:shared-plans-easier}.
 
+\subsubsection{Other Approaches}
+
+There are other frameworks, approaches, and models focusing on teamwork and
+collaborative agents. For instance, Jennings provides the Joint Responsibility
+framework which is specified formally using modal, temporal logics. Joint
+Responsibility stresses the role of joint intentions (based on Joint Intentions
+theory) specifying how both individuals and teams should behave whilst engaged
+in collaborative problem solving \cite{jennings:joint-intention-hybrid}
+\cite{jennings:joint-responsibility} \cite{jennings:on-responsible}
+\cite{jennings:joint-responsibility-dynamic}. In \cite{kinny:planned-team} Kinny
+et. al. introduce a language for representing joint plans for teams of agents
+and describe how agents can organize the formation of a skilled team to achieve
+a joint goal. They use joint intentions to capture the mental properties which
+characterize team activity.
+
 \subsubsection{Joint Responsibility}
 
 Jennings work in \cite{jennings:joint-intention-hybrid}
@@ -690,6 +721,20 @@ dynamically meshing sub-plans.
 Referring expressions \cite{heeman:model-collaboration-referring}
 
 \section{Similarities and Differences}
+
+Although, the four cricual components of the SharedPlans theory (see Section
+\ref{sec:sharedplans}) lack the notion of a joint intention, which is the most
+significant notion within the Joint Intentions theory, Grosz and Sidner do not
+believe that such a phenomenon (joint intention) exists in a collaboration. They
+believe their notion of ``intention that'' and mutual beliefs about states of
+the collaboration can provide similar functionalities as described in Joint
+Intentions theory (see Section \ref{sec:joint-intentions}).
+
+One similaroty between Joint Intentions and SHarePlans theories is that the
+latest articles from both of these works show that the agents require to
+communicate to maintain collaboration. However, in contrast to specially early
+articles of the SharedPlans theory, communication is an explicit requirement of
+a collaboration in the Joint Intentions theory.
 
 - SharedPlans theory:
 

@@ -25,7 +25,7 @@ Cynthia Breazeal, Andrew Brooks, Jesse Gray, Guy Hoffman, Cory Kidd, Hans Lee,
 \newblock {\em Journal of Humanoid Robots}, 1(2):1--34, 2004.
 
 \bibitem{burghart:cognitive-architecture-robot}
-Catherina Burghart, RalfMikut, Rainer Stiefelhagen, Tamim Asfour, Hartwig
+Catherina Burghart, Ralf Mikut, Rainer Stiefelhagen, Tamim Asfour, Hartwig
   Holzapfel, Peter Steinhaus, and Ruediger Dillmann.
 \newblock A cognitive architecture for a humanoid robot: {A} first approach.
 \newblock In {\em 5th IEEE-RAS International Conference on Humanoid Robots},
@@ -62,6 +62,11 @@ Philip~R. Cohen and Hector~J. Levesque.
 \newblock In Philip~R. Cohen, Jerry Morgan, and Martha~E. Pollack, editors,
   {\em Intentions in Communication}, pages 33--69. MIT Press, Cambridge, MA,
   1990.
+
+\bibitem{cohen:intentions}
+Philip~R. Cohen, Jerry Morgan, and Martha~E. Pollack.
+\newblock {\em Intentions in Communication}.
+\newblock A Bradford Book, 1990.
 
 \bibitem{esau:integrating-emotion-collaboration}
 Natascha Esau, Lisa Kleinjohann, and Bernd Kleinjohann.
@@ -177,11 +182,32 @@ Bevan Jarvis, Dennis Jarvis, and Lakhmi Jain.
 \newblock In {\em Intelligent Information Processing III}, volume 228. Springer
   US, 2007.
 
+\bibitem{jennings:joint-responsibility}
+Nicholas~R. Jennings.
+\newblock {\em {Joint Intentions as a Model of Multi-Agent Cooperation in
+  Complex Dynamic Environments}}.
+\newblock PhD thesis, Department of Electronic Engineering, University of
+  London, 1992.
+
+\bibitem{jennings:on-responsible}
+Nicholas~R. Jennings.
+\newblock On being responsible.
+\newblock In E.~Werner and Y.~Demazeau, editors, {\em Proceedings of the Third
+  European Workshop on Modelling Autonomous Agents in a Multi-Agent World},
+  pages 93--102. North-Holland, 1992.
+
 \bibitem{jennings:joint-intention-hybrid}
 Nicholas~R. Jennings.
 \newblock Controlling cooperative problem solving in industrial multi-agent
   systems using joint intentions.
 \newblock {\em Artificial Intelligence}, 75(2):195--240, 1995.
+
+\bibitem{jennings:joint-responsibility-dynamic}
+Nicholas~R. Jennings and E.~H. Mamdani.
+\newblock Using joint responsibility to coordinate collaborative problem
+  solving in dynamic environments.
+\newblock In {\em 10th National Conference on Artificial Intelligence
+  (AAAI-92)}, pages 269--275, 1992.
 
 \bibitem{kabil:coordination-mechanisms}
 Alexandre Kabil, Camille~De Keukelaere, and Pierre Chavaillier.
@@ -368,6 +394,11 @@ Milland Tambe.
 \newblock Agent architecture for flexible, practical teamwork.
 \newblock In {\em Proceedings of the National Conference on Artificial
   Intelligence}, pages 22--28, 1997.
+
+\bibitem{wilsker:study-theories}
+Burt Wilsker.
+\newblock A study of multi-agent collaboration theories.
+\newblock In {\em ISI Research Report}, pages 396--449, 1996.
 
 \bibitem{yen:cast}
 John Yen, Jianwen Yin, Thomas~R. Ioerger, Michael~S. Miller, Dianxiang Xu, and
