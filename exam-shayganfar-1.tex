@@ -601,25 +601,45 @@ STEAM uses joint intentions as a building block to ensure the teamwork coherency
 to build mental attitudes of team members. In other words, in STEAM as the
 recipe evolves, STEAM requires all team members to agree on execution of a step
 and form joint intentions to execute it while other joint intentions are formed,
-leading to a hierarchy. Second, 
+leading to a hierarchy. Second, is the amount of information that a team member
+needs to know to perform an action. According to SharedPlans, team members
+require to know only that a recipe exists to enable them to perform actions
+(not recipe details). Similarly in STEAM, team members only track the
+responsible subteam or individual team member to perform a specific step while
+this tracking does not need detailed plan recognition. The third issue is
+parallel to what is called unreconciled case in SharedPlans theory which in
+STEAM, it is handled by replanning and communication between team members
+assigning the unassigned or unachieved task. The last issue is communication
+between team members which also borrows the concept of ``intention that'' from
+SharedPlans theory to help generalization of STEAM's comminication capabilities 
+beside what Joint Intenitons theory offers.
 
-However, Tambe added more practical concepts into the
-STEAM's architecture. For instance, STEAM has team synchronization protocol to establish joint intention (see JPG in Section
-\ref{sec:joint-intentions}), or it has constructs for monitoring joint
-intentions which helps the agent to be able to monitor team performance. STEAM
-facilitates this monitoring by exploiting its explicit representation of team
-goals and plans. In particular, STEAM allows an explicit specification of
-monitoring conditions to determine achievement, unachievability or irrelevancy
-conditions of team operators. Finally, in STEAM, communication is driven by
-commitments embodied in the joint intentions theory, i.e., team members may
-communicate to obtain mutual belief while building and disbanding joint
-intentions. Thus, joint intentions provide STEAM a principled framework for
-reasoning about communication. Also, STEAM addresses some practical issues, not
-addressed in other teamwork theories. One of these issues is STEAM's detailed
-attention to communication overheads and risks, which can be significant
-\cite{tambe:agent-archtecture-teamwork}. Furthermore, operationalization of
-STEAM is based on enhancements to the Soar architecture \cite{laird:soar}, plus
-a set of about 300 domain-independent Soar rules.
+In \cite{tambe:flexible-teamwork} Tambe argues that the novel aspects of STEAM
+relate to its teamwork capabilities. The key novelty in STEAM has team operators
+beside individual team member operators. In STEAM when agents select a team
+operator for execution, they instantiate a team's joint intentions. Team
+operators explicitly express a team's joint activities, unlike the regular
+individual operators which express an agent's own activities. Hence, STEAM
+agents maintain their own private (to apply individual operators) and team
+states, e.g., mutual belief about the world (to apply team operators).
+
+However, Tambe added more practical concepts into the STEAM's architecture. For
+instance, STEAM has team synchronization protocol to establish joint intention
+(see JPG in Section \ref{sec:joint-intentions}), or it has constructs for
+monitoring joint intentions which helps the agent to be able to monitor team
+performance. STEAM facilitates this monitoring by exploiting its explicit
+representation of team goals and plans. In particular, STEAM allows an explicit
+specification of monitoring conditions to determine achievement, unachievability
+or irrelevancy conditions of team operators. Finally, in STEAM, communication is
+driven by commitments embodied in the joint intentions theory, i.e., team
+members may communicate to obtain mutual belief while building and disbanding
+joint intentions. Thus, joint intentions provide STEAM a principled framework
+for reasoning about communication. Also, STEAM addresses some practical issues,
+not addressed in other teamwork theories. One of these issues is STEAM's
+detailed attention to communication overheads and risks, which can be
+significant \cite{tambe:agent-archtecture-teamwork}. Furthermore,
+operationalization of STEAM is based on enhancements to the Soar architecture
+\cite{laird:soar}, plus a set of about 300 domain-independent Soar rules.
 
 Building on the well developed theory of joint intentions \cite{cohen:teamwork}
 and shared plans \cite{grosz:plans-discourse} \cite{grosz:collaboration}, the
