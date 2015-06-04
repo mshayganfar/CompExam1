@@ -7,6 +7,11 @@ Jerry Andriessen, Koenraad de~Smedt, and Michael Zock.
   psycholinguistics: AI and connectionist models of human language processing},
   pages 247--278. Taylor \& Francis, 1996.
 
+\bibitem{anscombe:intention}
+Gertrude Elizabeth~Margaret Anscombe.
+\newblock {\em Intention}.
+\newblock NY: Cornell University Press, 1963.
+
 \bibitem{babaian:writers-assistant}
 Tamara Babaian, Barbara~J. Grosz, and Stuart~M. Shieber.
 \newblock A writer's collaborative assistant.
@@ -31,6 +36,11 @@ Catherina Burghart, Ralf Mikut, Rainer Stiefelhagen, Tamim Asfour, Hartwig
 \newblock In {\em 5th IEEE-RAS International Conference on Humanoid Robots},
   pages 357--362, 2005.
 
+\bibitem{castaneda:thinking}
+Hector-Neri $Casta\tilde{n}eda$.
+\newblock {\em Thinking and Doing}.
+\newblock Dordrecht, Holland: D. Riedel, 1975.
+
 \bibitem{castelfranchi:commitments-aids}
 Cristiano Castelfranchi.
 \newblock Commitments: From individual intentions to groups and organizations.
@@ -51,6 +61,12 @@ William~J. Clancey.
   projects and collaboration.
 \newblock {\em IEEE Transactions on Systems, Man and Cybernetics, special issue
   on Human-Robot Interaction}, 34(2):125--137, 2004.
+
+\bibitem{cohen:team-formation}
+Philip Cohen, Hector Levesque, and Ira Smith.
+\newblock On team formation.
+\newblock In {\em Contemporary Action Theory. Synthese}, pages 87--114. Kluwer
+  Academic Publishers, 1997.
 
 \bibitem{cohen:teamwork}
 Philip Cohen and Hector~J. Levesque.

@@ -152,6 +152,45 @@ knowledge common. In a collaboration, agents can count on the commitment of
 other members, first to the goal and then—if necessary—to the mutual belief of
 the status of the goal.
 
+- Individual Commitment:
+
+Here, we provide the definition of ``individual commitment'' (also called
+as persistent goal) according to Cohen et. al. in \cite{cohen:team-formation}. 
+
+According to their definition an agent has a persistent goal relative to q to
+achieve p just in case:
+
+1. agent believes that p is currently false;
+
+2. agent wants p to be true eventually;
+
+3. it is true (and agent knows it) that (2) will continue to hold until the
+agent comes to believe either that p is true, or that it will never be true, or
+that q is false.
+
+- Individual Intention:
+
+An agent intends relative to some condition to do an action just in case she has
+a persistent goal (relative to that condition) of having done the action and,
+moreover, having done it, believing throughout that she is doing it
+\cite{cohen:teamwork}.
+
+
+We also provide the definition of \textit{Weak Achievement Goal} (WAG) which is
+the state of a team member nominally working on a goal:
+
+An agent has a WAG relative to q and with respect to a team to bring about p if
+either of the following conditions holds:
+
+- The agent has a normal achievement goal to bring about p; that is, the agent
+does not yet believe that p is true and has p eventually being true as a goal.
+
+- The agent believes that p is true, will never be true, or is irrelevant (that
+is, q is false), but has as a goal that the status of p be mutually believed by
+all the team members.
+
+- Joint Commitment:
+
 A joint intention of a team $\Theta$ is based on its joint commitment, which is
 defined as a \textit{Joint Persistent Goal} (JPG). A JPG to achieve a team
 action p, denoted JPG($\Theta$, p) requires all team members to mutually believe
@@ -165,6 +204,21 @@ is either achieved, unachievable or irrelevant, JPG($\Theta$, p) is dissolved,
 but p is left with a commitment to have this belief become $\Theta$'s mutual
 belief. Such a commitment is required to establish mutual belief in $\Theta$
 that an agent must typically communicate with its teammates.
+
+- Joint Intention:
+
+A team of agents jointly intends, relative to some escape condition, to do an
+action iff the members have a joint persistent goal relative to that condition
+of their having done the action and, moreover, having done it mutually believing
+throughout that they were doing it \cite{cohen:teamwork}.
+
+x and y jointly intend to do some action i it is mutually known between x and y
+that they each intend that the collective action occur, and also that they each
+intend to do their share as long as the other does likewise, and this mutual
+knowledge persists until it is mutually known that the activity is over (i.e.,
+is successful, unachievable, irrelevant). \cite{cohen:team-formation}.
+
+
 
 The Joint Intentions Framework \cite{levesque:acting-together}
 \cite{cohen:intention-commitment} \cite{cohen:persistence-intention-commitment}
@@ -239,6 +293,34 @@ state. In particular, joint intentions are held by the team as a whole
 
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
+
+This theory differentiates between knowing how to accomplish a goal (a recipe)
+and having a plan, which includes intentions. The SharedPlans theory explains
+how a group of agents can incrementally form and execute a SharedPlans that then
+guides and coordinates their activity towards the accomplishment of a shared
+goal.
+
+[Informally, two agents are said to have a SharedPlan when  they mutually
+believe that: a) they have a common goal; b) they have agreed on a recipe to accomplish
+the goal; c) they are each capable of performing their assigned actions; d) each
+intends to do their assigned actions; and e) they are committed to the overall
+success of the collaboration. SharedPlans are usually incrementally refined and
+executed by the collaborating agents; in a typical scenario a SharedPlan is
+initially partial (incompletely specified) and only becomes completely specified
+once the agents have finished refining and executing it. Refinement of a partial
+plan is carried out through means-ends reasoning and negotiation among the
+agents.]
+
+The formalization presented in (B. J. Grosz & S. Kraus, 1996) uses a first-order
+logic augmented with several modal operators, meta-predicates, and action
+expressions.
+
+In this representation, actions can be readily executable (“basic-level”) or
+complex, with complex actions having recipes consisting of additional
+sub-actions that are basic-level or complex. Thus actions and their
+decomposition form recipe trees, which reflect hierarchical plan decomposition.
+
+
 
 \subsubsection{Full Vs. Partial Shared Plan}
 A shared plan is either a \textit{Full Shared Plan} (FSP) or a \textit{Partial
@@ -397,7 +479,17 @@ necessarily entail this commitment.
 
 The key point about intentions to and intentions that is that both commit an
 agent not to adopt conflicting intentions, and constrain replanning in case of
-failure
+failure.
+
+An agent cannot intend for another agent to perform an action using this
+attitude.
+
+``Intend that'' is an attitude one or more agents hold with respect to a
+proposition, and reflects the desire for the agent(s) to achieve the state of
+the world specified, however, it is not as strong a commitment as intend-to, and
+does not require that the agent(s) know how to achieve the action and does not
+commit them to means-end reasoning. Further, an agent can intend-that another
+agent achieve the specified proposition.
 
 \subsubsection{Recipes}
 
@@ -706,6 +798,16 @@ characterize team activity.
 
 \section{Relation to Psychology and Sociology}
 
+The SharedPlans theory is based on the theories of Bratman and Pollack, who
+outline a mental-state view of plans in which having a plan is not just knowing
+how to do an action, but also having the intention to do the actions entailed.
+Bratman's views of intention goes back to philosophical views of Anscombe and
+$Casta\tilde{n}eda$ about intention \cite{anscombe:intention}
+\cite{castaneda:thinking}.
+
+Discourse segment pruposes are a natural extention of Gricean intentions at the
+utterance level.
+
 [from Hoffman \& Breazeal] In Bratman’s detailed analysis of Shared Cooperative
 Activity (SCA), he defines certain prerequisites for an activity to be
 considered shared and cooperative: he stresses the importance of mutual
@@ -731,6 +833,9 @@ latest articles from both of these works show that the agents require to
 communicate to maintain collaboration. [However, in contrast to specially early
 articles of the SharedPlans theory, communication is an explicit requirement of
 a collaboration in the Joint Intentions theory.] --> Check This!
+
+The theories rely on two different notions of intention. Both notions follow
+Bratman in that they prevent the agent(s) from adopting conflicting intentions.
 
 Also, Castelfranchi critisize the necessary and sufficient conditions (see
 Section \ref{sec:joint-intentions}) for joint persistent goal which plays a
@@ -827,9 +932,15 @@ the planning and conversation literature.
 
 In \cite{lochbaum:plan-models}, Lochbaum and Sidner modify and expand the
 SharedPlan model of collaborative behavior \cite{grosz:plans-discourse}. They
-present an algorithm for updating an agent’s beliefs about a partial SharedPlan
+present an algorithm for updating an agent’s beliefs about a partial shared plan
 and describe an initial implementation of this algorithm in the domain of
-network management.
+network management. Lochbaum, also in \cite{lochbaum:collaborative-planning},
+provides a computational model (based on the collaborative planning framework
+of SharedPlans \cite{grosz:collaboration}) for recognizing intentional structure
+and utilizing it in discourse processing. In short, she presents a SharedPlans
+model for recognizing Discourse Segment Purposes (DSPs)
+\cite{grosz:plans-discourse} \cite{sidner:discourse-collaborative-negotiation}
+and their interrelationships.
 
 The system GRATE* by Jennings \cite{jennings:joint-intention-hybrid} is based on
 the Joint Intention Theory. GRATE* provides a rule-based modelling approach to
