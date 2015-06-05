@@ -21,43 +21,41 @@
 
 \section{Introduction to Collaboration Theories}
 
-The construction of computer systems that are intelligent, collaborative
-problem-solving partners is an important goal for both the science of AI and its
-application. There is no question that there is a need to make computer systems
-better at helping us do what we use them to do. collaboration must be designed
-into systems from the start; it cannot be patched on. To build collaborative sys-
-tems, we need to identify the capabilities that must be added to individual
-agents so that they can work with other agents
-\cite{grosz:collaborative-systems}.
-
-Most collaborative situations involve agents who have different beliefs and
-capabilities. Partial knowledge is the rule, not the exception. As a result,
-collaborative planning requires an ability to ascribe beliefs and intentions.
-
-Another feature of collaborative activity is collaborative plans are not simply
-the sum of individual plans.
-
-To be collaborative, partners, e.g., a robot and a human, need to meet the
-specifications stipulated by some theories that we review in this document. As
-we discuss in Section \ref{sec:sharedplans}, collborators need to commit to the
-group activity and to their role in it; they need to divide the task load
-according to their capabilities so they can carry out the individual plans that
-constitute the group activity; and they need to commit to the success of others.
-Collaborators also need to be able to communicate with others effectively, and
-to interpret others' actions and utterances in the collaboration context.
-Furthermore, collaborators need to be willing to help others in doing their own
-tasks, and to reconcile between commitments to existing collabortion and their
-other activities \cite{grosz:mice-menus}.
+The construction of computer systems and robots that are intelligent,
+collaborative problem-solving partners is important in Artificial Intelligence
+(AI) and its applications. It has been always important for us to make computer
+systems better at helping us to do whatever they designed for. To build
+collaborative systems, we need to identify the capabilities that must be added
+to individual agents so that they can work with us or other agents. As Grosz
+says, collaboration must be designed into systems from the start; it cannot be
+patched on \cite{grosz:collaborative-systems}.
 
 Collaboration is a special type of coordinated activity in which the
 participants work jointly, together performing a task or carrying out the
 activities needed to satisfy a shared goal \cite{grosz:collaboration}.
+Collaboration involves several key properties both in structural and functional
+levels. For instance, most collaborative situations involve participants who
+have different beliefs and capabilities; most of the time collaborators only
+have partial knowledge of accomplishing the collaborative activities;
+collaborative plans are more than the sum of individual plans; collaborators
+require to maintain mutual beliefs about their shared goal through out the
+collaboration; they need to be able to communicate with others effectively;
+they need to commit to the group activities and to their role in it;
+collaborators need to commit to the success of others; they need to reconcile
+between commitments to existing collabortion and their other activities;
+and they need to interpret others' actions and utterances in the collaboration
+context \cite{grosz:mice-menus}. These collaboration properties are captured by
+the existing computational collaboration theoriess.
 
-Existing collaboration theories (including SharedPlans) consider the nature of a
-collaboration to be more than a set of individual acts. These theories argue for
-an essential distinction between a collaboration and a simple interaction or
-even a coordination in terms of commitments \cite{grosz:shared-plans,
-lochbaum:collaborative-planning}.
+As we mentioned, to be collaborative, partners, e.g., a robot and a human, need
+to meet the specifications stipulated by collaboration theories. These theories
+argue for an essential distinction between a collaboration and a simple
+interaction or even a coordination in terms of commitments
+\cite{grosz:shared-plans, lochbaum:collaborative-planning}. This document
+briefly provides description of major computational collaboration theories,
+their similarities and differences, and their application in AI and robotics. It
+primarily focuses on Joint Intention, SharedPlans and hybrid theories of
+collaboration.
 
 \section{Shared Activity}
 
