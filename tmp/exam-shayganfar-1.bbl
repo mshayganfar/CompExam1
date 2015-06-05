@@ -394,6 +394,12 @@ Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
   Autonomous Agents and Multiagent Systems}, AAMAS '03, pages 433--440, New
   York, NY, USA, 2003. ACM.
 
+\bibitem{searle:collective}
+John~R. Searle.
+\newblock Collective intentionality.
+\newblock In {\em Intentions in Communication}, pages 401--415. MIT Press,
+  1990.
+
 \bibitem{sidner:discourse-collaborative-negotiation}
 Candace Sidner.
 \newblock An artificial discourse language for collaborative negotiation.

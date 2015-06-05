@@ -55,7 +55,8 @@ interaction or even a coordination in terms of commitments
 briefly provides description of major computational collaboration theories,
 their similarities and differences, and their application in AI and robotics. It
 primarily focuses on Joint Intention, SharedPlans and hybrid theories of
-collaboration.
+collaboration. In this document, we do not present the theroies in formal
+language, but simply describe their features in general terms.
 
 \section{Computational Theories of Collaboration}
 
@@ -84,7 +85,7 @@ Gricean intentions at the utterance level \cite{neale:grice-language}.
 Cohen and Levesque also mention that in Joint Intentions theory their view of
 intention is primarily future-directed \cite{cohen:intention-commitment} which
 makes their view along with the Bratman's theory of intention
-\cite{bratman:intention}.
+\cite{bratman:intention}, contra Searle \cite{searle:collective}.
 
 \subsection{Joint Intentions Theory}
 \label{sec:joint-intentions}
@@ -116,90 +117,108 @@ the status of the goal.
 
 \subsubsection{Individual Commitment}
 
-Here, we provide the definition of ``individual commitment'' (also called
-as persistent goal) according to Cohen et. al. in \cite{cohen:team-formation}. 
+As we mentioned earlier, intentions and commitments are the basic idea of Joint
+Intentions theory. Here, we provide the definition of ``individual commitment''
+(also called as \textit{persistent goal}) by Cohen et.\,al. in
+\cite{cohen:team-formation}. According to their definition an agent has a
+persistent goal relative to q to achieve p just when:
 
-According to their definition an agent has a persistent goal relative to q to
-achieve p just in case:
+\begin{enumerate}
+  \item agent believes that p is currently false;
+  \item agent wants p to be true;
+  \item it is true (and agent knows it) that (2) will continue to hold until the
+  agent comes to believe either that p is true, or that it will never be true,
+  or that q is false.
+\end{enumerate}
 
-1. agent believes that p is currently false;
+Note that the condition q is a ``escape'' clause, which can be omitted for
+brevity, or it can be used as a reason for the agent to drop a commitment, even
+though it could be quite vague.
 
-2. agent wants p to be true eventually;
+\subsubsection{Individual Intention}
 
-3. it is true (and agent knows it) that (2) will continue to hold until the
-agent comes to believe either that p is true, or that it will never be true, or
-that q is false.
-
-- Individual Intention:
-
-An agent intends relative to some condition to do an action just in case she has
-a persistent goal (relative to that condition) of having done the action and,
-moreover, having done it, believing throughout that she is doing it
+As we mentioned in this Section, Joint Intention theory adopts Bratman's view of
+future-directed properties of intention. In this theory, an intention is
+defined to be a commitment to act in a certain mental states. In other words, an
+agent intends relative to some condition to do an action just in case it has a
+persistent goal or commitment (relative to that condition) of having done the
+action and, moreover, believing throughout that it is doing that action
 \cite{cohen:teamwork}.
 
-
-We also provide the definition of \textit{Weak Achievement Goal} (WAG) which is
-the state of a team member nominally working on a goal:
-
-An agent has a WAG relative to q and with respect to a team to bring about p if
-either of the following conditions holds:
-
-- The agent has a normal achievement goal to bring about p; that is, the agent
-does not yet believe that p is true and has p eventually being true as a goal.
-
-- The agent believes that p is true, will never be true, or is irrelevant (that
-is, q is false), but has as a goal that the status of p be mutually believed by
-all the team members.
+Intentioin inherits all the properties of commitment (e.g., consistency with
+mental states). Typically, an agent uses an intention as a decision within a
+supgoal-supergoal hierarchy to do a particular action. For instance, initially,
+the agent commits to p becomming true without having any concern about who or
+how p is going to be accomplished. Then, the agent commits to x or y as a mean to
+accomplish p. Lastly, the agent selects one of the actions (e.g., x) and forms
+an intention to do it. This intention will be given up when for whatever reason
+p is accomplished.
 
 \subsubsection{Joint Commitment}
 \label{sec:jpg}
 
-A joint intention of a team $\Theta$ is based on its joint commitment, which is
-defined as a \textit{Joint Persistent Goal} (JPG). A JPG to achieve a team
-action p, denoted JPG($\Theta$, p) requires all team members to mutually believe
-that p is currently false and want p to be eventually true. A JPG guarantees
-that team members cannot decommit until p is mutually known to be
-\textit{achieved, unachievable} or \textit{irrelevant}. Basically, JPG($\Theta$,
-p) requires team members to each hold p as a \textit{Weak Achievement Goal}
-(WAG). WAG($\mu$, p, $\Theta$), where $\mu$ is a team member in $\Theta$,
-requires p to achieve p if it is false. However, if p privately believes that p
-is either achieved, unachievable or irrelevant, JPG($\Theta$, p) is dissolved,
-but p is left with a commitment to have this belief become $\Theta$'s mutual
-belief. Such a commitment is required to establish mutual belief in $\Theta$
-that an agent must typically communicate with its teammates.
+Before talking about joint commitment, we provide the definition of \textit{Weak
+Achievement Goal} (WAG) concept in Joint Intentions theory which shows the state
+of a team member nominally working on a goal. The concept of WAG is used to
+provide the definition of the Joint Commitment in this theory.\\
 
-- Joint Intention:
+An agent has a WAG relative to q and with respect to a team to bring about p if
+either of the following conditions holds:
 
-A team of agents jointly intends, relative to some escape condition, to do an
-action iff the members have a joint persistent goal relative to that condition
-of their having done the action and, moreover, having done it mutually believing
-throughout that they were doing it \cite{cohen:teamwork}.
+\begin{itemize}
+  \item The agent has a normal achievement goal to bring about p; that is, the
+  agent does not yet believe that p is true and wants p to be true as a goal.
+  \item The agent believes that p is true, will never be true, or is irrelevant,
+  but has as a goal that the status of p be mutually believed by all the team
+  members.
+\end{itemize}
 
-x and y jointly intend to do some action i it is mutually known between x and y
-that they each intend that the collective action occur, and also that they each
-intend to do their share as long as the other does likewise, and this mutual
-knowledge persists until it is mutually known that the activity is over (i.e.,
-is successful, unachievable, irrelevant). \cite{cohen:team-formation}.
+\textbf{Joint commitment} -- A joint intention of a team $\Theta$ is based on
+its joint commitment, which is defined as a \textit{Joint Persistent Goal}
+(JPG). A JPG to achieve a team action p, denoted JPG($\Theta$, p) requires all
+team members to mutually believe that p is currently false and want p to be
+eventually true. A JPG guarantees that team members cannot decommit until p is
+mutually known to be \textit{achieved, unachievable} or \textit{irrelevant}.
+Basically, JPG($\Theta$, p) requires team members to each hold p as a
+\textit{Weak Achievement Goal} (WAG). WAG($\mu$, p, $\Theta$), where $\mu$ is a
+team member in $\Theta$, requires p to achieve p if it is false. However, if
+$\mu$ privately believes that p is either achieved, unachievable or irrelevant,
+JPG($\Theta$, p) is dissolved, but p is left with a commitment to have this
+belief become $\Theta$'s mutual belief. Such a commitment is required to
+establish mutual belief in $\Theta$ that an agent must typically communicate
+with its teammates \cite{cohen:teamwork}.
 
+An important consequence of achieving joint commitment in a team is that it
+predicts future communication which is critical within course of a
+collaboration. Thus, this communication leads team members to attain mutual
+beliefs which is a fundamental concept in teamwork activities. Notice that
+the minimum mutual belief for team members to attain is the achievement or
+failure of the shared goal which terminates collaboration.
 
+\subsubsection{Joint Intention}
 
-\subsection{Teamwork \& Collaboration}
+Joint intention is defined to be a joint commitment to the team members trying
+to do a joint action. Based on Cohen and Levesque's definition of joint
+intention, a team of agents jointly intends (relative to some escape condition)
+to do an action iff the members have a JPG (relative to that condition) of their
+having done the action, and having done it mutually believing throughout that
+they were doing it (knowingly) \cite{cohen:teamwork}.
 
-According to Joint Intentions theory, the notion of teamwork is characterized by
-joint commitment, also known as joint persistent goal (see Section
-\ref{sec:jpg}). The definition of JPG states that the agents mutually believe
-they have the appropriate goal, and that they mutually believe a persistent weak
-achievement goal (which represents the one-way commitment of one agent directed
-towards another) to achieve it persists until the agents mutually believe that
-the goal has either been achieved, impossible, or irrelevant.
+\subsubsection{Teamwork \& Communication}
 
-\subsubsection{Communication}
+In sum, according to Joint Intentions theory, the notion of teamwork is
+characterized by joint commitment, also known as joint persistent goal (see
+Section \ref{sec:jpg}). The definition of JPG states that the agents mutually
+believe they have the appropriate goal, and that they mutually believe a
+persistent weak achievement goal (which represents the one-way commitment of one
+agent directed towards another) to achieve it persists until the agents mutually
+believe that the goal has either been achieved, impossible, or irrelevant.
 
 Joint Intentions Theory claims that an efficient collaboration requires
 communication. Sharing information through communication is critical given that
 collabortors have different capabilities, and each individual often has only
 partial knowledge relevant to solving the problem, and sometimes diverging
-beliefs about the state of the collaborative activity.
+beliefs about the state of the collaborative activity.\\
 
 
 
