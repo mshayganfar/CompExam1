@@ -23,6 +23,17 @@ Michael~E. Bratman.
 \newblock {\em Intention, Plans, and Practical Reason}.
 \newblock Cambridge, Mass.: Harvard University Press, 1987.
 
+\bibitem{bratman:intention}
+Michael~E. Bratman.
+\newblock What is intention?
+\newblock In {\em Intentions in Communication}, Cognitive Technologies, pages
+  15--32. The MIT Press, Cambridge, MA, June 1990.
+
+\bibitem{bratman:plans-reasoning}
+Michael~E. Bratman, David~J. Israel, and Martha~E. Pollack.
+\newblock Plans and resource-bounded practical reasoning.
+\newblock {\em Computational Intelligence}, 4(3):349--355, 1988.
+
 \bibitem{breazeal:humanoid-robots}
 Cynthia Breazeal, Andrew Brooks, Jesse Gray, Guy Hoffman, Cory Kidd, Hans Lee,
   Jeff Lieberman, Andrea Lockerd, and David Mulanda.
@@ -302,6 +313,11 @@ Bilge Mutlu, Alison Terrell, and Chien-Ming Huang.
 \newblock In {\em Proceedings of the HRI 2013 Workshop on Collaborative
   Manipulation}, 2013.
 
+\bibitem{neale:grice-language}
+Stephen Neale.
+\newblock Paul grice and the philosophy of language.
+\newblock {\em Linguistics and Philosophy}, 15(5):509--559, 1992.
+
 \bibitem{nikolaidis:collaboration-joint-action}
 Stefanos Nikolaidis, Przemyslaw~A. Lasota, Gregory~F. Rossano, Carlos Martinez,
   Thomas~A. Fuhlbrigge, and Julie~A. Shah.
@@ -335,6 +351,11 @@ Timothy~W. Rauenbusch and Barbara~J. Grosz.
 \newblock A decision making procedure for collaborative planning.
 \newblock In {\em Proceedings of the Second International Joint Conference on
   Autonomous Agents and Multiagent Systems}, 2003.
+
+\bibitem{ravenscroft:folk}
+Ian Ravenscroft.
+\newblock {\em Folk Psychology as a Theory}.
+\newblock Stanford Encyclopedia of Philosophy, 2004.
 
 \bibitem{rich:cea}
 Charles Rich.

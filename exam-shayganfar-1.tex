@@ -57,23 +57,42 @@ their similarities and differences, and their application in AI and robotics. It
 primarily focuses on Joint Intention, SharedPlans and hybrid theories of
 collaboration.
 
-\section{Shared Activity}
+\section{Computational Theories of Collaboration}
 
-Joint action can best be described as doing something as a team where the
-participants share the same goal and a common plan of execution. Grosz and
-Sidner has pointed out that collaborative plans do not reduce to the sum of the
-individual plans \cite{grosz:plans-discourse}
-\cite{grosz:collaborative-systems}.
+The prominent collaboration theories are mostly based on plans and joint
+intentions \cite{cohen:teamwork} \cite{grosz:plans-discourse}
+\cite{Litman:discourse-commonsense}, and they were derived from the BDI
+paradigm developed by Bratman \cite{bratman:intentions-plans} which is
+fundamentally reliant on folk psychology \cite{ravenscroft:folk}. The two
+theories, Joint Intentions \cite{cohen:teamwork} and SharedPlans
+\cite{grosz:plans-discourse}, have been extensively used to examine and describe
+teamwork and collaboration.
 
-For example, if we were to move a table jointly through a doorway, your picking
-up one side of the table and starting to walk through the door does not make
-sense outside our joint activity. Even the sum of both our picking-up and moving
-actions would not amount to the shared activity without the existence of a
-collaborative plan that both of us are sharing (namely to move the table out the
-door). It seems that we both hold a joint intention, as well as individual
-intentions related to this joint intention.
+The SharedPlans theory is based on the theories of Bratman and Pollack
+\cite{bratman:plans-reasoning,pollack:plan-inference,
+pollack:plan-mental-attitudes}, who outline a mental-state view of plans in
+which having a plan is not just knowing how to do an action, but also having the
+intention to do the actions entailed. Bratman's views of intention goes back to
+philosophical views of Anscombe \cite{anscombe:intention} and
+$Casta\tilde{n}eda$ \cite{castaneda:thinking} about intention. Also, as Grosz
+and Sidner mention in \cite{grosz:plans-discourse} the natural segmentation of
+discourse reflects intentional behaviors in each segment. These intentions are
+designated as Discourse Segment Purposes (DSPs) which are the basic reasons for
+engaging in different segments of discourse. DSPs are a natural extention of
+Gricean intentions at the utterance level \cite{neale:grice-language}.
 
-\section{Communication}
+Cohen and Levesque also mention that in Joint Intentions theory their view of
+intention is primarily future-directed \cite{cohen:intention-commitment} which
+makes their view along with the Bratman's theory of intention
+\cite{bratman:intention}.
+
+\subsection{Theory of Joint Intentions/Teamwork}
+\label{sec:joint-intentions}
+
+It seems that we both hold a joint intention, as well as individual intentions
+related to this joint intention.
+
+\subsubsection{Communication}
 
 Cohen’s Joint Intention Theory predicts that an efficient and robust
 collaboration scheme in a changing environment requires an open channel of
@@ -81,37 +100,6 @@ communication. Sharing information through communication acts is critical given
 that each teammate often has only partial knowledge relevant to solving the
 problem, different capabilities, and possibly diverging beliefs about the state
 of the task.
-
-\section{Teamwork \& Collaboration}
-
-Bratman's view is that collective intention can be described by referring to
-individual intention in combination with other mental attitudes. Searle's
-opposing view is that collective intention cannot be so reduced.
-
-According to Joint Intentions theory, the notion of teamwork is characterized by
-joint commitment (also known as joint persistent goal or JPG). The definition of
-JPG states that the agents mutually believe they have the appropriate goal, and
-that they mutually believe a persistent weak achievement goal (which represents
-the one-way commitment of one agent directed towards another) to achieve it
-persists until the agents mutually believe that the goal has either been
-achieved, impossible, or irrelevant.
-
-\section{Computational Theories of Collaboration}
-
-There are prominent collaboration theories that are mostly based on plans and
-often analysis of the discourse between collaborators revolving around these
-plans \cite{grosz:plans-discourse, Litman:discourse-commonsense}. In these
-theories the discourse analysis is based on search over these tree plans
-\cite{rich:discourse}.
-
-The two theories Joint Intentions and SharedPlans have been extensively used to
-examine and describe teamwork.
-
-Two important theories for modeling teamwork collaboration were derived from
-the BDI paradigm.
-
-\subsection{Theory of Joint Intentions/Teamwork}
-\label{sec:joint-intentions}
 
 The Joint Intentions model of Cohen and Levesque \cite{cohen:teamwork,
 levesque:acting-together, cohen:persistence-intention-commitment,
@@ -187,7 +175,8 @@ does not yet believe that p is true and has p eventually being true as a goal.
 is, q is false), but has as a goal that the status of p be mutually believed by
 all the team members.
 
-- Joint Commitment:
+\subsubsection{Joint Commitment}
+\label{sec:jpg}
 
 A joint intention of a team $\Theta$ is based on its joint commitment, which is
 defined as a \textit{Joint Persistent Goal} (JPG). A JPG to achieve a team
@@ -215,6 +204,18 @@ that they each intend that the collective action occur, and also that they each
 intend to do their share as long as the other does likewise, and this mutual
 knowledge persists until it is mutually known that the activity is over (i.e.,
 is successful, unachievable, irrelevant). \cite{cohen:team-formation}.
+
+
+
+\subsection{Teamwork \& Collaboration}
+
+According to Joint Intentions theory, the notion of teamwork is characterized by
+joint commitment, also known as joint persistent goal (see Section
+\ref{sec:jpg}). The definition of JPG states that the agents mutually believe
+they have the appropriate goal, and that they mutually believe a persistent weak
+achievement goal (which represents the one-way commitment of one agent directed
+towards another) to achieve it persists until the agents mutually believe that
+the goal has either been achieved, impossible, or irrelevant.
 
 
 
@@ -291,6 +292,14 @@ state. In particular, joint intentions are held by the team as a whole
 
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
+
+Joint action can best be described as doing something as a team where the
+participants share the same goal and a common plan of execution. For example, if
+we were to move a table jointly through a doorway, your picking up one side of
+the table and starting to walk through the door does not make sense outside our
+joint activity. Even the sum of both our picking-up and moving actions would not
+amount to the shared activity without the existence of a collaborative plan that
+both of us are sharing (namely to move the table out the door).
 
 This theory differentiates between knowing how to accomplish a goal (a recipe)
 and having a plan, which includes intentions. The SharedPlans theory explains
@@ -546,6 +555,13 @@ measurement tool \cite{grosz:plans-discourse}
 
 \subsubsection{Commitment}
 
+[from Hoffman \& Breazeal] In Bratman’s detailed analysis of Shared Cooperative
+Activity (SCA), he defines certain prerequisites for an activity to be
+considered shared and cooperative: he stresses the importance of mutual
+responsiveness, commitment to the joint activity and commitment to mutual
+support. His work also introduces the idea of meshing singular sub-plans into a
+joint activity.
+
 Teamwork is:
 
 Mutual commitment to joint activity:
@@ -793,28 +809,6 @@ al. introduce a language for representing joint plans for teams of agents and
 describe how agents can organize the formation of a skilled team to achieve a
 joint goal. They use joint intentions to capture the mental properties which
 characterize team activity.
-
-\section{Relation to Psychology and Sociology}
-
-The SharedPlans theory is based on the theories of Bratman and Pollack, who
-outline a mental-state view of plans in which having a plan is not just knowing
-how to do an action, but also having the intention to do the actions entailed.
-Bratman's views of intention goes back to philosophical views of Anscombe and
-$Casta\tilde{n}eda$ about intention \cite{anscombe:intention}
-\cite{castaneda:thinking}.
-
-Discourse segment pruposes are a natural extention of Gricean intentions at the
-utterance level.
-
-[from Hoffman \& Breazeal] In Bratman’s detailed analysis of Shared Cooperative
-Activity (SCA), he defines certain prerequisites for an activity to be
-considered shared and cooperative: he stresses the importance of mutual
-responsiveness, commitment to the joint activity and commitment to mutual
-support. His work also introduces the idea of meshing singular sub-plans into a
-joint activity. In our implementation, we generalize this concept to the idea of
-dynamically meshing sub-plans.
-
-Referring expressions \cite{heeman:model-collaboration-referring}
 
 \section{Similarities and Differences}
 
