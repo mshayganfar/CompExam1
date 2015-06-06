@@ -91,31 +91,54 @@ makes their view along with the Bratman's theory of intention
 \label{sec:joint-intentions}
 
 Following Bratman's guidelines, Cohen and Levesque propose a formal approach to
-building artificial collaborative agents. The Joint Intentions model of Cohen
+building artificial collaborative agents. The Joint Intentions theory of Cohen
 and Levesque \cite{cohen:teamwork, cohen:intention-commitment,
 cohen:persistence-intention-commitment, cohen:intentions,
 levesque:acting-together} represents one of the first attempts to establish a
 formal theory of collaboration, and due to its clarity and expression, is one of
-the widely used of the teamwork theories. The basic idea of Joint Intentions
-theory is based on individual and joint intentions (as well as commitments) to
-act as a team member. Their notion of joint intention is viewed not only as a
-persistent commitment of the team to a shared goal, but also implies a
-commitment on part of all its members to a mutual belief about the state of the
-goal. In this theory, once an agent entered into a joint commitment with other
-agents, the agent should communicate its private beliefs with other team members
-if the agent believes that the joint goal is in its terminal status, i.e.,
-either the joint goal is achieved or it is unachievable or irrelevant
-\cite{wilsker:study-theories}. Thus, teammates are committed to inform other
-team members when they reach the conclusion that a goal is achievable,
-impossible, or irrelevant. For instance, if a robot and an astronaut are
-collaborating to install a solar panel, once the robot reaches the conclusion
-that the welding tool ihas deficiency, it is essential for the robot to have an
-intention to communicate with the astronaut and make this knowledge common.
-Therefore, according to this theory, in a collaboration, agents can count on the
-commitment of other members, first to the goal and then to the mutual belief of
-the status of the goal.
+the widely used of the teamwork theories. 
+
+The basic idea of Joint Intentions theory is based on individual and joint
+intentions (as well as commitments) to act as a team member. Their notion of
+joint intention is viewed not only as a persistent commitment of the team to a
+shared goal, but also implies a commitment on part of all its members to a
+mutual belief about the state of the goal. In other words, Joint Intentions
+theory describes how a team of agents can jointly act together by sharing mental
+states about their actions while an intention is viewed as a commitment to
+perform an action. And a joint intention is a shared commitment to perform an
+action while in a group mental state \cite{cohen:intention-commitment}. 
+
+In \cite{cohen:teamwork} Cohen and Levesque establish that joint intention
+cannot be defined simply as individual intention with the team regarded as an
+individual. The reason is after the initial formation of an intention, team
+members may diverge in their beliefs and their attitudes towards the intention.
+Instead, Cohen and Levesque generalise their own definition of intention. First,
+they present a definition of individual persistent goal (see Section
+\ref{sec:individual-commitment}) and individual intention (see Section
+\ref{sec:individual-intention}). Then, they define analogues of these concepts
+by presenting mutual belief in place of individual belief. The definition of
+joint persistent goal (see Section \ref{sec:jpg}) requires team members to
+commit to informing other members, if it comes to believe that the shared goal
+is in its terminal status. As a result, in Cohen and Levesque's theory, a team
+with a joint intention is a group that shares a common objective and a certain
+shared mental state \cite{jarvis:teams-multiagent-systems}.
+
+In this theory, once an agent entered into a joint commitment with other agents,
+the agent should communicate its private beliefs with other team members if the
+agent believes that the joint goal is in its terminal status, i.e., either the
+joint goal is achieved, or it is unachievable, or irrelevant
+\cite{wilsker:study-theories}. Thus, as we mentioned above, team members are
+committed to inform other team members when they reach the conclusion that a
+goal is achievable, impossible, or irrelevant. For instance, if a robot and an
+astronaut are collaborating to install a solar panel, once the robot reaches the
+conclusion that the welding tool has deficiency, it is essential for the robot
+to have an intention to communicate with the astronaut and make this knowledge
+common. Therefore, according to this theory, in a collaboration, agents can
+count on the commitment of other members, first to the goal and then to the
+mutual belief of the status of the goal.
 
 \subsubsection{Individual Commitment}
+\label{sec:individual-commitment}
 
 As we mentioned earlier, intentions and commitments are the basic idea of Joint
 Intentions theory. Here, we provide the definition of ``individual commitment''
@@ -136,6 +159,7 @@ brevity, or it can be used as a reason for the agent to drop a commitment, even
 though it could be quite vague.
 
 \subsubsection{Individual Intention}
+\label{sec:individual-intention}
 
 As we mentioned in this Section, Joint Intention theory adopts Bratman's view of
 future-directed properties of intention. In this theory, an intention is
@@ -218,81 +242,11 @@ Joint Intentions Theory claims that an efficient collaboration requires
 communication. Sharing information through communication is critical given that
 collabortors have different capabilities, and each individual often has only
 partial knowledge relevant to solving the problem, and sometimes diverging
-beliefs about the state of the collaborative activity.\\
-
-
-
-
-The Joint Intentions Framework \cite{levesque:acting-together}
-\cite{cohen:intention-commitment} \cite{cohen:persistence-intention-commitment}
-is a theoretical framework founded on BDI logics. The framework focuses on a
-team's joint mental state, called a joint intention. A team jointly intends a
-team action if all team members are jointly committed to perform an action while
-in a specified mental state.
-
-According to this theory, joint action is conceptualized as doing something
-together as a team where the teammates share the same goal and the same plan of
-execution. Sharing information through communication acts is critical given that
-each teammate often has only partial knowledge relevant to solving the problem,
-different capabilities, and possibly diverging beliefs about the state of the
-task. Communication plays an important role in coordinating their roles and
-actions to accomplish the task. It also serves to establish and maintain a set
-of mutual beliefs (also called common ground) among the team members. For
-instance, all teammates need to establish and maintain a set of mutual beliefs
-regarding the current state of the task, the respective roles and capabilities
-of each member, the responsibilities of each teammate, etc. What happens when
-things go wrong? Teammates must share a commitment to achieving the shared goal.
-They cannot abandon their efforts, but must instead continue to coordinate their
-efforts to try a different, mutually agreed upon plan. [--> Leonardo]
-
-Joint Intentions Theory describes how a team of agents can jointly act together
-by sharing mental states about their actions. An intention is viewed as a
-commitment to perform an action while in a mental state. And a joint intention
-is a shared commitment to perform an action while in a group mental state
-\cite{cohen:intention-commitment}. Communication is required to establish and
-maintain mutual beliefs and joint intentions. A team of agents jointly intend to
-perform an action if and only if the members have a joint persistent goal
-\cite{cohen:teamwork}.
-
-In order to enter a joint commitment, the team members have to establish
-appropriate mutual beliefs and individual commitments. Although the Joint
-Intentions Theory does not mandate communication and several techniques are
-available to establish mutual beliefs about actions from observations (see
-\cite{huber:without-communication}), currently communication seems to be the
-only feasible way to attain joint commitments. A key aspect of the Joint
-Intention Theory is the commitment to attain mutual belief about the termination
-of a team action. This helps to ensure that the team stays updated about the
-status of the team actions. This behaviour is achieved by enforcing that agents
-committing to a joint intention also commit to inform their team about any
-relevant failures or premature terminations. Joint intentions and joint
-commitments provide a basic framework to reason about coordination required for
-teamwork as well as guidance for monitoring and maintaining team activities.
-However, a single joint intention for a high-level team goal is not sufficient
-to model team behaviour in detail and to ensure coherent teamwork.
-
-There are also some other theories with similarities and contrasts conveying
-collaboration concepts including Cohen and Levesque's work describing the
-concept of \textit{joint intentions} in \cite{cohen:teamwork,
-levesque:acting-together}.
-
-In \cite{cohen:teamwork} Cohen and Levesque establish that joint intention
-cannot be defined simply as individual intention with the team regarded as an
-individual. This is because after the initial formation of an intention, team
-members may diverge in their beliefs and hence in their attitudes towards the
-intention. Instead, Cohen and Levesque generalise their own definition of
-intention. First they present a definition of individual persistent goal and, in
-terms of this, individual intention. Both definitions use the notion of
-individual belief. Next, they define precise analogues of these concepts --
-joint persistent goal and joint intention -- by invoking mutual belief in place
-of individual belief. The definition of joint persistent goal additionally
-requires each team member to commit to informing other members -- to the extent
-of the team's mutual belief -- if it comes to believe that the common goal has
-been achieved, becomes impossible or is no longer relevant. The result is that,
-while a team is not an individual, nevertheless joint intention is similar to
-individual intention. In Cohen and Levesque's theory, then, a team with a joint
-intention is a group that shares a common objective and a certain shared mental
-state. In particular, joint intentions are held by the team as a whole
-\cite{jarvis:teams-multiagent-systems}.
+beliefs about the state of the collaborative activity. Communication plays an
+important role in coordinating team members' roles and actions to accomplish
+their goal. For instance, it can help team members to establish and maintain a
+set of mutual beliefs regarding the current state of the collaboration, and the
+respective roles and capabilities of each member.
 
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
