@@ -251,43 +251,72 @@ respective roles and capabilities of each member.
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
 
-Joint action can best be described as doing something as a team where the
-participants share the same goal and a common plan of execution. For example, if
-we were to move a table jointly through a doorway, your picking up one side of
-the table and starting to walk through the door does not make sense outside our
-joint activity. Even the sum of both our picking-up and moving actions would not
-amount to the shared activity without the existence of a collaborative plan that
-both of us are sharing (namely to move the table out the door).
+The SharedPlans theory explains how a group of agents can incrementally form and
+execute a shared plan that then guides and coordinates their activity towards
+the accomplishment of a shared goal.
 
-This theory differentiates between knowing how to accomplish a goal (a recipe)
-and having a plan, which includes intentions. The SharedPlans theory explains
-how a group of agents can incrementally form and execute a SharedPlans that then
-guides and coordinates their activity towards the accomplishment of a shared
-goal.
+SharedPlans is a general theory of collaborative planning that requires no
+notion of joint intentions, accommodates multi-level action decomposition
+hierarchies and allows the process of expanding and elaborating partial plans
+into full plans (see Section \ref{sec:full-partial-plan}).
 
-[Informally, two agents are said to have a SharedPlan when  they mutually
-believe that: a) they have a common goal; b) they have agreed on a recipe to accomplish
-the goal; c) they are each capable of performing their assigned actions; d) each
-intends to do their assigned actions; and e) they are committed to the overall
-success of the collaboration. SharedPlans are usually incrementally refined and
-executed by the collaborating agents; in a typical scenario a SharedPlan is
-initially partial (incompletely specified) and only becomes completely specified
-once the agents have finished refining and executing it. Refinement of a partial
-plan is carried out through means-ends reasoning and negotiation among the
-agents.]
+The SharedPlans model of collaborative action \cite{grosz:planning-acting}
+\cite{grosz:collaboration} \cite{grosz:plans-discourse} aims to provide the
+theoretical foundations needed for building collaborative robots/ agents
+\cite{grosz:collaborative-systems}. It specifies four key characteristics for
+participants in a group activity to be collaborative partners, and thus for
+their joint activity to be collaborative. The SharedPlans definition states that
+for a group activity to be collaborative, the collaborators must have:
 
-The formalization presented in (B. J. Grosz & S. Kraus, 1996) uses a first-order
-logic augmented with several modal operators, meta-predicates, and action
-expressions.
+Look at this carefully!!!
 
-In this representation, actions can be readily executable (“basic-level”) or
-complex, with complex actions having recipes consisting of additional
-sub-actions that are basic-level or complex. Thus actions and their
-decomposition form recipe trees, which reflect hierarchical plan decomposition.
+\begin{enumerate}[a)]
+  \item individual intentions that the group perform the group activity;
+  \item mutual belief of a (partial or complete) recipe;
+  \item individual or group plans for the constituent subactions of the recipe;
+  \item intentions that their collaborators succeed in doing the constituent
+  subactions.
+\end{enumerate}
 
+In other words, to successfully complete a plan the collaborators must mutually
+believe that they have a common goal and have agreed on a sequence of actions
+for achieving that goal. They should believe that they are both capable of
+performing their own actions and intend to perform those actions while they are
+committed to the success of their plans.
 
+SharedPlans is rooted in the observation that collaborative plans are not simply
+a collection of individual plans, but rather a tight interleaving of mutual
+beliefs and intentions of different team members.
+
+The formalization presented in \cite{grosz:collaboration} uses first-order
+logic.
+
+\subsubsection{SharedPlans}
+
+Grosz and Sidner propose that collaboration must have the following three
+elements:
+
+\begin{enumerate}
+  \item the participants must have commitment to the shared activity;
+  \item there must be a process for reaching an agreement on a recipe for the
+  group action;
+  \item there must be commitment to the constituent actions. 
+\end{enumerate}
+
+The SharedPlans formalization distinguishes partial plans and complete plans. A
+Full SharedPlan (FSP) is a complete plan in which agents have fully determined
+how they will perform an action. The Partial SharedPlan (PSP) definition
+provides a specification of the minimal mental-state requirements for
+collaboration to exist and gives criteria governing the process of completing
+the plan. Consequently, a full recipe for doing an action \textit{A} is a set of
+actions and constraints such that the doing of those actions under those
+constraints constitutes the doing of action \textit{A}. A partial recipe is a
+set of actions and constraints that may be extended to a full recipe
+\cite{grosz:planning-acting}.
 
 \subsubsection{Full Vs. Partial Shared Plan}
+\label{sec:full-partial-plan}
+
 A shared plan is either a \textit{Full Shared Plan} (FSP) or a \textit{Partial
 Shared Plan} (PSP). An FSP to do $\alpha$ represents a situation where every
 aspect of a joint activity $\alpha$ is fully determined. This includes mutual
@@ -322,139 +351,93 @@ on the SharedPlans theory. However, the SharedPlans theory provides the concept
 of \textit{Partial Shared Plan} (PSP) which since a team might only have the
 plan partially. The PSP is a snapshot of the team's mental state in a particular
 situation in their teamwork, and further communication and planning is often
-used to fulfill the conditions of an FSP. Notice that for the same reason
-recipes can be partial.
+used to fulfill the conditions of an FSP. The idea behind PSP is enabling the
+agents to modify the shared plan over the course of planning without impairing
+the achievement of the shared goals. Notice that for the same reason recipes
+can be partial \cite{grosz:collaboration, grosz:plans-discourse}.
 
 \subsubsection{Communicating Intentions}
 
-Using discourse plans can help to encode the knowledge about conversation.
+In \cite{grosz:plans-discourse}, Grosz and Sidner argue that the SharedPlans
+theory recognises three interrelated levels of discourse structure, and the
+components of the discourse structure are a trichotomy of linguistic structure,
+intentions structure and the attention state. In their work, the linguistic
+structure of a discourse is a sequence of utterances aggregating into discourse
+segments just as the words in a single sentence form constituent phrases. They
+also discuss the idea of the discourse purpose as the intention that underlies
+engagement in the particular discourse. They believe this intention is the
+reason behind performing a discourse rather than some other actions, and also
+the reason behind conveying a particular content of the discourse rather than
+some other contents. They describe mechanisms for plan analysis looking at
+Discourse Segment Purposes (DSPs). In fact, the DSPs specify how the discourse
+segments contribute to achieving the overall discourse purpose. Finally, the
+third component in their theory, the attentional state, provides an abstraction
+of the agent's focus of attention as the discourse unfolds. The focusing
+structure contains DSPs and the stacking of focus spaces reflects the relative
+salience of the entities in each space during the discourse. In short, the
+focusing structure is the central repository for the contextual content required
+for processing utterances during the discourse \cite{grosz:plans-discourse}.
+Using discourse plans can help to encode the knowledge about conversation.\\
 
-The SharedPlans theory recognises three interrelated levels of discourse
-structure.
 
-In \cite{grosz:plans-discourse}, Grosz and Sidner argue that the components of
-the discourse structure are a trichotomy of linguistic structure, intentions
-structure and the attention state. In their work, the linguistic structure of a
-discourse is a sequence of utterances aggregating into discourse segments just
-as the words in a single sentence form constituent phrases. They also discuss
-the idea of the discourse purpose as the intention that underlies engagement in
-the particular discourse. They believe this intention is the reason behind
-performing a discourse rather than some other actions, and also the reason
-behind conveying a particular content of the discourse rather than some other
-contents. They describe mechanisms for plan analysis looking at Discourse
-Segment Purposes (DSPs). In fact, the DSPs specify how the discourse segments
-contribute to achieving the overall discourse purpose. Finally, the third
-component in their theory, the attentional state, provides an abstraction of the
-agent's focus of attention as the discourse unfolds. The focusing structure
-contains DSPs and the stacking of focus spaces reflects the relative salience of
-the entities in each space during the discourse. In short, the focusing
-structure is the central repository for the contextual content required for
-processing utterances during the discourse \cite{grosz:plans-discourse}.
+
+
+Joint action can best be described as doing something as a team where the
+participants share the same goal and a common plan of execution. For example, if
+we were to move a table jointly through a doorway, your picking up one side of
+the table and starting to walk through the door does not make sense outside our
+joint activity. Even the sum of both our picking-up and moving actions would not
+amount to the shared activity without the existence of a collaborative plan that
+both of us are sharing (namely to move the table out the door).
+
+This theory differentiates between knowing how to accomplish a goal (a recipe)
+and having a plan, which includes intentions. 
+
+[Informally, two agents are said to have a SharedPlan when  they mutually
+believe that: a) they have a common goal; b) they have agreed on a recipe to accomplish
+the goal; c) they are each capable of performing their assigned actions; d) each
+intends to do their assigned actions; and e) they are committed to the overall
+success of the collaboration. SharedPlans are usually incrementally refined and
+executed by the collaborating agents; in a typical scenario a SharedPlan is
+initially partial (incompletely specified) and only becomes completely specified
+once the agents have finished refining and executing it. Refinement of a partial
+plan is carried out through means-ends reasoning and negotiation among the
+agents.]
+
+Recipe -- In this representation, actions can be readily executable
+(“basic-level”) or complex, with complex actions having recipes consisting of
+additional sub-actions that are basic-level or complex. Thus actions and their
+decomposition form recipe trees, which reflect hierarchical plan decomposition.
+
 
 \subsubsection{Collaboration Vs. Sum of Coordinate Actions}
 
 \cite{grosz:collaborative-systems}
 
-\subsubsection{SharedPlans}
-
-Grosz and Sidner (1996) propose that collaboration must have three elements:
-
-1. the participants must have commitment to the shared activity,
-
-2. there must be a process for reaching an agreement on a recipe for the group
-action, and
-
-3. there must be commitment to the constituent actions.
-
-The SharedPlans formalization distinguishes partial plans and complete plans. A
-Full SharedPlan (FSP) is a complete plan in which agents have fully determined
-how they will perform an action. The Partial SharedPlan (PSP) definition
-provides a specification of the minimal mental-state requirements for
-collaboration to exist and gives criteria governing the process of completing
-the plan. Consequently, a full recipe for doing an action \textit{A} is a set of
-actions and constraints such that the doing of those actions under those
-constraints constitutes the doing of action \textit{A}. A partial recipe is a
-set of actions and constraints that may be extended to a full recipe
-\cite{grosz:planning-acting}.
-
-Grosz and Sidner \cite{grosz:plans-discourse}
-Grosz and Kraus \cite{grosz:collaboration}
-
-SharedPlans is a general theory of collaborative planning that requires no
-notion of joint intentions, accommodates multi-level action decomposition
-hierarchies and allows the process of expanding and elaborating partial plans
-into full plans.
-
-SharedPlans is rooted in the observation that collaborative plans are not simply
-a collection of individual plans, but rather a tight interleaving of mutual
-beliefs and intentions of different team members.
-
-The SharedPlans model of collaborative action \cite{grosz:planning-acting}
-\cite{grosz:collaboration} \cite{grosz:plans-discourse} aims to provide the
-theoretical foundations needed for building collaborative robots/ agents
-\cite{grosz:collaborative-systems}. It specifies four key characteristics for
-participants in a group activity to be collaborative partners, and thus for
-their joint activity to be collaborative. The SharedPlans definition states that
-for a group activity to be collaborative, the collaborators must have:
-
-Look at this carefully!!!
-
-\begin{enumerate}[a)]
-  \item individual intentions that the group perform the group activity;
-  \item mutual belief of a (partial or complete) recipe;
-  \item individual or group plans for the constituent subactions of the recipe;
-  \item intentions that their collaborators succeed in doing the constituent
-  subactions.
-\end{enumerate}
- 
-In other words, to successfully complete a plan the collaborators must mutually
-believe that they have a common goal and have agreed on a sequence of actions
-for achieving that goal. They should believe that they are both capable of
-performing their own actions and intend to perform those actions while they are
-committed to the success of their plans.
-
-The intentions that this definition specifies constitute different kinds of
-commitments required of the collaborators. 
-
-The idea behind partial shared plans is enabling the agents to modify the shared
-plan over the course of planning without impairing the achievement of the shared
-goals.
-
 \subsubsection{Intention-to and Intention-that}
 
 In Grosz and Sidner's SharedPlans theory \cite{grosz:plans-discourse}, two
-intentional attitudes are employed: ``intending to" (do an action) and
-``intending that" (a proposition will hold). The notion of \textit{intention
-to}, as an individual-oriented intention, models the intention of an agent to do
-any single-agent action while the agent not only believes that it is able to
-execute that action, but it also committs to doing so. In short, it is an
-intention to perform an action, similar to Bratman’s conception. In contrast
-with \textit{intention to}, an \textit{intention that}, as the notion of an
-intention directed toward group activity, does not directly imply an action. In
-fact, an individual agent's \textit{intention that} is directed towards its
-collaborator's action or towards a group's joint action. \textit{Intention that}
-guides an agent to take actions (including the communication), that enable or
-facilitate other collaborators to perform assigned tasks. This leads an agent to
-behave in a manner consistent with a collaborative effort. Therefore, agents
+intentional attitudes are employed: \textit{intending to} (do an action) and
+\textit{intending that} (a proposition will hold). The notion of
+\textit{intention to}, as an individual-oriented intention, models the intention
+of an agent to do any single-agent action while the agent not only believes that
+it is able to execute that action, but it also committs to doing so. In short,
+it is an intention to perform an action, similar to Bratman's view of intention.
+In contrast with \textit{intention to}, an \textit{intention that}, as the
+notion of an intention directed toward group activity, does not directly imply
+an action. In fact, an individual agent's \textit{intention that} is directed
+towards its collaborators' action or towards a group's joint action.
+\textit{Intention that} guides an agent to take actions (including the
+communication), that enable or facilitate other collaborators to perform
+assigned tasks. This leads an agent to behave collaboratively. Therefore, agents
 will adopt intentions to communicate about the plan \cite{grosz:collaboration}.
-There is a significant difference between ``Intention that'' and ``Intention
-to". ``Intention to" commits an agent to means-end reasoning and acting
-\cite{bratman:intentions-plans}. In contrast, ``Intention that'' does not
-necessarily entail this commitment.
-
-The key point about intentions to and intentions that is that both commit an
-agent not to adopt conflicting intentions, and constrain replanning in case of
-failure.
-
-An agent cannot intend for another agent to perform an action using this
-attitude.
-
-``Intend that'' is an attitude one or more agents hold with respect to a
-proposition, and reflects the desire for the agent(s) to achieve the state of
-the world specified, however, it is not as strong a commitment as intend-to, and
-does not require that the agent(s) know how to achieve the action and does not
-commit them to means-end reasoning. Further, an agent can intend-that another
-agent achieve the specified proposition.
+As another difference, \textit{Intention to} commits an agent to means-end
+reasoning and acting \cite{bratman:intentions-plans} while \textit{Intention
+that} does not necessarily entail this commitment. The key point about
+\textit{Intention to} and \textit{intention that} is that both commit an agent
+not to adopt conflicting intentions, and constrain replanning in case of
+failure. Further, an agent can \textit{intention that} another agent achieve the
+specified proposition.
 
 \subsubsection{Recipes}
 
