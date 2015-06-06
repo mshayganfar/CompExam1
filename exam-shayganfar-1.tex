@@ -291,6 +291,62 @@ beliefs and intentions of different team members.
 The formalization presented in \cite{grosz:collaboration} uses first-order
 logic.
 
+\subsubsection{Recipes}
+
+The SharedPlans definition of mutual beliefs states that when agents have a
+shared plan for doing some action, they must hold mutual beliefs about the way
+in which they should perform that action
+\cite{grosz:collaboration,grosz:plans-discourse}. Following Pollack
+\cite{pollack:plan-mental-attitudes}, the term recipe refers to what
+collaborators know when they know a way of doing an action. Recipes are
+specified at a particular level of detail. Although, the agents need to have
+mutual beliefs about actions specified in the recipe, they do not need to have
+mutual beliefs about all levels of performing actions. Therefore, having mutual
+belief of the recipe means that the collaborators hold the same beliefs about
+the way in which an action should be accomplished. Consequently, the
+collaborators need to agree on how to execute an action. Recipes are
+aggregations of action-types and relations among them. Action-types, rather than
+actions, are the main elements in recipes. Grosz and Sidner in their earlier
+work \cite{grosz:plans-discourse} have considered only simple recipes in which
+each recipe consisted of only a single action-type relation
+\cite{lochbaum:plan-models}. Recipes can be partial, meaning thay can expand and
+be modified over time.
+
+\subsubsection{Plans}
+
+Figure \ref{fig:plans} shows what we need to add to individual plans in order to
+have plans for group actions. The top of the figure lists the main components
+for individual plans. First, an individual agent needs to know the recipe for an
+action, whereas agents in a group need to have a mutual belief of a recipe for
+an action. In the case of a group plan, having mutual belief of a recipe, leads
+the agents to agree on how they are going to execute the action. Then, just as
+individual agents need to have the ability to perform the constituent actions in
+an individual plan and must have intentions to perform them, the participants in
+a group activity need to have individual or group plans for each of the
+constituent actions in the mutually agreed recipe
+\cite{grosz:collaborative-systems, grosz:plans-discourse}.
+
+\begin{figure}[tbh]
+  \center
+  \includegraphics[width=0.9\textwidth]{figure/plans.png}
+  \caption{Plans for collaborative action \cite{grosz:collaborative-systems}.}
+  \label{fig:plans}
+\end{figure}
+
+As shown in Figure \ref{fig:plans} (bottom), plans for group actions include two
+essential constituents that do not have correlates in the individual plan.
+First, the agents need to have a commitment to the group activity; All the
+agents need to intend that (see Section \ref{sec:intend-to-that}) the group will
+do the action. For instance, a robot and an astronaut need to have intentions
+that they install solar panels together. Among other things, these intentions
+will keep them both working on the panels until the panels are installed.
+Second, the participants need to have some commitment to the other agents to
+succeed in their own their actions. For instance, the robot must have an
+intention that the astronaut be able to measure the quality of installation
+successfully. This intention will prevent the robot from interrupting the
+astronaut's measurement action or prevent the robot from using astronaut's
+measurement tool \cite{grosz:collaborative-systems, grosz:plans-discourse}.
+
 \subsubsection{SharedPlans}
 
 Grosz and Sidner propose that collaboration must have the following three
@@ -415,6 +471,7 @@ decomposition form recipe trees, which reflect hierarchical plan decomposition.
 \cite{grosz:collaborative-systems}
 
 \subsubsection{Intention-to and Intention-that}
+\label{sec:intend-to-that}
 
 In Grosz and Sidner's SharedPlans theory \cite{grosz:plans-discourse}, two
 intentional attitudes are employed: \textit{intending to} (do an action) and
@@ -439,69 +496,12 @@ not to adopt conflicting intentions, and constrain replanning in case of
 failure. Further, an agent can \textit{intention that} another agent achieve the
 specified proposition.
 
-\subsubsection{Recipes}
-
-The SharedPlans definition of mutual beliefs states that when agents have a
-shared plan for doing some act, they must hold mutual beliefs about the way in
-which to perform that act. Following Pollack
-\cite{pollack:plan-mental-attitudes}, the term recipe refers to what
-collaborators know when they know a way of doing something. Recipes are
-specified at a particular level of detail. Hence, the agents need to have mutual
-beliefs about acts specified at the particular level of detail of the recipe,
-and they do not to have mutual beliefs about all levels of acts that each agent
-will perform. Mutual belief of the recipe essentially means that all the
-collaborators hold the same beliefs about the way in which the activity will be
-accomplished. Therefore, the collaborators must agree on how to do the activity.
-Grosaz and Sidner in their earlier work \cite{grosz:plans-discourse} have
-considered only simple recipes in which each recipe consisted of only a single
-act-type relation \cite{lochbaum:plan-models}. Recipes are aggregations of
-act-types and relations among them. Act-types, rather than actions, are the main
-elements in recipes. Recipes can be partial, meaning thay can expand and be
-modified over time.
-
-\subsubsection{Plans}
-
-Figure \ref{fig:plans} shows what we need to add to individual plans in order to
-have plans for group action, and lists the major components of group plans; to
-provide a base for comparison, the top of the figure lists the main components
-for individual plans. First, just as an individual agent must know how to do an
-action, agents in a group must have knowledge of how they’re going to do an
-action. In the case of a group plan to do a joint activity, there must be mutual
-belief of the recipe; agents must agree on how they are going to do the action.
-Then, just as individual agents must have the ability to perform the constituent
-actions in an individual plan and must have intentions to perform them, the
-participants in a group activity must have individual or group plans for each of
-the constituent actions in their agreed-on recipe \cite{grosz:plans-discourse}
-\cite{grosz:collaborative-systems}.
-
-\begin{figure}[tbh]
-  \center
-  \includegraphics[width=0.9\textwidth]{figure/plans.png}
-  \caption{Plans for collaborative action \cite{grosz:collaborative-systems}.}
-  \label{fig:plans}
-\end{figure}
-
-Plans for group actions include two major constituents that do not have
-correlates in the individual plan. First, the agents must have a commitment to
-the group activity; they must all intend-that the group will do the action. For
-instance, a robot and an astronaut need to have intentions that they install
-solar panels. Among other things, these intentions will keep them both working
-on the panels until the panels are installed. Second, the participants must have
-some commitment to the other agents being able to do their actions. For example,
-the robot must have an intention that the astronaut be able to measure the
-quality of installation. This intention will prevent the robot from interrupting
-astronaut's measurement action or prevent the robot from using astronaut's
-measurement tool \cite{grosz:plans-discourse}
-\cite{grosz:collaborative-systems}.
-
 \subsubsection{Commitment}
 
-[from Hoffman \& Breazeal] In Bratman’s detailed analysis of Shared Cooperative
-Activity (SCA), he defines certain prerequisites for an activity to be
-considered shared and cooperative: he stresses the importance of mutual
-responsiveness, commitment to the joint activity and commitment to mutual
-support. His work also introduces the idea of meshing singular sub-plans into a
-joint activity.
+Bratman defines certain prerequisites for an activity to be considered shared
+and cooperative: he stresses the importance of mutual responsiveness, commitment
+to the joint activity and commitment to mutual support
+\cite{bratman:shared-activity}.
 
 Teamwork is:
 
@@ -509,7 +509,7 @@ Mutual commitment to joint activity:
 
 - Agreement on the joint activity
 
-- Cannot abomdom activity without involving teammates
+- Cannot abondon activity without involving teammates
 
 Mutual suppport:
 
