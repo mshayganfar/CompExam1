@@ -15,7 +15,7 @@ Gertrude Elizabeth~Margaret Anscombe.
 \bibitem{babaian:writers-assistant}
 Tamara Babaian, Barbara~J. Grosz, and Stuart~M. Shieber.
 \newblock A writer's collaborative assistant.
-\newblock In {\em In Proceedings of the International Conference on Intelligent
+\newblock In {\em Proceedings of the International Conference on Intelligent
   User Interfaces (IUI2000)}, pages 7--14. ACM Press, 2002.
 
 \bibitem{bratman:intentions-plans}
@@ -143,11 +143,6 @@ Barbara~J. Grosz.
 \newblock Beyond mice and menus.
 \newblock {\em Proceedings of the American Philosophical Society},
   149(4):523--543, 2005.
-
-\bibitem{grosz:ccsp}
-Barbara~J. Grosz and Luke Hunsberger.
-\newblock The dynamics of intention in collaborative activity.
-\newblock {\em Cognitive Systems Research}, 7(2-3):259--272, 2006.
 
 \bibitem{grosz:intention-dynamics-collaboration}
 Barbara~J. Grosz and Luke Hunsberger.
@@ -375,7 +370,7 @@ Charles Rich, Candace~L. Sidner, and Neal Lesh.
 \bibitem{rickel:discourse-theory-dialogue}
 Jeff Rickel, Neal Lesh, Charles Rich, Candace~L. Sidner, and Abigail Gertner.
 \newblock Collaborative discourse theory as a foundation for tutorial dialogue.
-\newblock In {\em In Proceedings Sixth International Conference on Intelligent
+\newblock In {\em Proceedings Sixth International Conference on Intelligent
   Tutoring Systems}, 2002.
 
 \bibitem{scerri:robot-agent-person}
@@ -402,8 +397,8 @@ John~R. Searle.
 \bibitem{sidner:discourse-collaborative-negotiation}
 Candace Sidner.
 \newblock An artificial discourse language for collaborative negotiation.
-\newblock In {\em In Proceedings of the Twelfth National Conference on
-  Artificial Intelligence}, pages 814--819. MIT Press, 1994.
+\newblock In {\em Proceedings of the Twelfth National Conference on Artificial
+  Intelligence}, pages 814--819. MIT Press, 1994.
 
 \bibitem{sidner:enagagement-robot}
 Candace~L. Sidner and Myroslava Dzikovska.
@@ -452,7 +447,7 @@ Burt Wilsker.
 John Yen, Jianwen Yin, Thomas~R. Ioerger, Michael~S. Miller, Dianxiang Xu, and
   Richard~A. Volz.
 \newblock Cast: Collaborative agents for simulating teamwork.
-\newblock In {\em In Proceedings of IJCAI’2001}, pages 1135--1142, 2001.
+\newblock In {\em Proceedings of IJCAI’2001}, pages 1135--1142, 2001.
 
 \bibitem{yin:knowledge-based-sharedplans}
 Jianwen Yin, Michael~S. Miller, Thomas~R. Ioerger, John Yen, and Richard~A.
@@ -465,7 +460,7 @@ Jianwen Yin, Michael~S. Miller, Thomas~R. Ioerger, John Yen, and Richard~A.
 \bibitem{zamfirescu:gdss}
 Zamfirescu and Candea.
 \newblock On integrating agents into gdss.
-\newblock In {\em In Preprints of the 9th IFAC / IFORS / IMACS / IFIP/
-  Symposium on Large Scale Systems: Theory and Applications}, 2001.
+\newblock In {\em Preprints of the 9th IFAC / IFORS / IMACS / IFIP/ Symposium
+  on Large Scale Systems: Theory and Applications}, 2001.
 
 \end{thebibliography}

@@ -260,6 +260,34 @@ notion of joint intentions, accommodates multi-level action decomposition
 hierarchies and allows the process of expanding and elaborating partial plans
 into full plans (see Section \ref{sec:full-partial-plan}).
 
+Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
+\cite{lochbaum:plan-models} present a model of plans to account for how agents
+with partial knowledge collaborate in the construction of a domain plan. Agents
+have a library of partially specified plan schemas (recipes). These recipes
+might be underspecified as to how an action is executed or how an action
+contributes to a goal. Agents then collaborate in constructing a shared plan by
+uttering statements about their beliefs and intentions about the plan. This
+collaboration will terminate with each agent mutually believing that each act in
+the plan can be executed by one of the agents, that that agent intends to
+perform the act, and that each act in the plan contributes to the goal.
+
+Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
+\cite{lochbaum:plan-models} are interested in the type of plans that underlie
+discourse in which the agents are collaborating in order to achieve a shared
+goal. They propose that agents are building a shared plan in which participants
+have a collection of beliefs and intentions about the actions in the plan.
+
+Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
+\cite{lochbaum:plan-models} model how several agents with partial knowledge
+collaborate on constructing a shared domain plan . Each agent communicates their
+beliefs and intentions by making utterances about what actions they can
+contribute to the shared plan. Collaboration is again modelled by the agents
+establishing a mutual belief that each action in the shared plan contributes to
+the goal of the plan, and that each action can and will be performed by one of
+the agents.
+
+
+
 The SharedPlans model of collaborative action \cite{grosz:planning-acting}
 \cite{grosz:collaboration} \cite{grosz:plans-discourse} aims to provide the
 theoretical foundations needed for building collaborative robots/ agents
@@ -347,7 +375,7 @@ successfully. This intention will prevent the robot from interrupting the
 astronaut's measurement action or prevent the robot from using astronaut's
 measurement tool \cite{grosz:collaborative-systems, grosz:plans-discourse}.
 
-\subsubsection{SharedPlans}
+\subsubsection{Shared Plans}
 
 Grosz and Sidner propose that collaboration must have the following three
 elements:
@@ -369,6 +397,25 @@ actions and constraints such that the doing of those actions under those
 constraints constitutes the doing of action \textit{A}. A partial recipe is a
 set of actions and constraints that may be extended to a full recipe
 \cite{grosz:planning-acting}.
+
+\textit{Shared plan} is another essential concept in the collaboration context.
+The definition of the shared plan is derived from the definition of plans
+Pollack introduced in \cite{pollack:plan-inference,
+pollack:plan-mental-attitudes} since it rests on a detailed treatment of the
+relations among actions and it distinguishes the intentions and beliefs of an
+agent about those actions. However, since Pollack's plan model is just a simple
+plan of a single agent, Grosz and Sidner extended that to plans of two or more
+collaborative agents. The concept of the shared plan provides a framework in
+which to further evaluate and explore the roles that particular beliefs and
+intentions play in collaborative activity \cite{lochbaum:plan-models}. However,
+this formulation of shared plans (a) could only deal with activities that
+directly decomposed into single-agent actions, (b) did not address the
+requirement for the commitment of the agents to their joint activities, and (c)
+did not adequately deal with agents having partial recipes
+\cite{grosz:collaboration}. Grosz and Kraus in \cite{grosz:collaboration},
+reformulate Pollack's definition of the individual plans
+\cite{pollack:plan-mental-attitudes}, and also revise and expand the SharedPlans
+to address these shortcomings.
 
 \subsubsection{Full Vs. Partial Shared Plan}
 \label{sec:full-partial-plan}
@@ -499,141 +546,17 @@ specified proposition.
 \subsubsection{Commitment}
 
 Bratman defines certain prerequisites for an activity to be considered shared
-and cooperative: he stresses the importance of mutual responsiveness, commitment
-to the joint activity and commitment to mutual support
-\cite{bratman:shared-activity}.
+and cooperative \cite{bratman:shared-activity}. He stresses the importance of:
 
-Teamwork is:
-
-Mutual commitment to joint activity:
-
-- Agreement on the joint activity
-
-- Cannot abondon activity without involving teammates
-
-Mutual suppport:
-
-- Must be active in helping teammate activity
-
-Mutual Responsiveness:
-
-- Take over tasks from teammates if necessary
-
-Joint Intentions theory is expressed in a modal language.
-
-Individual Commitment:(Joint Intentions)
-
-PGOAL (Persistent Goal) to achieve p relative to q
-
-1. she believes that p is currently false.
-
-2. she wants p to be true eventually.
-
-3. 2. will continue to hold until she comes to believe that p is true, or will
-never be true, or that q is false (q is irrelevance clause for the case that p
-becomes unnecessary).
-
-Joint Commitment: (Joint Intentions)
-
-JPG (Joint Persistent Goal) to achieve p relative to q
-
-1. they mutually believe that p is currently false.
-
-2. they mutually believe that they all want p to be true eventually.
-
-3. until they come to mutually believe that p is true, or will never be true, or
-that q is false, they will continue to mutually believe that they each have p as
-a AGOAL (Achievement Goal)
-
-Joint Intention:
-
-A Join Intention of team t to achieve p relative to q
-≡
-t’s members have a JPG to achieve p relative to q 
-+
-t’s members are believing throughout that they are doing it.
-
-(a joint intention to perform a particular action is a joint commitment to enter
-a future state wherein the agents mutually believe the collaborative action is
-imminent just before they perform it)
-
-Theorem:
-
-If a team jointly intends to do a complex action consisting of team members
-concurrently doing individual actions, then the individuals will privately
-intend to do their share relative to the joint intention.
-
-The notion of an agent’s commitment to achieving some state in the world is
-expressed as a persistent goal or PGOAL in Joint Intentions Theory
-\cite{cohen:intention-commitment}. An agent x has a persistent goal (PGOAL x p
-q) if x wants p to become true and cannot give up the goal until it believes
-that p is accomplished, or is impossible, or is irrelevant. An intention to do
-an action is defined as a persistent goal in which the agent is committed to
-performing the action believing throughout that it is doing that action.
-
-Bratman in \cite{bratman:intentions-plans} has argued that intentions noramlly
-pose the problems for the agent and agents needs to determine an action to
-achieve those intentions. He also argued that intentions constrain an agent’s
-choice of what else it can intend, and they provide the context for an agent’s
-replanning when something goes wrong. The commitment to joint activity leads to
-a need to communicate.
-
-Finally, the definition of the overall plan in terms of constituent plans of
-individuals or groups is recursive, with the recursion ending at the level of
-basic, individual actions \cite{grosz:mice-menus}.
-
-Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
-\cite{lochbaum:plan-models} present a model of plans to account for how agents
-with partial knowledge collaborate in the construction of a domain plan. Agents
-have a library of partially speci ed plan schemas (recipes). These recipes might
-be underspeci ed as to how an action is executed or how an action contributes to
-a goal. Agents then collaborate in constructing a shared plan by uttering
-statements about their beliefs and intentions about the plan. This collaboration
-will terminate with each agent mutually believing that each act in the plan can
-be executed by one of the agents, that that agent intends to perform the act,
-and that each act in the plan contributes to the goal.
-
-Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
-\cite{lochbaum:plan-models} are interested in the type of plans that underlie
-discourse in which the agents are collaborating in order to achieve a shared
-goal. They propose that agents are building a shared plan in which participants
-have a collection of beliefs and intentions about the actions in the plan.
-
-Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
-\cite{lochbaum:plan-models} model how several agents with partial knowledge
-collaborate on constructing a shared domain plan . Each agent communicates their
-beliefs and intentions by making utterances about what actions they can
-contribute to the shared plan. Collaboration is again modelled by the agents
-establishing a mutual belief that each action in the shared plan contributes to
-the goal of the plan, and that each action can and will be performed by one of
-the agents.
-
-\textit{Shared plan} is another essential concept in the collaboration context.
-The definition of the shared plan is derived from the definition of plans
-Pollack introduced in \cite{pollack:plan-inference,
-pollack:plan-mental-attitudes} since it rests on a detailed treatment of the
-relations among actions and it distinguishes the intentions and beliefs of an
-agent about those actions. However, since Pollack's plan model is just a simple
-plan of a single agent, Grosz and Sidner extended that to plans of two or more
-collaborative agents. The concept of the shared plan provides a framework in
-which to further evaluate and explore the roles that particular beliefs and
-intentions play in collaborative activity \cite{lochbaum:plan-models}. However,
-this formulation of shared plans (a) could only deal with activities that
-directly decomposed into single-agent actions, (b) did not address the
-requirement for the commitment of the agents to their joint activities, and (c)
-did not adequately deal with agents having partial recipes
-\cite{grosz:collaboration}. Grosz and Kraus in \cite{grosz:collaboration},
-reformulate Pollack's definition of the individual plans
-\cite{pollack:plan-mental-attitudes}, and also revise and expand the SharedPlans
-to address these shortcomings.
-
-\subsubsection{Coordinated Cultivation of SharedPlans}
-
-Grosz and Hunsberger \cite{grosz:ccsp} claim to reconcile the two approaches.
-They provide the ``Coordinated Cultivation of SharedPlans" (CCSP) model, which,
-while relying solely on individual intention, captures the essential properties
-argued for in accounts that require group-oriented intention. CCSP also provides
-a general architecture for collaboration-capable agents.
+\begin{enumerate}[a)]
+  \item \textbf{Mutual commitment to joint activity} -- which can be achieved by
+  agreement on the joint activity, and preventing to abondon activity without
+  involving teammates;
+  \item \textbf{Mutual suppport} -- which can be achieved by team members
+  if they actively try to help teammate activity;
+  \item \textbf{Mutual Responsiveness} -- which means team members should take
+  over tasks from teammates if necessary.
+\end{enumerate}
 
 \subsection{Hybrid Collaboration Approaches}
 
