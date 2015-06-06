@@ -85,7 +85,29 @@ Gricean intentions at the utterance level \cite{neale:grice-language}.
 Cohen and Levesque also mention that in Joint Intentions theory their view of
 intention is primarily future-directed \cite{cohen:intention-commitment} which
 makes their view along with the Bratman's theory of intention
-\cite{bratman:intention}, contra Searle \cite{searle:collective}.
+\cite{bratman:intention}, contra Searle \cite{searle:collective}.\\
+
+\textbf{Commitment} -- One of the most important concepts of teamwork and
+collaboration is the concept of commitment. Collaboration theories require to
+meet the notion of commitment, otherwise the participants are just doing some
+coordinated works. Since the prominent computational collaboration theories,
+reviewed in this paper, are based on Bratman's view of intention, here we
+briefly provide his view of commitment before describing these theories. Bratman
+defines certain prerequisites for an activity to be considered shared and
+cooperative \cite{bratman:shared-activity}. He stresses the importance of:
+
+\begin{enumerate}[a)]
+  \item \textbf{Mutual commitment to joint activity} -- which can be achieved by
+  agreement on the joint activity, and preventing to abondon activity without
+  involving teammates;
+  \item \textbf{Mutual suppport} -- which can be achieved by team members
+  if they actively try to help teammate activity;
+  \item \textbf{Mutual responsiveness} -- which means team members should take
+  over tasks from teammates if necessary.
+\end{enumerate}
+
+In the following sections, we are going to see how each collaboration theory
+addresses the notion of commitment.
 
 \subsection{Joint Intentions Theory}
 \label{sec:joint-intentions}
@@ -251,52 +273,39 @@ respective roles and capabilities of each member.
 \subsection{SharedPlans Theory}
 \label{sec:sharedplans}
 
-The SharedPlans theory explains how a group of agents can incrementally form and
+The SharedPlans model of collaborative action \cite{grosz:planning-acting,
+grosz:collaboration, grosz:plans-discourse} aims to provide the theoretical
+foundations needed for building collaborative robots/agents
+\cite{grosz:collaborative-systems}. SharedPlans is a general theory of
+collaborative planning that requires no notion of joint intentions (see
+Section \ref{sec:joint-intentions}), accommodates multi-level action
+decomposition hierarchies and allows the process of expanding and elaborating
+partial plans into full plans (see Section \ref{sec:full-partial-plan}).
+SharedPlans theory explains how a group of agents can incrementally form and
 execute a shared plan that then guides and coordinates their activity towards
 the accomplishment of a shared goal.
 
-SharedPlans is a general theory of collaborative planning that requires no
-notion of joint intentions, accommodates multi-level action decomposition
-hierarchies and allows the process of expanding and elaborating partial plans
-into full plans (see Section \ref{sec:full-partial-plan}).
+Grosz and Sidner in \cite{grosz:plans-discourse} present a model of plans to
+account for how agents with partial knowledge collaborate in the construction of
+a domain plan. They are interested in the type of plans that underlie discourse
+in which the agents are collaborating in order to achieve a shared goal. They
+propose that agents are building a shared plan in which participants have a
+collection of beliefs and intentions about the actions in the plan. Agents have
+a library of how do their actions, i.e. recipes (see Section \ref{sec:recipe}).
+These recipes might be partially specified as to how an action is executed, or
+contributes to a goal (see Section \ref{sec:full-partial-plan}). Then, each
+agent communicates their beliefs and intentions by making utterances about what
+actions they can contribute to the shared plan (see Section \ref{sec:shared}).
+This communication leads the construction of a shared plan, as well as
+terminating the collaboration with each agent mutually believing that there
+exists one agent who is going to execute an action in the plan, and the fact
+that that agent has intention to perform the action, and that each action in the
+plan contributes to the goal \cite{grosz:plans-discourse}
+\cite{lochbaum:plan-models}.
 
-Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
-\cite{lochbaum:plan-models} present a model of plans to account for how agents
-with partial knowledge collaborate in the construction of a domain plan. Agents
-have a library of partially specified plan schemas (recipes). These recipes
-might be underspecified as to how an action is executed or how an action
-contributes to a goal. Agents then collaborate in constructing a shared plan by
-uttering statements about their beliefs and intentions about the plan. This
-collaboration will terminate with each agent mutually believing that each act in
-the plan can be executed by one of the agents, that that agent intends to
-perform the act, and that each act in the plan contributes to the goal.
-
-Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
-\cite{lochbaum:plan-models} are interested in the type of plans that underlie
-discourse in which the agents are collaborating in order to achieve a shared
-goal. They propose that agents are building a shared plan in which participants
-have a collection of beliefs and intentions about the actions in the plan.
-
-Grosz, Sidner and Lochbaum in \cite{grosz:plans-discourse} and
-\cite{lochbaum:plan-models} model how several agents with partial knowledge
-collaborate on constructing a shared domain plan . Each agent communicates their
-beliefs and intentions by making utterances about what actions they can
-contribute to the shared plan. Collaboration is again modelled by the agents
-establishing a mutual belief that each action in the shared plan contributes to
-the goal of the plan, and that each action can and will be performed by one of
-the agents.
-
-
-
-The SharedPlans model of collaborative action \cite{grosz:planning-acting}
-\cite{grosz:collaboration} \cite{grosz:plans-discourse} aims to provide the
-theoretical foundations needed for building collaborative robots/ agents
-\cite{grosz:collaborative-systems}. It specifies four key characteristics for
+ It specifies four key characteristics for
 participants in a group activity to be collaborative partners, and thus for
-their joint activity to be collaborative. The SharedPlans definition states that
-for a group activity to be collaborative, the collaborators must have:
-
-Look at this carefully!!!
+their joint activity to be collaborative.
 
 \begin{enumerate}[a)]
   \item individual intentions that the group perform the group activity;
@@ -320,6 +329,7 @@ The formalization presented in \cite{grosz:collaboration} uses first-order
 logic.
 
 \subsubsection{Recipes}
+\label{sec:recipe}
 
 The SharedPlans definition of mutual beliefs states that when agents have a
 shared plan for doing some action, they must hold mutual beliefs about the way
@@ -376,6 +386,7 @@ astronaut's measurement action or prevent the robot from using astronaut's
 measurement tool \cite{grosz:collaborative-systems, grosz:plans-discourse}.
 
 \subsubsection{Shared Plans}
+\label{sec:shared}
 
 Grosz and Sidner propose that collaboration must have the following three
 elements:
@@ -542,21 +553,6 @@ that} does not necessarily entail this commitment. The key point about
 not to adopt conflicting intentions, and constrain replanning in case of
 failure. Further, an agent can \textit{intention that} another agent achieve the
 specified proposition.
-
-\subsubsection{Commitment}
-
-Bratman defines certain prerequisites for an activity to be considered shared
-and cooperative \cite{bratman:shared-activity}. He stresses the importance of:
-
-\begin{enumerate}[a)]
-  \item \textbf{Mutual commitment to joint activity} -- which can be achieved by
-  agreement on the joint activity, and preventing to abondon activity without
-  involving teammates;
-  \item \textbf{Mutual suppport} -- which can be achieved by team members
-  if they actively try to help teammate activity;
-  \item \textbf{Mutual Responsiveness} -- which means team members should take
-  over tasks from teammates if necessary.
-\end{enumerate}
 
 \subsection{Hybrid Collaboration Approaches}
 
