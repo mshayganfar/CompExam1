@@ -502,47 +502,59 @@ their goal. For instance, it can help team members to establish and maintain a
 set of mutual beliefs regarding the current state of the collaboration, and the
 respective roles and capabilities of each member.
 
-\subsection{Hybrid Collaboration Approaches}
-
-\subsubsection{Hybrid Collaboration Approaches}
+\subsection{STEAM -- A Hybrid Collaboration Approach}
 
 Tambe in \cite{tambe:flexible-teamwork} argues that teamwork in complex,
 dynamic, multi-agent domains requires the agent to obtains flexibility and
-reusability by using integrated capabilities. Tambe created STEAM based on this
-idea. STEAM's operationalization in complex, real-world domains is the key in
-its development to address important teamwork issues some of which are discussed
-in Section \ref{sec:applicaiton}. STEAM is founded on the Joint Intentions
-theory and it uses joint intentions as the basic building block of teamwork.
-According to Tambe's claim, several advantages accrue due to the this use of
-Joint Intentions theory, such as achieving a principled framework for reasoning
-about coordination and communication in a team which the joint intention can
-provide. Or, the guidance for monitoring and maintenance of a team activity
-which again the joint commitment in joint intention provides. Ans lastly, Tambe
-believes the joint intention in a team can facilitate reasoning about team
-activity and team member's contribution to that activity. However, he believes
-for a high level team goal, one single joint intention is not sufficient to
-achieve all these advantages. Thus, STEAM borrows some of the concepts of
-SharedPlans theory. First, STEAM uses the concept of ``intention that'' (see
-Section \ref{sec:sharedplans}) towards an activity as well as the fact that
-SharedPlans theory mandates team members' mutual belief in a common recipe and
-shared plans for individual steps in the common recipe. Thus, in this case,
-SharedPlans helps STEAM to achieve coherency of within the teamwork. However,
-STEAM uses joint intentions as a building block to ensure the teamwork coherency
-to build mental attitudes of team members. In other words, in STEAM as the
-recipe evolves, STEAM requires all team members to agree on execution of a step
-and form joint intentions to execute it while other joint intentions are formed,
-leading to a hierarchy. Second, is the amount of information that a team member
-needs to know to perform an action. According to SharedPlans, team members
-require to know only that a recipe exists to enable them to perform actions
-(not recipe details). Similarly in STEAM, team members only track the
-responsible subteam or individual team member to perform a specific step while
-this tracking does not need detailed plan recognition. The third issue is
+reusability by using integrated capabilities. Tambe created STEAM (simply, a
+\textbf{S}hell \textbf{TEAM}work) based on this idea. STEAM's operationalization
+in complex, real-world domains is the key in its development to address
+important teamwork issues some of which are discussed in Section
+\ref{sec:applicaiton}. STEAM is founded on the Joint Intentions theory and it
+uses joint intentions as the basic building block of teamwork while it is
+informed by key concepts from SharedPlans theory.
+
+Building on the well developed theory of joint intentions \cite{cohen:teamwork}
+and sharedPlans \cite{grosz:collaboration, grosz:plans-discourse}, the STEAM
+teamwork model \cite{tambe:flexible-teamwork} was operationalized as a set of
+domain independent rules that describe how teams should work together. According
+to Tambe's claim, several advantages accrue due to the this use of Joint
+Intentions theory, such as achieving a principled framework for reasoning about
+coordination and communication in a team which the joint intention can provide.
+Or, the guidance for monitoring and maintenance of a team activity which again
+the joint commitment in joint intention provides. And lastly, Tambe believes the
+joint intention in a team can facilitate reasoning about team activity and team
+members' contribution to that activity. 
+
+However, he also believes for a high level team goal, one single joint intention
+is not sufficient to achieve all these advantages. Thus, STEAM borrows some of
+the concepts of SharedPlans theory. First, STEAM uses the concept of ``intention
+that'' (see Section \ref{sec:sharedplans}) towards an activity as well as the
+fact that SharedPlans theory mandates team members' mutual belief in a common
+recipe and shared plans for individual steps in the common recipe. Thus, in this
+case, SharedPlans helps STEAM to achieve coherency within the teamwork. Besides,
+STEAM uses joint intentions to ensure the teamwork coherency to build mental
+attitudes of team members. In other words, in STEAM as the recipe evolves, STEAM
+requires all team members to agree on execution of a step and form joint
+intentions to execute it while other joint intentions are formed, leading to a
+hierarchy. Second, is the amount of information that a team member needs to know
+to perform an action. According to SharedPlans, team members require to know
+only that a recipe exists to enable them to perform actions (not recipe details
+-- see Section \ref{sec:recipe}). Similarly in STEAM, team members only track
+the responsible subteam or individual team member to perform a specific step
+while this tracking does not need detailed plan recognition. The third issue is
 parallel to what is called unreconciled case in SharedPlans theory which in
 STEAM, it is handled by replanning and communication between team members
 assigning the unassigned or unachieved task. The last issue is communication
 between team members which also borrows the concept of ``intention that'' from
-SharedPlans theory to help generalization of STEAM's comminication capabilities 
+SharedPlans theory to help generalization of STEAM's comminication capabilities
 beside what Joint Intenitons theory offers.
+
+In sum, STEAM builds on both Joint Intention Theory and SharedPlans Theory and
+tries to overcome their shortcomings. Based on joint intentions, STEAM builds up
+hierarchical structures that parallel the SharedPlans Theory. Hence, STEAM
+formalises commitments by building an  maintaining Joint Intentions, and uses
+SharedPlans to formulate the team's attitudes in complex tasks.
 
 In \cite{tambe:flexible-teamwork} Tambe argues that the novel aspects of STEAM
 relate to its teamwork capabilities. The key novelty in STEAM has team operators
@@ -571,36 +583,6 @@ significant \cite{tambe:agent-archtecture-teamwork}. Furthermore,
 operationalization of STEAM is based on enhancements to the Soar architecture
 \cite{laird:soar}, plus a set of about 300 domain-independent Soar rules.
 
-Building on the well developed theory of joint intentions \cite{cohen:teamwork}
-and shared plans \cite{grosz:plans-discourse} \cite{grosz:collaboration}, the
-STEAM teamwork model \cite{tambe:flexible-teamwork} was operationalized as a set
-of domain independent rules that describe how teams should work together.
-
-Tambe's work on \textit{STEAM teamwork model} \cite{tambe:flexible-teamwork}.
-
-STEAM enables explicit representation of team goals and plans, and team’s
-joint commitments.
-
-STEAM (Shell for Teamwork) builds on both Joint Intention Theory and Shared Plan
-Theory and tries to overcome their shortcomings. Based on joint intentions,
-STEAM builds up hierarchical structures that parallel the Shared Plan Theory as
-described in the previous chapter. Hence, STEAM formalises commitments by
-building an  maintaining Joint Intentions, and uses SharedPlans to formulate the
-team's attitudes in complex tasks.
-
-In \cite{tambe:flexible-teamwork} Tambe presents STEAM, an implemented model of
-teamwork based primarily on Cohen et al.'s theory of Joint Intentions, but
-informed by key concepts from SharedPlans. Following Cohen et al., a team
-initially adopts a joint intention for a high-level team goal that includes
-commitments to maintain the goal until it is deemed already achieved,
-unachievable or irrelevant. The agents then construct a hierarchy of individual
-and joint intentions analogous to partial SharedPlans. Tambe notes that as the
-hierarchy evolves, if a step involves only a subteam then that subteam must form
-a joint intention to perform that step, and the remaining team members need only
-track the subteam's joint intention, requiring that they be able to infer
-whether or not the subteam intends to, or is able to, execute that step
-\cite{hunsberger:shared-plans-easier}.
-
 \subsection{Other Approaches}
 
 There are other frameworks, approaches, and models focusing on teamwork and
@@ -608,15 +590,15 @@ collaborative agents. For instance, Jennings provides the Joint Responsibility
 framework which is specified formally using modal, temporal logics. Joint
 Responsibility stresses the role of joint intentions (based on Joint Intentions
 theory) specifying how both individuals and teams should behave whilst engaged
-in collaborative problem solving \cite{jennings:joint-intention-hybrid}
-\cite{jennings:joint-responsibility} \cite{jennings:on-responsible}
-\cite{jennings:joint-responsibility-dynamic}. Jennings has developed Generic
-Rules and Agent model Testbed Environment (GRATE) as a prototype system based on
-Joint Responsibility framework. In \cite{kinny:planned-team} Kinny et.
-al. introduce a language for representing joint plans for teams of agents and
-describe how agents can organize the formation of a skilled team to achieve a
-joint goal. They use joint intentions to capture the mental properties which
-characterize team activity.
+in collaborative problem solving \cite{jennings:joint-responsibility,
+jennings:on-responsible, jennings:joint-intention-hybrid,
+jennings:joint-responsibility-dynamic}. Jennings has developed \textit{Generic
+Rules and Agent model Testbed Environment} (GRATE) as a prototype system based
+on Joint Responsibility framework. In \cite{kinny:planned-team} Kinny et.
+al. elaborate the concept of Planned Team Activity and introduce a language for
+representing joint plans for teams of agents and describe how agents can
+organize the formation of a skilled team to achieve a joint goal. They use joint
+intentions to capture the mental properties which characterize team activity.
 
 \section{Similarities and Differences}
 

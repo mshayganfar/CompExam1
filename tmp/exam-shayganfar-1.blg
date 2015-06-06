@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: exam-shayganfar-1.aux
 The style file: plain.bst
 Database file #1: mshayganfar.bib
-You've used 76 entries,
+You've used 75 entries,
             2118 wiz_defined-function locations,
-            911 strings with 17795 characters,
-and the built_in function-call counts, 29588 in all, are:
-= -- 2928
-> -- 1300
-< -- 39
-+ -- 527
-- -- 433
-* -- 1941
-:= -- 4628
-add.period$ -- 250
-call.type$ -- 76
-change.case$ -- 428
+            904 strings with 17515 characters,
+and the built_in function-call counts, 29186 in all, are:
+= -- 2883
+> -- 1293
+< -- 37
++ -- 524
+- -- 431
+* -- 1919
+:= -- 4572
+add.period$ -- 246
+call.type$ -- 75
+change.case$ -- 424
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 1271
-empty$ -- 2434
-format.name$ -- 433
-if$ -- 6495
+cite$ -- 75
+duplicate$ -- 1250
+empty$ -- 2396
+format.name$ -- 431
+if$ -- 6399
 int.to.chr$ -- 0
-int.to.str$ -- 76
-missing$ -- 82
-newline$ -- 383
-num.names$ -- 162
-pop$ -- 540
+int.to.str$ -- 75
+missing$ -- 81
+newline$ -- 378
+num.names$ -- 160
+pop$ -- 535
 preamble$ -- 1
-purify$ -- 362
+purify$ -- 359
 quote$ -- 0
-skip$ -- 927
+skip$ -- 910
 stack$ -- 0
-substring$ -- 1846
-swap$ -- 403
-text.length$ -- 39
+substring$ -- 1817
+swap$ -- 393
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 288
+type$ -- 284
 warning$ -- 0
-while$ -- 287
-width$ -- 78
-write$ -- 855
+while$ -- 282
+width$ -- 77
+write$ -- 842

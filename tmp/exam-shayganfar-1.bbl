@@ -191,13 +191,6 @@ Jerry~R. Hobbs, Alicia Sagae, and Suzanne Wertheim.
 \newblock In {\em Formal Ontology in Information Systems - Proceedings of the
   Seventh International Conference}, pages 249--262, 2012.
 
-\bibitem{hunsberger:shared-plans-easier}
-Luke Hunsberger.
-\newblock {Making Shared Plans More Concise and Easier to Reason About}.
-\newblock In {\em Proceedings of the 5th International Workshop on Intelligent
-  Agents V : Agent Theories, Architectures, and Languages ({ATAL}-98)}, volume
-  1555, pages 81--98. Springer-Verlag: Heidelberg, Germany, 1999.
-
 \bibitem{hunsberger:auction-collaborative}
 Luke Hunsberger and Barbara~J. Grosz.
 \newblock A combinatorial auction for collaborative planning.
