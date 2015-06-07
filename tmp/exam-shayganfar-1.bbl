@@ -366,13 +366,6 @@ Jeff Rickel, Neal Lesh, Charles Rich, Candace~L. Sidner, and Abigail Gertner.
 \newblock In {\em Proceedings Sixth International Conference on Intelligent
   Tutoring Systems}, 2002.
 
-\bibitem{scerri:robot-agent-person}
-Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
-  Schurr, and Milind Tambe.
-\newblock A prototype infrastructure for distributed robot-agent-person teams.
-\newblock In {\em The Second International Joint Conference on Autonomous
-  Agents and Multiagent Systems}, 2003.
-
 \bibitem{scerri:prototype-distributed-teams}
 Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
   Schurr, and Milind Tambe.
@@ -380,6 +373,13 @@ Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
 \newblock In {\em Proceedings of the Second International Joint Conference on
   Autonomous Agents and Multiagent Systems}, AAMAS '03, pages 433--440, New
   York, NY, USA, 2003. ACM.
+
+\bibitem{scerri:robot-agent-person}
+Paul Scerri, David Pynadath, Lewis Johnson, Paul Rosenbloom, Mei Si, Nathan
+  Schurr, and Milind Tambe.
+\newblock A prototype infrastructure for distributed robot-agent-person teams.
+\newblock In {\em The Second International Joint Conference on Autonomous
+  Agents and Multiagent Systems}, 2003.
 
 \bibitem{searle:collective}
 John~R. Searle.

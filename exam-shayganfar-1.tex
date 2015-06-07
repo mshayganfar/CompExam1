@@ -666,7 +666,7 @@ which we address some of them here in this section:
   theory.
 \end{enumerate}
 
-\textbf{A Critique to Joint Intention theory} -- Castelfranchi critisizes the
+\textbf{A critique to Joint Intention theory} -- Castelfranchi critisizes the
 necessary and sufficient conditions (see Section \ref{sec:joint-intentions}) for
 joint persistent goal which plays a crucial role in the Joint Intentions theory.
 According to his example, if a French and an American scientists both are
@@ -688,166 +688,16 @@ might come to strongly comete with each other
 \section{Application in Human-Computer Collaboration}
 \label{sec:applicaiton}
 
-COLLAGEN \cite{rich:collaboration-manager,rich:discourse} is the first
-implemented system based on the SharedPlans theory. It incorporates certain
-algorithms for discourse generation and interpretation, and is able to maintain
-a segmented interaction history, which facilitates the discourse between human
-user and the intelligent agent. The model includes two main parts: (1) a
-representation of discourse state and (2) a discourse interpretation algorithm
-utterances of the user and agent \cite{rickel:discourse-theory-dialogue}.
+There are many research focusing on different aspects of collaboration based on
+different collaboration theories, i.e., SharedPlans, Joint Intentions, and
+hybrid theories of collaboration. In this section, we provide some of the examples
+of homogeneous and heterogeneous agent/robot and human collaboraitons.
 
-In \cite{heeman:model-collaboration-referring} Heeman presents a computational
-model of how a conversational participant collaborates in order to make a
-referring action successful. The model is based on the view of language as
-goal-directed behaviour, and in his work, he refers to SharedPlans as part of
-the planning and conversation literature.
-
-In \cite{lochbaum:plan-models}, Lochbaum and Sidner modify and expand the
-SharedPlan model of collaborative behavior \cite{grosz:plans-discourse}. They
-present an algorithm for updating an agent’s beliefs about a partial shared plan
-and describe an initial implementation of this algorithm in the domain of
-network management. Lochbaum, also in \cite{lochbaum:collaborative-planning},
-provides a computational model (based on the collaborative planning framework
-of SharedPlans \cite{grosz:collaboration}) for recognizing intentional structure
-and utilizing it in discourse processing. In short, she presents a SharedPlans
-model for recognizing Discourse Segment Purposes (DSPs)
-\cite{grosz:plans-discourse} \cite{sidner:discourse-collaborative-negotiation}
-and their interrelationships.
-
-The system GRATE* by Jennings \cite{jennings:joint-intention-hybrid} is based on
-the Joint Intention Theory. GRATE* provides a rule-based modelling approach to
-cooperation using the notion of Joint Responsibilities, which in turn is based
-on Join Intentions. GRATE* is geared towards industrial settings in which both
-agents and the communication between them can be considered to be reliable.
-
-CAST (Collaborative Agents for Simulating Teamwork) \cite{yen:cast}
-\cite{yin:knowledge-based-sharedplans} is a teamwork framework based on the
-SharedPlans Theory. CAST focuses on flexibility in dynamic environments and on
-proactive information exchange enabled by anticipating what information team
-members will need. Petri Nets are used to represent both the team structure and
-the teamwork process, i.e., the plans to be executed.
-
-Researchers in \cite{hobbs:microsociology-relationship} discuss developing an
-ontology of microsocial concepts for use in an instructional system for teaching
-cross-cultural communication. They believe being acquainted with one another is
-not a strong enough relationship to create a society from. Hence, there is a
-need for commitment and shared plans (as the basis of social life) to achieve a
-shared goal. In this work, Gorsz and Sidner's SharedPlans theory
-\cite{grosz:plans-discourse} is used to explain the concept of shared plans
-within the interpersonal relationships of societies in an industrial
-environment.
-
-In \cite{hunsberger:auction-collaborative} Hunsberger and Grosz discuss the idea
-of whether the rational, utility-maximizing agents should determine commiting to
-a group activity when there is an opportunity to collaborate. They call this
-problem as the ``initial-commitment decision problem'' (ICDP) and provide a
-mechanism that agents can use to dolve the ICDP. They use the representation of
-action, act-types and recepies in the SharedPlans theory.
-
-In \cite{zamfirescu:gdss} an integrated agent-based model for Group Decision
-Support Systems is proposed and discussed. The decisional model that authors
-outline in this paper is based on the SharedPlans theory.
-
-Rauenbusch and Grosz in \cite{rauenbusch:decision-making-planning} formally
-define a search problem with search operators that correspond to the team
-planning decisions. They provide an algorithm for making the three types of
-interrelated decisions by recasting the problem as a search problem. Their model
-respects the constraints on mental states specified by the SharedPlans theory of
-collaboration.
-
-In \cite{marsella:robocup} authors provide their in RoboCup (robotics soccer
-testbed) in which their focus is on teamwork and learning challenges. Their
-research investigationin RobotCup is based on ISI Synthetic, a team of synthetic
-soccer-players. They also investigate the use of STEAM as their model of
-teamwork which is influenced by the Joint Intentions and SharedPlans theories.
-
-Babaian et. al. ini \cite{babaian:writers-assistant} describe Writer’s Aid, a
-system that deploys AI planning techniques to enable it to serve as an author’s
-collaborative assistant. While an author writes a document, Writer’s Aid helps
-in identifying and inserting citation keys and by autonomously finding and
-caching potentially relevant papers and their associated bibliographic
-information from various on-line sources. They believe the underlying concepts
-of SharedPlans is relevent since in collaborative interfaces like Writer’s Aid,
-the users establish shared goals with the system and user and the system
-both take initiative in satisfying them.
-
-In \cite{montreuil:planning-robot-activity} researchers address high-level robot
-planning issues for an interactive cognitive robot that acts in presence or in
-collaboration with a human partner. They describe a Human Aware Task Planner
-(HATP) which is designed to provide socially acceptable plans to achieve
-collaborative tasks. They use notions of plans based on SharedPlans theory.
-
-In \cite{sidner:enagagement-robot} Sidner and Dzikovska argue that robots, in
-order to participate in conversations with humans, need to make use of
-conventions of conversation and the means to be connected to their human
-counterparts. They provide an initial research on engagement in human-human
-interaction and applications to stationary robots in hosting activities. They
-believe hosting activities are collaborative because neither party completely
-determines the goals to be undertaken nor the means of reaching the goal. To
-build a robot host, they rely on an agent built using Collagen which is
-implemented based on the SharedPlans theory.
-
-In \cite{kinny:planned-team} authors introduce a language for representing joint
-plans for teams of agents. They describe how agents can organize the formation
-of a suitably skilled team to achieve a joint goal, and they explain how such a
-team can execute these plans to generate complex, synchronized team activity. In
-this paper, authors adopt the underlying concepts of the Joint Intentions theory
-as the structure of their collaborative agents.
-
-Breazeal et. al. in \cite{breazeal:humanoid-robots} present an overview of their
-work towards building socially intelligent, cooperative humanoid robots,
-Leonardo, that can collaborate and learn in partnership with humans. They employ
-the Joint Intentions theory of collaboration to implement the collaborative
-behaviors while performing a task in collaboration with humans.
-
-In \cite{subramanian:joint-intention-dialogue} researchers' goal is to develop
-an architecture (based on the concepts of Joint Intentions theory) that can
-guide an agent during collaborative teamwork. They describe how a joint
-intention interpreter that is integrated with a reasoner over beliefs and
-communicative acts can form the core of a dialogue engine. Ultimately, the
-system engages in dialogue through the planning and execution of communicative
-acts necessary to attain the collaborative task at hand.
-
-Mutlu et. al. in \cite{mutlu:coordination-robot} discuss key mechanisms for
-effective coordination toward informing the design of communication and
-coordination mechanisms for robots. They present two illustrative studies that
-explore how robot behavior might be designed to employ these mechanisms
-(particularly joint attention and action observation) to improve measure of task
-performance in human-robot collaboration. Their work uses Joint Intentions
-theory to develop shared task representations and strategies for task
-decomposition.
-
-In \cite{kabil:coordination-mechanisms} researchers propose a behavioral
-architecture C$^2$BDI that allows to enhance the knowledge sharing using natural
-language communication between team members. They define collaborative
-conversation protocols that provide proactive behavior to agents for the
-coordination between team members. Their agent architecture provides
-deliberative and conversational behaviors for collaboration, and it is based
-on both of the SharedPlans and Joint Intentions theories.
-
-This domain independent teamwork model, STEAM, has been successfully applied to
-a variety of domains.  From combat air missions
-\cite{hill:synthetic-battlefield-aircraft} to robot soccer \cite{kitano:robocup}
-to teams supporting human organizations
-\cite{pynadath:teamwork-heterogeneous-agents} to rescue response
-\cite{scerri:robot-agent-person}, applying the same set of STEAM rules has
-resulted in successful coordination between heterogeneous agents. The successful
-use of the same teamwork model in a wide variety of diverse domains provides
-compelling evidence that it is the principles of team- work, rather than
-exploitation of speciØc domain phenomena, that underlies the success of teamwork
-based approaches.
-
-There are many research focusing
-on different aspects of collaboration each of which are different than my own
-work. In my thesis, I focus on emotion functions and how they impact
-collaboration's structure and processes, and how the dynamics of the
-collaboration structure influences emotion-regulated processes. Some of the
-other works focus on the concepts of robot assistants
+There are some works focusing on the concepts of robot assistants
 \cite{clancey:agent-assistants-collaboration}, or teamwork and its challenges in
-cognitive and behavioral levels \cite{cohen:teamwork,
-nikolaidis:collaboration-joint-action, scerri:prototype-distributed-teams,
-tambe:flexible-teamwork}. Some researchers have an overall look at a
-collaboration concept at the architectural level. In
+cognitive and behavioral levels \cite{nikolaidis:collaboration-joint-action,
+scerri:prototype-distributed-teams}. Some researchers
+have an overall look at a collaboration concept at the architectural level. In
 \cite{garcia:collaboration-emotional-awareness} authors present a collaborative
 architecture, COCHI, to support the concept of emotional awareness. In
 \cite{esau:integrating-emotion-collaboration} authors present the integration of
@@ -855,8 +705,8 @@ emotional competence into a cognitive architecture which runs on a robot, MEXI.
 In \cite{sofge:collaboration-humanoid-space} authors discuss the challenges of
 integrating natural language, gesture understanding and spatial reasoning of a
 collaborative humanoid robot situated in the space. The importance of
-communication during collaboration has been considered by some researchers from
-human-computer interaction and human-robot collaboration
+communication during collaboration has been also considered by some researchers
+from human-computer interaction and human-robot collaboration
 \cite{clair:action-intention-collaboraiton,
 matignon:verbal-nonverbal-collaboration, rich:discourse} to theories describing
 collaborative negotiation, and discourse planning and structures
@@ -865,10 +715,138 @@ sidner:discourse-collaborative-negotiation}. There are other concepts such as
 joint actions and commitments \cite{grosz:intention-dynamics-collaboration},
 dynamics of intentions during collaboration \cite{levesque:acting-together}, and
 task-based planning providing more depth in the context of collaboration
-\cite{burghart:cognitive-architecture-robot, rich:cea}.
+\cite{burghart:cognitive-architecture-robot, rich:cea}. The concept of
+collaboration has also received attention in the industry and in research in
+robotic laboratories \cite{green:collaboration-literature-review}.
 
-The concept of collaboration has also received attention in the industry and in
-research in robotic laboratories \cite{green:collaboration-literature-review}.
+\textbf{Applications of SharedPlans Theory} -- COLLAGEN
+\cite{rich:collaboration-manager, rich:discourse} is the first implemented
+system based on the SharedPlans theory. It incorporates certain algorithms for
+discourse generation and interpretation, and is able to maintain a segmented
+interaction history, which facilitates the discourse between human user and the
+intelligent agent. The model includes two main parts: (1) a representation of
+discourse state and (2) a discourse interpretation algorithm utterances of the
+user and agent \cite{rickel:discourse-theory-dialogue}. In
+\cite{heeman:model-collaboration-referring} Heeman presents a computational
+model of how a conversational participant collaborates in order to make a
+referring action successful. The model is based on the view of language as
+goal-directed behaviour, and in his work, he refers to SharedPlans as part of
+the planning and conversation literature. In \cite{lochbaum:plan-models},
+Lochbaum and Sidner modify and expand the SharedPlan model of collaborative
+behavior \cite{grosz:plans-discourse}. They present an algorithm for updating an
+agent’s beliefs about a partial shared plan and describe an initial
+implementation of this algorithm in the domain of network management. Lochbaum,
+also in \cite{lochbaum:collaborative-planning}, provides a computational model
+(based on the collaborative planning framework of SharedPlans
+\cite{grosz:collaboration}) for recognizing intentional structure and utilizing
+it in discourse processing. In short, she presents a SharedPlans model for
+recognizing Discourse Segment Purposes (DSPs) \cite{grosz:plans-discourse}
+\cite{sidner:discourse-collaborative-negotiation} and their interrelationships.
+CAST (Collaborative Agents for Simulating Teamwork) \cite{yen:cast}
+\cite{yin:knowledge-based-sharedplans} is a teamwork framework based on the
+SharedPlans Theory. CAST focuses on flexibility in dynamic environments and on
+proactive information exchange enabled by anticipating what information team
+members will need. Petri Nets are used to represent both the team structure and
+the teamwork process, i.e., the plans to be executed. Researchers in
+\cite{hobbs:microsociology-relationship} discuss developing an ontology of
+microsocial concepts for use in an instructional system for teaching
+cross-cultural communication. They believe being acquainted with one another is
+not a strong enough relationship to create a society from. Hence, there is a
+need for commitment and shared plans (as the basis of social life) to achieve a
+shared goal. In this work, Gorsz and Sidner's SharedPlans theory
+\cite{grosz:plans-discourse} is used to explain the concept of shared plans
+within the interpersonal relationships of societies in an industrial
+environment. In \cite{hunsberger:auction-collaborative} Hunsberger and Grosz
+discuss the idea of whether the rational, utility-maximizing agents should
+determine commiting to a group activity when there is an opportunity to
+collaborate. They call this problem as the ``initial-commitment decision
+problem'' (ICDP) and provide a mechanism that agents can use to dolve the ICDP.
+They use the representation of action, act-types and recepies in the SharedPlans
+theory. In \cite{zamfirescu:gdss} an integrated agent-based model for Group
+Decision Support Systems is proposed and discussed. The decisional model that
+authors outline in this paper is based on the SharedPlans theory. Rauenbusch and
+Grosz in \cite{rauenbusch:decision-making-planning} formally define a search
+problem with search operators that correspond to the team planning decisions.
+They provide an algorithm for making the three types of interrelated decisions
+by recasting the problem as a search problem. Their model respects the
+constraints on mental states specified by the SharedPlans theory of
+collaboration. Babaian et. al. ini \cite{babaian:writers-assistant} describe
+Writer’s Aid, a system that deploys AI planning techniques to enable it to serve
+as an author’s collaborative assistant. While an author writes a document,
+Writer’s Aid helps in identifying and inserting citation keys and by
+autonomously finding and caching potentially relevant papers and their
+associated bibliographic information from various on-line sources. They believe
+the underlying concepts of SharedPlans is relevent since in collaborative
+interfaces like Writer’s Aid, the users establish shared goals with the system
+and user and the system both take initiative in satisfying them. In
+\cite{montreuil:planning-robot-activity} researchers address high-level robot
+planning issues for an interactive cognitive robot that acts in presence or in
+collaboration with a human partner. They describe a Human Aware Task Planner
+(HATP) which is designed to provide socially acceptable plans to achieve
+collaborative tasks. They use notions of plans based on SharedPlans theory. In
+\cite{sidner:enagagement-robot} Sidner and Dzikovska argue that robots, in order
+to participate in conversations with humans, need to make use of conventions of
+conversation and the means to be connected to their human counterparts. They
+provide an initial research on engagement in human-human interaction and
+applications to stationary robots in hosting activities. They believe hosting
+activities are collaborative because neither party completely determines the
+goals to be undertaken nor the means of reaching the goal. To build a robot
+host, they rely on an agent built using Collagen which is implemented based on
+the SharedPlans theory.\\
+
+\textbf{Applications of Joint Intentions Theory} -- In \cite{kinny:planned-team}
+authors introduce a language for representing joint plans for teams of agents.
+They describe how agents can organize the formation of a suitably skilled team
+to achieve a joint goal, and they explain how such a team can execute these
+plans to generate complex, synchronized team activity. In this paper, authors
+adopt the underlying concepts of the Joint Intentions theory as the structure of
+their collaborative agents. Breazeal et. al. in \cite{breazeal:humanoid-robots}
+present an overview of their work towards building socially intelligent,
+cooperative humanoid robots, Leonardo, that can collaborate and learn in
+partnership with humans. They employ the Joint Intentions theory of
+collaboration to implement the collaborative behaviors while performing a task
+in collaboration with humans. In \cite{subramanian:joint-intention-dialogue}
+researchers' goal is to develop an architecture (based on the concepts of Joint
+Intentions theory) that can guide an agent during collaborative teamwork. They
+describe how a joint intention interpreter that is integrated with a reasoner
+over beliefs and communicative acts can form the core of a dialogue engine.
+Ultimately, the system engages in dialogue through the planning and execution of
+communicative acts necessary to attain the collaborative task at hand. Mutlu et.
+al. in \cite{mutlu:coordination-robot} discuss key mechanisms for effective
+coordination toward informing the design of communication and coordination
+mechanisms for robots. They present two illustrative studies that explore how
+robot behavior might be designed to employ these mechanisms (particularly joint
+attention and action observation) to improve measure of task performance in
+human-robot collaboration. Their work uses Joint Intentions theory to develop
+shared task representations and strategies for task decomposition. The system
+GRATE* by Jennings \cite{jennings:joint-intention-hybrid} is based on the Joint
+Intention Theory. GRATE* provides a rule-based modelling approach to cooperation
+using the notion of Joint Responsibilities, which in turn is based on Join
+Intentions. GRATE* is geared towards industrial settings in which both agents
+and the communication between them can be considered to be reliable.\\
+
+\textbf{Applications of Hybrid Theories} -- This domain independent teamwork
+model, STEAM, has been successfully applied to a variety of domains.  From
+combat air missions \cite{hill:synthetic-battlefield-aircraft} to robot soccer
+\cite{kitano:robocup} to teams supporting human organizations
+\cite{pynadath:teamwork-heterogeneous-agents} to rescue response
+\cite{scerri:robot-agent-person}, applying the same set of STEAM rules has
+resulted in successful coordination between heterogeneous agents. The successful
+use of the same teamwork model in a wide variety of diverse domains provides
+compelling evidence that it is the principles of team- work, rather than
+exploitation of speciØc domain phenomena, that underlies the success of teamwork
+based approaches. In \cite{marsella:robocup} authors provide their in RoboCup
+(robotics soccer testbed) in which their focus is on teamwork and learning
+challenges. Their research investigationin RobotCup is based on ISI Synthetic, a
+team of synthetic soccer-players. They also investigate the use of STEAM as
+their model of teamwork which is influenced by the Joint Intentions and
+SharedPlans theories. In \cite{kabil:coordination-mechanisms} researchers
+propose a behavioral architecture C$^2$BDI that allows to enhance the knowledge
+sharing using natural language communication between team members. They define
+collaborative conversation protocols that provide proactive behavior to agents
+for the coordination between team members. Their agent architecture provides
+deliberative and conversational behaviors for collaboration, and it is based
+on both of the SharedPlans and Joint Intentions theories.
 
 \section{Conclusion}
 
