@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  6 JUN 2015 20:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  6 JUN 2015 21:56
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -277,14 +277,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 797--827
 [18]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ˜ in font cmr10!
- (./exam-shayganfar-1.bbl [19] [20]
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 868--885
+
+ []
+
+(./exam-shayganfar-1.bbl [20] [21]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ™ in font cmti10!
- [21] [22]
+ [22] [23]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [23] [24] [25]
+ [24] [25] [26]
 ! Misplaced alignment tab character &.
 l.407 \newblock Springer Science &
                                    Business Media, 2012.
@@ -298,7 +303,7 @@ might try typing `S' now just to see what is salvageable.
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ™ in font cmti10!
-[26]) [27] (./exam-shayganfar-1.aux) ) 
+[27]) [28] (./exam-shayganfar-1.aux) ) 
 Here is how much of TeX's memory you used:
  2530 strings out of 495028
  34610 string characters out of 6181497
@@ -318,10 +323,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on exam-shayganfar-1.pdf (27 pages, 259687 bytes).
+Output written on exam-shayganfar-1.pdf (28 pages, 261719 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
