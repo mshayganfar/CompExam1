@@ -23,8 +23,8 @@
 
 The construction of computer systems and robots that are intelligent,
 collaborative problem-solving partners is important in Artificial Intelligence
-(AI) and its applications. It has been always important for us to make computer
-systems better at helping us to do whatever they designed for. To build
+(AI) and its applications. It has always been important for us to make computer
+systems better at helping us to do whatever they are designed for. To build
 collaborative systems, we need to identify the capabilities that must be added
 to individual agents so that they can work with us or other agents. As Grosz
 says, collaboration must be designed into systems from the start; it cannot be
@@ -36,23 +36,23 @@ activities needed to satisfy a shared goal \cite{grosz:collaboration}.
 Collaboration involves several key properties both in structural and functional
 levels. For instance, most collaborative situations involve participants who
 have different beliefs and capabilities; most of the time collaborators only
-have partial knowledge of accomplishing the collaborative activities;
-collaborative plans are more than the sum of individual plans; collaborators
-require to maintain mutual beliefs about their shared goal through out the
-collaboration; they need to be able to communicate with others effectively;
-they need to commit to the group activities and to their role in it;
-collaborators need to commit to the success of others; they need to reconcile
-between commitments to existing collabortion and their other activities;
-and they need to interpret others' actions and utterances in the collaboration
-context \cite{grosz:mice-menus}. These collaboration properties are captured by
-the existing computational collaboration theoriess.
+have partial knowledge of the process of accomplishing the collaborative
+activities; collaborative plans are more than the sum of individual plans;
+collaborators are required to maintain mutual beliefs about their shared goal
+through out the collaboration; they need to be able to communicate with others
+effectively; they need to commit to the group activities and to their role in
+it; collaborators need to commit to the success of others; they need to
+reconcile between commitments to the existing collabortion and their other
+activities; and they need to interpret others' actions and utterances in the
+collaboration context \cite{grosz:mice-menus}. These collaboration properties
+are captured by the existing computational collaboration theories.
 
 As we mentioned, to be collaborative, partners, e.g., a robot and a human, need
 to meet the specifications stipulated by collaboration theories. These theories
 argue for an essential distinction between a collaboration and a simple
 interaction or even a coordination in terms of commitments
 \cite{grosz:shared-plans, lochbaum:collaborative-planning}. This document
-briefly provides description of major computational collaboration theories,
+briefly provides descriptions of major computational collaboration theories,
 their similarities and differences, and their application in AI and robotics. It
 primarily focuses on Joint Intention, SharedPlans and hybrid theories of
 collaboration. In this document, we do not present the theroies in formal
@@ -74,7 +74,7 @@ The SharedPlans theory is based on the theories of Bratman and Pollack
 pollack:plan-mental-attitudes}, who outline a mental-state view of plans in
 which having a plan is not just knowing how to do an action, but also having the
 intention to do the actions entailed. Bratman's views of intention goes back to
-philosophical views of Anscombe \cite{anscombe:intention} and
+the philosophical views of Anscombe \cite{anscombe:intention} and
 $Casta\tilde{n}eda$ \cite{castaneda:thinking} about intention. Also, as Grosz
 and Sidner mention in \cite{grosz:plans-discourse} the natural segmentation of
 discourse reflects intentional behaviors in each segment. These intentions are
@@ -84,22 +84,22 @@ Gricean intentions at the utterance level \cite{neale:grice-language}.
 
 Cohen and Levesque also mention that in Joint Intentions theory their view of
 intention is primarily future-directed \cite{cohen:intention-commitment} which
-makes their view along with the Bratman's theory of intention
+makes their view similar to Bratman's theory of intention
 \cite{bratman:intention}, contra Searle \cite{searle:collective}.\\
 
 \textbf{Commitment} -- One of the most important concepts of teamwork and
-collaboration is the concept of commitment. Collaboration theories require to
-meet the notion of commitment, otherwise the participants are just doing some
+collaboration is the concept of commitment. Collaboration theories are required
+to meet the notion of commitment, otherwise the participants are just doing some
 coordinated works. Since the prominent computational collaboration theories,
-reviewed in this paper, are based on Bratman's view of intention, here we
-briefly provide his view of commitment before describing these theories. Bratman
+reviewed in this paper, are based on Bratman's view of intention, we briefly
+provide his view of commitment here before describing these theories. Bratman
 defines certain prerequisites for an activity to be considered shared and
 cooperative \cite{bratman:shared-activity}. He stresses the importance of:
 
 \begin{enumerate}[a)]
   \item \textbf{Mutual commitment to joint activity} -- which can be achieved by
-  agreement on the joint activity, and preventing to abondon activity without
-  involving teammates;
+  agreement on the joint activity, and prevention of abandoning the activity
+  without involving teammates;
   \item \textbf{Mutual suppport} -- which can be achieved by team members
   if they actively try to help teammate activity;
   \item \textbf{Mutual responsiveness} -- which means team members should take
@@ -134,13 +134,13 @@ a domain plan. They are interested in the type of plans that underlie discourse
 in which the agents are collaborating in order to achieve a shared goal. They
 propose that agents are building a shared plan (see Section \ref{sec:shared}) in
 which participants have a collection of beliefs and intentions about the actions
-in the plan. Agents have a library of how do their actions, i.e. recipes (see
+in the plan. Agents have a library of how to do their actions, i.e. recipes (see
 Section \ref{sec:recipe}). These recipes might be partially specified as to how
 an action is executed, or contributes to a goal (see Section
 \ref{sec:full-partial-plan}). Then, each agent communicates their beliefs and
 intentions by making utterances about what actions they can contribute to the
 shared plan. This communication leads to the construction of a shared plan, as
-well as terminating the collaboration with each agent mutually believing that
+well as termination of the collaboration with each agent mutually believing that
 there exists one agent who is going to execute an action in the plan, and the
 fact that that agent has intention to perform the action, and that each action
 in the plan contributes to the goal \cite{grosz:plans-discourse}
@@ -163,24 +163,24 @@ doing some action, they must hold mutual beliefs about the way in which they
 should perform that action \cite{grosz:collaboration,grosz:plans-discourse}.
 Following Pollack \cite{pollack:plan-mental-attitudes}, the term recipe refers
 to what collaborators know when they know a way of doing an action. Recipes are
-specified at a particular level of detail. Although, the agents need to have
+specified at a particular level of detail. Although the agents need to have
 mutual beliefs about actions specified in the recipe, they do not need to have
 mutual beliefs about all levels of performing actions. Therefore, having mutual
-belief of the recipe means that the collaborators hold the same beliefs about
-the way in which an action should be accomplished. Consequently, the
+beliefs of the recipe means that the collaborators hold the same beliefs
+about the way in which an action should be accomplished. Consequently, the
 collaborators need to agree on how to execute an action. Recipes are
 aggregations of action-types and relations among them. Action-types, rather than
 actions, are the main elements in recipes. Grosz and Sidner in their earlier
 work \cite{grosz:plans-discourse} have considered only simple recipes in which
 each recipe consisted of only a single action-type relation
-\cite{lochbaum:plan-models}. Recipes can be partial, meaning thay can expand and
+\cite{lochbaum:plan-models}. Recipes can be partial, meaning they can expand and
 be modified over time.
 
 \subsubsection{Shared Plans}
 \label{sec:shared}
 
 Grosz and Sidner propose that collaboration must have the following three
-elements which also shows the importance of the shared plans:
+elements, which also shows the importance of the shared plans:
 
 \begin{enumerate}
   \item the participants must have commitment to the shared activity;
@@ -212,12 +212,12 @@ Figure \ref{fig:plans} shows what we need to add to individual plans in order to
 have plans for group actions. The top of the figure lists the main components
 for individual plans. First, an individual agent needs to know the recipe for an
 action, whereas agents in a group need to have a mutual belief of a recipe for
-an action. In the case of a group plan, having mutual belief of a recipe, leads
-the agents to agree on how they are going to execute the action. Then, just as
-individual agents need to have the ability to perform the constituent actions in
-an individual plan and must have intentions to perform them, the participants in
-a group activity need to have individual or group plans for each of the
-constituent actions in the mutually agreed recipe
+an action (botom of the figure). In the case of a group plan, having a mutual
+belief of a recipe, leads the agents to agree on how they are going to execute
+the action. Then, similar to individual agents that need to have the ability to
+perform the constituent actions in an individual plan and must have intentions
+to perform them, the participants in a group activity need to have individual or
+group plans for each of the constituent actions in the mutually agreed recipe
 \cite{grosz:collaborative-systems, grosz:plans-discourse}.
 
 \begin{figure}[tbh]
@@ -238,7 +238,7 @@ Second, the participants need to have some commitment to the other agents to
 succeed in their own their actions. For instance, the robot must have an
 intention that the astronaut be able to measure the quality of installation
 successfully. This intention will prevent the robot from interrupting the
-astronaut's measurement action or prevent the robot from using astronaut's
+astronaut's measurement action or prevent the robot from using the astronaut's
 measurement tool \cite{grosz:collaborative-systems, grosz:plans-discourse}.
 
 \subsubsection{Full Vs. Partial Shared Plan}
@@ -247,16 +247,16 @@ measurement tool \cite{grosz:collaborative-systems, grosz:plans-discourse}.
 The SharedPlans formalization distinguishes complete plans and partial plans. A
 shared plan can be either a \textit{Full Shared Plan (FSP)} or a \textit{Partial
 Shared Plan (PSP)}. An \textit{FSP} is a complete plan in which agents have fully
-determined how they will perform an action. An \textit{PSP} definition provides a
+determined how they will perform an action. A \textit{PSP} definition provides a
 specification of the minimal mental state requirements for collaboration to
 exist and gives criteria governing the process of completing the plan. 
 
 An \textit{FSP} to do $\alpha$ represents a situation where every aspect of a
 joint activity $\alpha$ is fully determined. This includes mutual belief and
-agreement in the complete recipe to do $\alpha$. Recipe is a specication of a
-set of actions \textit{$A_i$}, which constitutes performance of $\alpha$ when
-executed under specified constraints. \textit{FSP(\textbf{P}, $\Theta, \alpha,
-T_p, T_\alpha, \textbf{R}_\alpha$)} denotes a group $\Theta$'s plan
+agreement in the complete recipe to do $\alpha$. A recipe is a specication of a
+set of actions \textit{$A_i$}, which constitutes the performance of $\alpha$
+when executed under specified constraints. \textit{FSP(\textbf{P}, $\Theta,
+\alpha, T_p, T_\alpha, \textbf{R}_\alpha$)} denotes a group $\Theta$'s plan
 \textit{\textbf{P}} at time \textit{$T_p$} to do action $\alpha$ at time
 \textit{$T_\alpha$} using recipe \textit{$\textbf{R}_\alpha$}. In short,
 \textit{FSP} holds if and only if the following conditions are satisfied:
@@ -291,7 +291,7 @@ shared goals. Notice that for the same reason recipes also can be partial
 \subsubsection{Communicating Intentions}
 
 In SharedPlans theory Grosz and Sidner are interested in the type of plans that
-underlie discourse in which the agents collaborate to achieve a shared goal.
+underlie a discourse in which the agents collaborate to achieve a shared goal.
 Here we present their view of discourse structure, since it is directly related
 to the intentions behind collaborators' actions. In
 \cite{grosz:plans-discourse}, Grosz and Sidner argue that the SharedPlans theory
@@ -325,21 +325,21 @@ intentional attitudes are employed: \textit{intending to} (do an action) and
 of an agent to do any single-agent action while the agent not only believes that
 it is able to execute that action, but it also committs to doing so. In short,
 it is an intention to perform an action, similar to Bratman's view of intention.
-In contrast with \textit{intention to}, an \textit{intention that}, as the
-notion of an intention directed toward group activity, does not directly imply
-an action. In fact, an individual agent's \textit{intention that} is directed
-towards its collaborators' action or towards a group's joint action.
-\textit{Intention that} guides an agent to take actions (including the
-communication), that enable or facilitate other collaborators to perform
-assigned tasks. This leads an agent to behave collaboratively. Therefore, agents
-will adopt intentions to communicate about the plan \cite{grosz:collaboration}.
-As another difference, \textit{Intention to} commits an agent to means-end
-reasoning and acting \cite{bratman:intentions-plans} while \textit{Intention
-that} does not necessarily entail this commitment. The key point about
-\textit{Intention to} and \textit{intention that} is that both commit an agent
-not to adopt conflicting intentions, and constrain replanning in case of
-failure. Further, an agent can \textit{intention that} another agent achieve the
-specified proposition.
+In contrast with \textit{intention to}, an \textit{intention that}, as an
+intention directed toward group activity, does not directly imply an action. In
+fact, an individual agent's \textit{intention that} is directed towards its
+collaborators' action or towards a group's joint action. \textit{Intention that}
+guides an agent to take actions (including communication), that enable or
+facilitate other collaborators to perform assigned tasks. This leads an agent to
+behave collaboratively. Therefore, agents will adopt intentions to communicate
+about the plan \cite{grosz:collaboration}. As another difference,
+\textit{Intention to} commits an agent to means-end reasoning and acting
+\cite{bratman:intentions-plans} while \textit{Intention that} does not
+necessarily entail this commitment. The key point about \textit{Intention to}
+and \textit{intention that} is that both commit an agent not to adopt
+conflicting intentions, and constrain replanning in case of failure. Further, an
+agent can \textit{intention that} another agent achieve the specified
+proposition.
 
 \subsection{Joint Intentions Theory}
 \label{sec:joint-intentions}
@@ -349,8 +349,8 @@ building artificial collaborative agents. The Joint Intentions theory of Cohen
 and Levesque \cite{cohen:teamwork, cohen:intention-commitment,
 cohen:persistence-intention-commitment, cohen:intentions,
 levesque:acting-together} represents one of the first attempts to establish a
-formal theory of collaboration, and due to its clarity and expression, is one of
-the widely used of the teamwork theories. 
+formal theory of collaboration, and due to its clarity and expression, is a
+widely used teamwork theory.
 
 The basic idea of Joint Intentions theory is based on individual and joint
 intentions (as well as commitments) to act as a team member. Their notion of
@@ -359,12 +359,12 @@ shared goal, but also implies a commitment on part of all its members to a
 mutual belief about the state of the goal. In other words, Joint Intentions
 theory describes how a team of agents can jointly act together by sharing mental
 states about their actions while an intention is viewed as a commitment to
-perform an action. And a joint intention is a shared commitment to perform an
-action while in a group mental state \cite{cohen:intention-commitment}. 
+perform an action. A joint intention is a shared commitment to perform an action
+while in a group mental state \cite{cohen:intention-commitment}.
 
 In \cite{cohen:teamwork} Cohen and Levesque establish that joint intention
 cannot be defined simply as individual intention with the team regarded as an
-individual. The reason is after the initial formation of an intention, team
+individual. The reason is that after the initial formation of an intention, team
 members may diverge in their beliefs and their attitudes towards the intention.
 Instead, Cohen and Levesque generalise their own definition of intention. First,
 they present a definition of individual persistent goal (see Section
@@ -384,7 +384,7 @@ joint goal is achieved, or it is unachievable, or irrelevant
 \cite{wilsker:study-theories}. Thus, as we mentioned above, team members are
 committed to inform other team members when they reach the conclusion that a
 goal is achievable, impossible, or irrelevant. For instance, if a robot and an
-astronaut are collaborating to install a solar panel, once the robot reaches the
+astronaut are collaborating to install a solar panel, and the robot reaches the
 conclusion that the welding tool has deficiency, it is essential for the robot
 to have an intention to communicate with the astronaut and make this knowledge
 common. Therefore, according to this theory, in a collaboration, agents can
@@ -394,11 +394,11 @@ mutual belief of the status of the goal.
 \subsubsection{Individual Commitment}
 \label{sec:individual-commitment}
 
-As we mentioned earlier, intentions and commitments are the basic idea of Joint
+As we mentioned earlier, intentions and commitments are the basic ideas of Joint
 Intentions theory. Here, we provide the definition of ``individual commitment''
-(also called as \textit{persistent goal}) by Cohen et.\,al. in
+(also called \textit{persistent goal}) by Cohen et.\,al. in
 \cite{cohen:team-formation}. According to their definition an agent has a
-persistent goal relative to q to achieve p just when:
+persistent goal relative to q to achieve p only when:
 
 \begin{enumerate}
   \item agent believes that p is currently false;
@@ -408,7 +408,7 @@ persistent goal relative to q to achieve p just when:
   or that q is false.
 \end{enumerate}
 
-Note that the condition q is a ``escape'' clause, which can be omitted for
+Note that the condition q is an ``escape'' clause, which can be omitted for
 brevity, or it can be used as a reason for the agent to drop a commitment, even
 though it could be quite vague.
 
@@ -417,28 +417,29 @@ though it could be quite vague.
 
 As we mentioned in this Section, Joint Intention theory adopts Bratman's view of
 future-directed properties of intention. In this theory, an intention is
-defined to be a commitment to act in a certain mental states. In other words, an
+defined to be a commitment to act in a certain mental state. In other words, an
 agent intends relative to some condition to do an action just in case it has a
 persistent goal or commitment (relative to that condition) of having done the
 action and, moreover, believing throughout that it is doing that action
 \cite{cohen:teamwork}.
 
-Intentioin inherits all the properties of commitment (e.g., consistency with
+Intention inherits all the properties of commitment (e.g., consistency with
 mental states). Typically, an agent uses an intention as a decision within a
-supgoal-supergoal hierarchy to do a particular action. For instance, initially,
-the agent commits to p becomming true without having any concern about who or
-how p is going to be accomplished. Then, the agent commits to x or y as a mean to
-accomplish p. Lastly, the agent selects one of the actions (e.g., x) and forms
-an intention to do it. This intention will be given up when for whatever reason
-p is accomplished.
+subgoal-supergoal hierarchy to do a particular action. For instance, initially,
+the agent commits to p becoming true without having any concern about who or
+how p is going to be accomplished. Then, the agent commits to x or y as a mean
+to accomplish p. Lastly, the agent selects one of the actions (e.g., x) and
+forms an intention to do it. This intention will be given up when for whatever
+reason p is accomplished.
 
 \subsubsection{Joint Commitment}
 \label{sec:jpg}
 
-Before talking about joint commitment, we provide the definition of \textit{Weak
-Achievement Goal} (WAG) concept in Joint Intentions theory which shows the state
-of a team member nominally working on a goal. The concept of WAG is used to
-provide the definition of the Joint Commitment in this theory.\\
+Before talking about joint commitment, we provide the definition of
+the \textit{Weak Achievement Goal} (WAG) concept in Joint Intentions theory
+which shows the state of a team member nominally working on a goal. The concept
+of WAG is used to provide the definition of the Joint Commitment in this
+theory.\\
 
 An agent has a WAG relative to q and with respect to a team to bring about p if
 either of the following conditions holds:
@@ -454,20 +455,20 @@ either of the following conditions holds:
 \textbf{Joint commitment} -- A joint intention of a team $\Theta$ is based on
 its joint commitment, which is defined as a \textit{Joint Persistent Goal}
 (JPG). A JPG to achieve a team action p, denoted JPG($\Theta$, p) requires all
-team members to mutually believe that p is currently false and want p to be
-eventually true. A JPG guarantees that team members cannot decommit until p is
-mutually known to be \textit{achieved, unachievable} or \textit{irrelevant}.
+team members to mutually believe that p is currently false and want p to
+eventually be true. A JPG guarantees that team members cannot decommit until p
+is mutually known to be \textit{achieved, unachievable} or \textit{irrelevant}.
 Basically, JPG($\Theta$, p) requires team members to each hold p as a
 \textit{Weak Achievement Goal} (WAG). WAG($\mu$, p, $\Theta$), where $\mu$ is a
-team member in $\Theta$, requires p to achieve p if it is false. However, if
+team member in $\Theta$, requires $\mu$ to achieve p if it is false. However, if
 $\mu$ privately believes that p is either achieved, unachievable or irrelevant,
 JPG($\Theta$, p) is dissolved, but p is left with a commitment to have this
 belief become $\Theta$'s mutual belief. Such a commitment is required to
-establish mutual belief in $\Theta$ that an agent must typically communicate
-with its teammates \cite{cohen:teamwork}.
+establish mutual belief in $\Theta$; this commitment typically makes an agent
+communicate with its teammates \cite{cohen:teamwork}.
 
 An important consequence of achieving joint commitment in a team is that it
-predicts future communication which is critical within course of a
+predicts future communication which is critical within the course of a
 collaboration. Thus, this communication leads team members to attain mutual
 beliefs which is a fundamental concept in teamwork activities. Notice that
 the minimum mutual belief for team members to attain is the achievement or
@@ -478,23 +479,24 @@ failure of the shared goal which terminates collaboration.
 Joint intention is defined to be a joint commitment to the team members trying
 to do a joint action. Based on Cohen and Levesque's definition of joint
 intention, a team of agents jointly intends (relative to some escape condition)
-to do an action iff the members have a JPG (relative to that condition) of their
-having done the action, and having done it mutually believing throughout that
-they were doing it (knowingly) \cite{cohen:teamwork}.
+to do an action if and only if the members have a JPG (relative to that
+condition) of their having done the action, and having done it mutually
+believing throughout that they were doing it (knowingly) \cite{cohen:teamwork}.
 
 \subsubsection{Teamwork \& Communication}
 
-In sum, according to Joint Intentions theory, the notion of teamwork is
+In summary, according to Joint Intentions theory, the notion of teamwork is
 characterized by joint commitment, also known as joint persistent goal (see
 Section \ref{sec:jpg}). The definition of JPG states that the agents mutually
 believe they have the appropriate goal, and that they mutually believe a
 persistent weak achievement goal (which represents the one-way commitment of one
 agent directed towards another) to achieve it persists until the agents mutually
-believe that the goal has either been achieved, impossible, or irrelevant.
+believe that the goal has either been achieved, or become impossible, or
+irrelevant.
 
-Joint Intentions Theory claims that an efficient collaboration requires
+Joint Intentions theory claims that an efficient collaboration requires
 communication. Sharing information through communication is critical given that
-collabortors have different capabilities, and each individual often has only
+collaborators have different capabilities, and each individual often has only
 partial knowledge relevant to solving the problem, and sometimes diverging
 beliefs about the state of the collaborative activity. Communication plays an
 important role in coordinating team members' roles and actions to accomplish
@@ -505,11 +507,11 @@ respective roles and capabilities of each member.
 \subsection{STEAM -- A Hybrid Collaboration Approach}
 
 Tambe in \cite{tambe:flexible-teamwork} argues that teamwork in complex,
-dynamic, multi-agent domains requires the agent to obtains flexibility and
+dynamic, multi-agent domains requires the agents to obtain flexibility and
 reusability by using integrated capabilities. Tambe created STEAM (simply, a
 \textbf{S}hell \textbf{TEAM}work) based on this idea. STEAM's operationalization
-in complex, real-world domains is the key in its development to address
-important teamwork issues some of which are discussed in Section
+in complex, real-world domains is the key in its development to addressing 
+important teamwork issues, some of which are discussed in Section
 \ref{sec:applicaiton}. STEAM is founded on the Joint Intentions theory and it
 uses joint intentions as the basic building block of teamwork while it is
 informed by key concepts from SharedPlans theory.
@@ -517,38 +519,39 @@ informed by key concepts from SharedPlans theory.
 Building on the well developed theory of joint intentions \cite{cohen:teamwork}
 and sharedPlans \cite{grosz:collaboration, grosz:plans-discourse}, the STEAM
 teamwork model \cite{tambe:flexible-teamwork} was operationalized as a set of
-domain independent rules that describe how teams should work together. According
-to Tambe's claim, several advantages accrue due to the this use of Joint
-Intentions theory, such as achieving a principled framework for reasoning about
-coordination and communication in a team which the joint intention can provide.
-Or, the guidance for monitoring and maintenance of a team activity which again
-the joint commitment in joint intention provides. And lastly, Tambe believes the
-joint intention in a team can facilitate reasoning about team activity and team
-members' contribution to that activity. 
+domain-independent rules that describe how teams should work together. According
+to Tambe's claim, several advantages accrue due to this use of Joint Intentions
+theory, such as achieving a principled framework for reasoning about
+coordination and communication in a team, which the joint intention can provide.
+Another advantage is the guidance for monitoring and maintenance of a team
+activity which the joint commitment in joint intention again provides. And
+lastly, Tambe believes the joint intention in a team can facilitate reasoning
+about team activity and team members' contribution to that activity.
 
-However, he also believes for a high level team goal, one single joint intention
-is not sufficient to achieve all these advantages. Thus, STEAM borrows some of
-the concepts of SharedPlans theory. First, STEAM uses the concept of ``intention
-that'' (see Section \ref{sec:sharedplans}) towards an activity as well as the
-fact that SharedPlans theory mandates team members' mutual belief in a common
-recipe and shared plans for individual steps in the common recipe. Thus, in this
-case, SharedPlans helps STEAM to achieve coherency within the teamwork. Besides,
-STEAM uses joint intentions to ensure the teamwork coherency to build mental
-attitudes of team members. In other words, in STEAM as the recipe evolves, STEAM
-requires all team members to agree on execution of a step and form joint
-intentions to execute it while other joint intentions are formed, leading to a
-hierarchy. Second, is the amount of information that a team member needs to know
-to perform an action. According to SharedPlans, team members require to know
-only that a recipe exists to enable them to perform actions (not recipe details
--- see Section \ref{sec:recipe}). Similarly in STEAM, team members only track
-the responsible subteam or individual team member to perform a specific step
-while this tracking does not need detailed plan recognition. The third issue is
-parallel to what is called unreconciled case in SharedPlans theory which in
-STEAM, it is handled by replanning and communication between team members
-assigning the unassigned or unachieved task. The last issue is communication
-between team members which also borrows the concept of ``intention that'' from
-SharedPlans theory to help generalization of STEAM's comminication capabilities
-beside what Joint Intenitons theory offers.
+However, he also believes that for a high level team goal, one single joint
+intention is not sufficient to achieve all these advantages. Thus, STEAM borrows
+some of the concepts of SharedPlans theory. First, STEAM uses the concept of
+``intention that'' (see Section \ref{sec:sharedplans}) towards an activity as
+well as the fact that SharedPlans theory mandates team members' mutual belief in
+a common recipe and shared plans for individual steps in the common recipe.
+Thus, in this case, SharedPlans helps STEAM to achieve coherency within the
+teamwork. Besides, STEAM uses joint intentions to ensure the teamwork coherency
+to build the mental attitudes of team members. In other words, as the recipe
+evolves, STEAM requires all team members to agree on the execution of a step and
+form joint intentions to execute it while other joint intentions are formed,
+leading to a hierarchy. A second concept STEAM borrows from SharedPlans is the
+amount of information that a team member needs to know to perform an action.
+According to SharedPlans, team members require to know only that a recipe exists
+to enable them to perform actions (not recipe details -- see Section
+\ref{sec:recipe}). Similarly in STEAM, team members only track the responsible
+subteam or individual team member to perform a specific step while this tracking
+does not need detailed plan recognition. The third issue is parallel to what is
+called unreconciled case in SharedPlans theory which in STEAM, it is handled by
+replanning and communication between team members assigning the unassigned or
+unachieved task. The last issue is communication between team members which also
+borrows the concept of ``intention that'' from SharedPlans theory to help
+generalization of STEAM's comminication capabilities beside what Joint
+Intenitons theory offers.
 
 In sum, STEAM builds on both Joint Intention Theory and SharedPlans Theory and
 tries to overcome their shortcomings. Based on joint intentions, STEAM builds up
